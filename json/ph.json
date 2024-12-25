@@ -1,0 +1,917 @@
+{
+    "ph-1-abc": {
+        "id": "ph-1-abc",
+        "course_id": "Ph 1 abc",
+        "name": "Classical Mechanics and Electromagnetism",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second, third terms",
+        "description": "The first year of a two-year course in introductory classical and modern physics. Topics: Newtonian mechanics in Ph 1 a; electricity and magnetism, and special relativity, in Ph 1 b, c. Emphasis on physical insight and problem solving. Ph 1 b, c is divided into two tracks: the Practical Track emphasizing practical electricity, and the Analytic Track, which teaches and uses methods of multivariable calculus. Students enrolled in the Practical Track are encouraged to take Ph 8 bc concurrently. Students will be given information helping them to choose a track at the end of fall term.",
+        "offered": true,
+        "instructors": "Ravi, Patterson, X. Chen, Refael.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-2-abc": {
+        "id": "ph-2-abc",
+        "course_id": "Ph 2 abc",
+        "name": "Waves, Quantum Mechanics, and Statistical Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "An introduction to several areas of physics including applications in modern science and engineering. Topics include discrete and continuous oscillatory systems, wave mechanics, applications in telecommunications and other areas (first term); foundational quantum concepts, the quantum harmonic oscillator, the Hydrogen atom, applications in optical and semiconductor systems (second term); ensembles and statistical systems, thermodynamic laws, applications in energy technology and other areas (third term). Although best taken in sequence, the three terms can be taken independently.",
+        "offered": true,
+        "instructors": "Hildebrandt, Filippone.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 abc, Ma 1 abc.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d",
+            "ph-1-abc"
+        ]
+    },
+    "ph-3": {
+        "id": "ph-3",
+        "course_id": "Ph 3",
+        "name": "Introductory Physics Laboratory",
+        "units": "6 units (0-3-3)",
+        "terms": "first, second, third terms",
+        "description": "Introduction to experimental physics and data analysis, with techniques relevant to all fields that deal in quantitative data. Specific physics topics include ion trapping, harmonic motion, mechanical resonance, and precision interferometry. Broader skills covered include introductions to essential electronic equipment used in modern research labs, basic digital data acquisition and analysis, statistical interpretation of quantitative data, professional record keeping and documentation of experimental research, and an introduction to the Mathematica programming language. Only one term may be taken for credit.",
+        "offered": true,
+        "instructors": "Black, Libbrecht.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 a or instructor's permission.",
+        "prereqs": [
+            "ph-1-abc"
+        ]
+    },
+    "fsph-4": {
+        "id": "fsph-4",
+        "course_id": "FS/Ph 4",
+        "name": "First-Year Seminar: Astrophysics and Cosmology with Open Data",
+        "units": "6 units (2-0-4)",
+        "terms": "first term",
+        "description": "Astrophysics and cosmology are in the midst of a golden age of science-rich observations from incredibly powerful telescopes of various kinds. The data from these instruments are often freely available on the web. Anyone can do things like study x-rays from pulsars in our galaxy or gamma rays from distant galaxies using data from Swift and Fermi; discover planets eclipsing nearby stars using data from Kepler; measure the expansion of the universe using supernovae data; study the cosmic microwave background with data from Planck; find gravitational waves from binary black hole mergers using data from LIGO; and study the clustering of galaxies using Hubble data. We will explore some of these data sets and the science that can be extracted from them. A primary goal of this class is to develop skills in scientific computing and visualization. Bring your laptop!",
+        "offered": true,
+        "instructors": "Weinstein.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-5": {
+        "id": "ph-5",
+        "course_id": "Ph 5",
+        "name": "Analog Electronics for Physicists",
+        "units": "9 units (0-5-4)",
+        "terms": "first term",
+        "description": "A fast-paced laboratory course covering the design, construction, and testing of practical analog and interface circuits, with emphasis on applications of operational amplifiers. No prior experience with electronics is required. Basic linear and nonlinear elements and circuits are studied, including amplifiers, filters, oscillators and other signal conditioning circuits. Each week includes a 45 minute lecture/recitation and a 2\u00bd hour laboratory. The course culminates in a two-week project of the student's choosing.",
+        "offered": true,
+        "instructors": "Rice, Libbrecht.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 abc, Ma 1 abc, Ma 2 taken concurrently.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-2102",
+            "ma-1-d",
+            "ph-1-abc"
+        ]
+    },
+    "ph-6": {
+        "id": "ph-6",
+        "course_id": "Ph 6",
+        "name": "Physics Laboratory",
+        "units": "9 units",
+        "terms": "second term",
+        "description": "A laboratory introduction to experimental physics and data analysis. Experiments use research-grade equipment and techniques to investigate topics in classical electrodynamics, resonance phenomena, waves, and other physical phenomena. Students develop critical, quantitative evaluations of the relevant physical theories; they work individually and choose which experiments to conduct. Each week includes a 30-minute individual recitation and a 3 hour laboratory.",
+        "offered": true,
+        "instructors": "Rice, Politzer.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 2 a or Ph 12 a, Ma 2, Ph 3, Ph 2 b or Ph 12 b (may be taken concurrently), Ma 3 (may be taken concurrently).",
+        "prereqs": [
+            "ph-2-abc",
+            "ma-3103",
+            "ph-12-abc",
+            "ph-3",
+            "ma-2102"
+        ]
+    },
+    "ph-7": {
+        "id": "ph-7",
+        "course_id": "Ph 7",
+        "name": "Physics Laboratory",
+        "units": "9 units",
+        "terms": "third term",
+        "description": "A laboratory course continuing the study of experimental physics introduced in Physics 6. The course introduces some of the equipment and techniques used in quantum, condensed matter, nuclear, and particle physics. The menu of experiments includes some classics which informed the development of the modern quantum theory, including electron diffraction, the Stern-Gerlach experiment, Compton scattering, and the M\u00f6ssbauer Effect. The course format follows that of Physics 6: students work individually and choose which experiments to conduct, and each week includes a 30 minute individual recitation and a 3 hour laboratory.",
+        "offered": true,
+        "instructors": "Rice, Politzer.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 6, Ph 2 b or Ph 12 b, Ph 2 c or Ph 12 c taken concurrently.",
+        "prereqs": [
+            "ph-6",
+            "ph-2-abc",
+            "ph-12-abc"
+        ]
+    },
+    "ph-8-bc": {
+        "id": "ph-8-bc",
+        "course_id": "Ph 8 bc",
+        "name": "Experiments in Electromagnetism",
+        "units": "3 units (0-3-0)",
+        "terms": "second, third terms",
+        "description": "A two-term sequence of experiments that parallel the material of Ph 1 bc. It includes measuring the force between wires with a homemade analytical balance, measuring properties of a 1,000-volt spark, and building and studying a radio-wave transmitter and receiver. The take-home experiments are constructed from a kit of tools and electronic parts. Measurements are compared to theoretical expectations.",
+        "offered": true,
+        "instructors": "Spiropulu.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 a.",
+        "prereqs": [
+            "ph-1-abc"
+        ]
+    },
+    "fsph-9": {
+        "id": "fsph-9",
+        "course_id": "FS/Ph 9",
+        "name": "First-Year Seminar: The Science of Music",
+        "units": "6 units (2-0-4)",
+        "terms": "first term",
+        "description": "This course will focus on the physics of sound, how musical instruments make it, and how we hear it, including readings, discussions, demonstrations, and student observations using sound analysis software. In parallel we will consider what differentiates music from other sounds, and its role psychically and culturally. Students will do a final project of their choice and design, with possibilities including analysis of recordings of actual musical instruments, instrument construction and analysis, and tests or surveys of people's abilities or preferences. First-year (undergraduate) only; limited enrollment.",
+        "offered": true,
+        "instructors": "Politzer.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-10": {
+        "id": "ph-10",
+        "course_id": "Ph 10",
+        "name": "Frontiers in Physics",
+        "units": "3 units (2-0-1)",
+        "terms": "first term",
+        "description": "Open for credit to first-year students and sophomores. Weekly seminar by a member of the physics department or a visitor, to discuss their research at an introductory level; the other class meetings will be used to explore background material related to seminar topics and to answer questions that arise. The course will also help students find faculty sponsors for individual research projects. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Spiropulu.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "fsph-11-abc": {
+        "id": "fsph-11-abc",
+        "course_id": "FS/Ph 11 abc",
+        "name": "First-Year Seminar: Beyond Physics",
+        "units": "6 units (2-0-4)",
+        "terms": "second, third terms of a first-year student's first year and first term of sophomore year",
+        "description": "First-year students are offered the opportunity to enroll in this class by submitting potential solutions to problems posed in the fall term. A small number of solutions will be selected as winners, granting those students permission to register. This course demonstrates how research ideas arise, are evaluated, and tested and how the ideas that survive are developed. Weekly group discussions and one-on-one meetings with faculty allow students to delve into cutting edge scientific research. Ideas from physics are used to think about a huge swath of problems ranging from how to detect life on extrasolar planets to exploring the scientific underpinnings of science fiction in Hollywood films to considering the efficiency of molecular machines. Support for summer research at Caltech between an undergraduate's first and sophomore years will be automatic for students making satisfactory progress. Graded pass/fail. First-year (undergraduates) only; limited enrollment.",
+        "offered": true,
+        "instructors": "Phillips.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-12-abc": {
+        "id": "ph-12-abc",
+        "course_id": "Ph 12 abc",
+        "name": "Waves, Quantum Physics, and Statistical Mechanics",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second, third terms",
+        "description": "A one-year course primarily for students intending further work in the physics option. Topics include classical waves; wave mechanics, interpretation of the quantum wave-function, one-dimensional bound states, scattering, and tunneling; thermodynamics, introductory kinetic theory, and quantum statistics.",
+        "offered": true,
+        "instructors": "Zmuidzinas, Golwala.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 abc, Ma 1 abc, or equivalents.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d",
+            "ph-1-abc"
+        ]
+    },
+    "fsph-15": {
+        "id": "fsph-15",
+        "course_id": "FS/Ph 15",
+        "name": "First-Year Seminar: Quantum Information Science Today and Tomorrow",
+        "units": "6 units (2-0-4)",
+        "terms": "first term",
+        "description": "Quantum information science is transforming our understanding of the physical world and pointing toward revolutionary future technologies. We will explore the conceptual foundations of this rapidly advancing field. Topics to be discussed include quantum entanglement, Bell inequalities, decoherence, quantum metrology, quantum computing, quantum error correction, and quantum cryptography.",
+        "offered": true,
+        "instructors": "Preskill.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-20": {
+        "id": "ph-20",
+        "course_id": "Ph 20",
+        "name": "Computational Physics Laboratory I",
+        "units": "6 units (0-6-0)",
+        "terms": "first term",
+        "description": "Introduction to the tools of scientific computing. Use of numerical algorithms and symbolic manipulation packages for solution of physical problems. Python for scientific programming, Mathematica for symbolic manipulation, Unix tools for software development.",
+        "offered": true,
+        "instructors": "Adhikari.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: CS 1 or equivalent.",
+        "prereqs": [
+            "cs-1-x",
+            "cs-1"
+        ]
+    },
+    "ph-21": {
+        "id": "ph-21",
+        "course_id": "Ph 21",
+        "name": "Computational Physics Laboratory II",
+        "units": "6 units (0-6-0)",
+        "terms": "second term",
+        "description": "Computational tools for data analysis. Use of python for accessing scientific data from the web. Bayesian techniques. Fourier techniques. Image manipulation with python.",
+        "offered": true,
+        "instructors": "Adhikari.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 20 or equivalent experience with programming.",
+        "prereqs": [
+            "ph-20"
+        ]
+    },
+    "ph-22": {
+        "id": "ph-22",
+        "course_id": "Ph 22",
+        "name": "Computational Physics Laboratory III",
+        "units": "6 units (0-6-0)",
+        "terms": "third term",
+        "description": "Computational tools and numerical techniques. Applications to problems in classical mechanics. Numerical solution of 3-body and N-body systems. Monte Carlo integration.",
+        "offered": true,
+        "instructors": "McCuller.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 20 or equivalent experience with programming and numerical techniques.",
+        "prereqs": [
+            "ph-20"
+        ]
+    },
+    "ph-50-ab": {
+        "id": "ph-50-ab",
+        "course_id": "Ph 50 ab",
+        "name": "Caltech Physics League",
+        "units": "3 units (1-0-2)",
+        "terms": "first, second terms",
+        "description": "This course serves as a physics club, meeting weekly to discuss and analyze real-world problems in physical sciences. A broad range of topics will be considered, such as energy production, space and atmospheric phenomena, astrophysics, nano-science, and others. Students will use basic physics knowledge to produce simplified (and perhaps speculative) models of complex natural phenomena. In addition to regular assignments, students will also compete in solving challenge problems each quarter with prizes given in recognition of the best solutions.",
+        "offered": true,
+        "instructors": "Refael.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 abc.",
+        "prereqs": [
+            "ph-1-abc"
+        ]
+    },
+    "ph-70": {
+        "id": "ph-70",
+        "course_id": "Ph 70",
+        "name": "Oral and Written Communication",
+        "units": "6 units (2-0-4)",
+        "terms": "first, second terms",
+        "description": "Provides practice and guidance in oral and written communication of material related to contemporary physics research. Students will choose a topic of interest, make presentations of this material in a variety of formats, and, through a guided process, draft and revise a technical or review article on the topic. The course is intended for senior physics majors. Fulfills the Institute scientific writing requirement.",
+        "offered": true,
+        "instructors": "Hitlin.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-77-abc": {
+        "id": "ph-77-abc",
+        "course_id": "Ph 77 abc",
+        "name": "Advanced Physics Laboratory",
+        "units": "9 units (0-5-4)",
+        "terms": "first, second, third terms",
+        "description": "Advanced preparation for laboratory research. Dual emphasis on practical skills used in modern research groups and historic experiments that illuminate important theoretical concepts. Topics include advanced signal acquisition, conditioning, and data processing, introductions to widely-used optical devices and techniques, laser-frequency stabilization, and classic experiments such as magnetic resonance, optical pumping, and doppler-free spectroscopy. Fundamentals of vacuum engineering, thin-film sample growth, and cryogenics are occasionally offered. Special topics and student-led projects are available on request.",
+        "offered": true,
+        "instructors": "Black, Libbrecht.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 7 or instructor's permission.",
+        "prereqs": [
+            "ph-7"
+        ]
+    },
+    "ph-78-abc": {
+        "id": "ph-78-abc",
+        "course_id": "Ph 78 abc",
+        "name": "Senior Thesis (Experiment)",
+        "units": "9 units",
+        "terms": "first, second, third terms",
+        "description": "Open only to senior physics majors. Experimental research must be supervised by a faculty member, the student's thesis adviser. Two 15-minute presentations to the Physics Undergraduate Committee are required, one near the end of the first term and one near the end of third term. The written thesis must be completed and distributed to the committee one week before the second presentation. Students wishing assistance in finding an adviser and/or a topic for a senior thesis are invited to consult with the chair of the Physics Undergraduate Committee, or any other member of this committee. A grade will not be assigned in Ph 78 until the end of the third term. P grades will be given the first two terms, and then changed at the end of the course to the appropriate letter grade. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: To register for this course, the student must obtain approval of the chair of the Physics Undergraduate Committee (Ken Libbrecht).",
+        "prereqs": []
+    },
+    "ph-79-abc": {
+        "id": "ph-79-abc",
+        "course_id": "Ph 79 abc",
+        "name": "Senior Thesis (Theory)",
+        "units": "9 units",
+        "terms": "first, second, third terms",
+        "description": "Open only to senior physics majors. Theoretical research must be supervised by a faculty member, the student's thesis adviser. Two 15-minute presentations to the Physics Undergraduate Committee are required, one near the end of the first term and one near the end of third term. The written thesis must be completed and distributed to the committee one week before the second presentation. Students wishing assistance in finding an adviser and/or a topic for a senior thesis are invited to consult with the chair of the Physics Undergraduate Committee, or any other member of this committee. A grade will not be assigned in Ph 79 until the end of the third term. P grades will be given the first two terms, and then changed at the end of the course to the appropriate letter grade. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: To register for this course, the student must obtain approval of the chair of the Physics Undergraduate Committee (Ken Libbrecht).",
+        "prereqs": []
+    },
+    "ph-101": {
+        "id": "ph-101",
+        "course_id": "Ph 101",
+        "name": "Order-of-Magnitude Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Emphasis will be on using basic physics to understand complicated systems. Examples will be selected from properties of materials, geophysics, weather, planetary science, astrophysics, cosmology, biomechanics, etc. Given in alternate years.",
+        "offered": true,
+        "instructors": "Phinney.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ayph-104": {
+        "id": "ayph-104",
+        "course_id": "Ay/Ph 104",
+        "name": "Relativistic Astrophysics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course is designed primarily for junior and senior undergraduates in astrophysics and physics. It covers the physics of black holes and neutron stars, including accretion, particle acceleration and gravitational waves, as well as their observable consequences: (neutron stars) pulsars, magnetars, X-ray binaries, gamma-ray bursts; (black holes) X-ray transients, tidal disruption and quasars/active galaxies and sources of gravitational waves.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1, Ph 2 ab.",
+        "prereqs": [
+            "ph-2-abc",
+            "ph-1-abc"
+        ]
+    },
+    "ph-105": {
+        "id": "ph-105",
+        "course_id": "Ph 105",
+        "name": "Analog Electronics for Physicists",
+        "units": "9 units",
+        "terms": "first term",
+        "description": "A laboratory course intended for graduate students, it covers the design, construction, and testing of simple, practical analog and interface circuits useful for signal conditioning and experiment control in the laboratory. No prior experience with electronics is required. Students will use operational amplifiers, analog multipliers, diodes, bipolar transistors, and passive circuit elements. Each week includes a 45 minute lecture/recitation and a 2\u00bd hour laboratory. The course culminates in a two-week project of the student's choosing.",
+        "offered": true,
+        "instructors": "Rice, Libbrecht.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 1 abc, Ma 2, or equivalent.",
+        "prereqs": [
+            "ma-2102",
+            "ph-1-abc"
+        ]
+    },
+    "ph-106-abc": {
+        "id": "ph-106-abc",
+        "course_id": "Ph 106 abc",
+        "name": "Topics in Classical Physics",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second, third terms",
+        "description": "An intermediate course in the application of basic principles of classical physics to a wide variety of subjects. Ph 106 a will be devoted to mechanics, including Lagrangian and Hamiltonian formulations of mechanics, small oscillations and normal modes, central forces, and rigid-body motion. Ph 106 b will be devoted to fundamentals of electrostatics and magnetostatics, including boundary-value problems, multipole expansions, and electrostatics and magnetostatics in matter. Ph106 c will cover electrodynamics, including conservation laws, potential theory, electromagnetic waves, and radiation as well as the relationship between special relativity and electrodynamics.",
+        "offered": true,
+        "instructors": "Chatziiaonnou, Porter.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 2 ab or Ph 12 abc, Ma 2.",
+        "prereqs": [
+            "ph-2-abc",
+            "ma-2102",
+            "ph-12-abc"
+        ]
+    },
+    "ph-107": {
+        "id": "ph-107",
+        "course_id": "Ph 107",
+        "name": "Classical and Laser Optics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "An introduction and overview of classical and laser optics. We will develop tools and concepts to understand the behavior of light, such as ray transfer matrix analysis, wave optics, diffraction, coherence, interference, and polarization. These tools will then be used to understand the action of optical elements, imaging, resonators, waveguides, fiber optics, Gaussian beams, interferometers, and other techniques and concepts commonly encountered in research settings.",
+        "offered": true,
+        "instructors": "Hutzler, Adhikari.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 2 ab or Ph 12 ab.",
+        "prereqs": [
+            "ph-2-abc",
+            "ph-12-abc"
+        ]
+    },
+    "aphph-112": {
+        "id": "aphph-112",
+        "course_id": "APh/Ph 112",
+        "name": "Stochastic Resonance Phenomena and the Essential Role of Noise",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Noise is often regarded as a nuisance. In experimental systems, it diminishes signal to noise ratio and obfuscates patterns and weak signals. In theoretical systems, it requires modelling by stochastic differential equations, whose solutions can be analytically intractable except for the simplest of Gaussian processes. Research on classical and quantum systems has revealed, however, that noise is essential when boosting hidden signatures by the phenomenon known as stochastic resonance. Many different methods proposed for inducing stochastic resonance are now revolutionizing measurement and modeling in fields as wide ranging as nonlinear optics and photonics, quantum communication, SQUID devices, neurophysiology, hydrodynamics, climate research and finance. This course, designed to appeal to theorists and experimentalists alike, is conducted in survey and seminar style. Review of the current literature will be complimented by lectures and readings focused on statistical physics and stochastic processes.",
+        "offered": true,
+        "instructors": "Troian.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 12 abc, ACM 95/100 ab and Ph 106 abc, equivalent background, or instructor's permission.",
+        "prereqs": [
+            "ph-12-abc",
+            "acm-95100-ab",
+            "ph-106-abc"
+        ]
+    },
+    "phaphee-118-c": {
+        "id": "phaphee-118-c",
+        "course_id": "Ph/APh/EE 118 c",
+        "name": "Physics of Measurement: Moonbounce and Beyond - Microwave Scattering for Communications and Metrology",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "In 1944, the possibility of bouncing radio waves off the moon was first discovered inadvertently. Since then, radio wave echoes have been recorded from other planets, asteroids, tropospheric disturbances, and airplanes aloft. Microwave scattering provides a rich platform enabling exploration of long-range microwave communications, remote sensing, and interesting astrophysical measurements. This class will cover the physics of microwave propagation and scattering, low-earth orbit (LEO) satellite trajectories and communications, moonbounce, and the principles of ultrasensitive instrumentation - for both transmitting and receiving - enabling remote sensing with microwaves. One formal lecture per week will cover the fundamentals. The second weekly class meeting will be an extended hands-on workshop - starting mid-afternoon and going on into the evening - to assemble all aspects of a high-power microwave scattering system operating at 23cm. Students will set up tracking software for satellites and planetary objects, assemble an ultrasensitive software-defined radio (SDR) system, implement 1kW microwave power amplification at 23cm, and explore antenna and feed horn theory and practice. Also implemented will be powerful weak signal communications methods pioneered by Prof. Joe Taylor (Physics, Princeton) enabling ultraweak signal extraction through GPS synchronization of remote sources and receivers. We will employ Caltech's fantastic resource for this project - a 6-meter diameter microwave dish atop Moore Laboratory. Prospective students are encouraged to obtain an FCC Technician license (or higher) prior to spring term to permit their operation of the system. For information see: http://www.its.caltech.edu/~w6ue/",
+        "offered": true,
+        "instructors": "Roukes.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 118a, and a course in microwave physics and engineering (e.g., Ph 118b, EE 153, or equivalent), or permission from the instructor.",
+        "prereqs": [
+            "ee-153"
+        ]
+    },
+    "phapheebe-118-ab": {
+        "id": "phapheebe-118-ab",
+        "course_id": "Ph/APh/EE/BE 118 ab",
+        "name": "Physics of Measurement",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course explores the fundamental underpinnings of experimental measurements from the perspectives of information, noise, coupling, responsivity, and backaction. Its overarching goal is to enable students to develop intuition about a diversity of real measurement systems and the means to critically evaluate them. This involves developing a standard framework for estimating the ultimate and practical limits to information that can be extracted from a real measurement system. Topics will include the fundamental nature of information and signals, physical signal transduction and responsivity, the physical origin of noise processes, modulation, frequency conversion, synchronous detection, signal-sampling techniques, digitization, signal transforms, spectral analyses, and correlation methods. The first term will cover the essential underpinnings, while second-term topics will vary year-by-year according to interest. Among possible Ph 118 b topics are: high frequency, microwave, and fast time-domain measurements; biological interfaces and biosensing; the physics of functional brain imaging; and quantum measurement.\n Part b not offered 2024-25.",
+        "offered": true,
+        "instructors": "Roukes.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 127, APh 105, or equivalent, or permission from instructor.",
+        "prereqs": [
+            "ph-127-ab",
+            "ph-105"
+        ]
+    },
+    "csph-120": {
+        "id": "csph-120",
+        "course_id": "CS/Ph 120",
+        "name": "Quantum Cryptography",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course is an introduction to quantum cryptography: how to use quantum effects, such as quantum entanglement and uncertainty, to implement cryptographic tasks with levels of security that are impossible to achieve classically. The course covers the fundamental ideas of quantum information that form the basis for quantum cryptography, such as entanglement and quantifying quantum knowledge. We will introduce the security definition for quantum key distribution and see protocols and proofs of security for this task. We will also discuss the basics of device-independent quantum cryptography as well as other cryptographic tasks and protocols, such as bit commitment or position-based cryptography.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ma 1 b, Ph 2 b or Ph 12 b, CS 21, CS 38 or equivalent recommended (or instructor's permission).",
+        "prereqs": [
+            "ph-2-abc",
+            "ph-12-abc",
+            "ma-1-abc",
+            "cs-21",
+            "ma-1-d",
+            "cs-38"
+        ]
+    },
+    "ph-121-abc": {
+        "id": "ph-121-abc",
+        "course_id": "Ph 121 abc",
+        "name": "Computational Physics Lab",
+        "units": "6 units (0-6-0)",
+        "terms": "first, second, third terms",
+        "description": "Many of the recent advances in physics are attributed to progress in computational power. In the advanced computational lab, students will hone their computational skills by working through projects inspired by junior level classes (such as classical mechanics and E, statistical mechanics, quantum mechanics and quantum many-body physics). This course will primarily be in Python and Mathematica. This course is offered pass/fail.",
+        "offered": true,
+        "instructors": "Y. Chen, Motrunich.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-125-abc": {
+        "id": "ph-125-abc",
+        "course_id": "Ph 125 abc",
+        "name": "Quantum Mechanics",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second, third terms",
+        "description": "A one-year course in quantum mechanics and its applications, for students who have completed Ph 12 or Ph 2. Wave mechanics in 3-D, scattering theory, Hilbert spaces, matrix mechanics, angular momentum, symmetries, spin-1/2 systems, approximation methods, identical particles, and selected topics in atomic, solid-state, nuclear, and particle physics.",
+        "offered": true,
+        "instructors": "Porter, Cheung.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ma 2 ab, Ph 12 abc or Ph 2 ab, or equivalents.",
+        "prereqs": [
+            "ma-2102",
+            "ph-2-abc",
+            "ph-12-abc"
+        ]
+    },
+    "ph-127-ab": {
+        "id": "ph-127-ab",
+        "course_id": "Ph 127 ab",
+        "name": "Statistical Physics of Interacting Systems, Phases, and Phase Transitions",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second terms",
+        "description": "An advanced course in statistical physics that focuses on systems of interacting particles. Part a will cover interacting gases and spin models of magnetism, phase transitions and broken symmetries, classical field theories, and renormalization group approach to collective phenomena. Part b will introduce the path-integral based quantum to classical statistical mechanics mapping, as well as dualities and topological-defects descriptions, with applications to magnets, superfluids, and gauge field theories.",
+        "offered": true,
+        "instructors": "Motrunich.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 12 c or equivalent; quantum mechanics at the level of Ph 125 ab is required for Ph 127 b; may be taken concurrently.",
+        "prereqs": [
+            "ph-127-ab",
+            "ph-125-abc",
+            "ph-12-abc"
+        ]
+    },
+    "ph-129-abc": {
+        "id": "ph-129-abc",
+        "course_id": "Ph 129 abc",
+        "name": "Mathematical Methods of Physics",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second terms",
+        "description": "Mathematical methods and their application in physics. First term focuses on group theoretic methods in physics. Second term includes analytic methods such as complex analysis, differential equations, integral equations and transforms, and other applications of real analysis. Third term covers probability and statistics in physics. Each part may be taken independently.\n Part c not offered 2024-25.",
+        "offered": true,
+        "instructors": "X. Chen, Chatziioannou.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ma 2 and Ph 2 abc, or equivalent.",
+        "prereqs": [
+            "ma-2102",
+            "ph-2-abc"
+        ]
+    },
+    "ph-135": {
+        "id": "ph-135",
+        "course_id": "Ph 135",
+        "name": "Introduction to Condensed Matter",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course is an introduction to condensed matter which covers electronic properties of solids, including band structures, and transport. In addition, the course will introduce topological band-structure effects, covering Berry phase, the Thouless pump, and topological insulators. Ph 135 is continued by Ph/APh 223 ab in the winter and spring terms.",
+        "offered": true,
+        "instructors": "Ye.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125 ab or equivalent or instructor's permission.",
+        "prereqs": [
+            "ph-125-abc"
+        ]
+    },
+    "ph-136-abc": {
+        "id": "ph-136-abc",
+        "course_id": "Ph 136 abc",
+        "name": "Applications of Classical Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Applications of classical physics to topics of interest in contemporary \"macroscopic\" physics. Continuum physics and classical field theory; elasticity and hydrodynamics; plasma physics; magnetohydrodynamics; thermodynamics and statistical mechanics; gravitation theory, including general relativity and cosmology; modern optics. Content will vary from year to year, depending on the instructor. An attempt will be made to organize the material so that the terms may be taken independently. Ph 136 a will focus on thermodynamics, statistical mechanics, random processes, and optics. Ph 136 b will focus on fluid dynamics, MHD, turbulence, and plasma physics. Ph 136 c will cover an introduction to general relativity. Given in alternate years.",
+        "offered": true,
+        "instructors": "Most, Fuller, Teukolsky.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 106 ab or equivalent.",
+        "prereqs": [
+            "ph-106-abc"
+        ]
+    },
+    "phaph-137-abc": {
+        "id": "phaph-137-abc",
+        "course_id": "Ph/APh 137 abc",
+        "name": "Atoms and Photons",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course will provide an introduction to the interaction of atomic systems with photons. Each term can be taken independent of each other. The main emphasis is on laying the foundation for understanding current research that utilizes cold atoms and quantized light fields. First term: resonance phenomena, atomic structure, and the semi-classical interaction of atoms with static and oscillating electromagnetic fields. Techniques such as laser cooling/trapping, coherent manipulation and control of atomic systems. Second term: quantization of light fields, quantized light matter interaction, open system dynamics, entanglement, master equations, quantum jump formalism. Applications to cavity QED, optical lattices, and Rydberg arrays.\n Part b and part c not offered 2024-25.",
+        "offered": true,
+        "instructors": "Hutzler.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125 ab or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ph-125-abc"
+        ]
+    },
+    "aphph-138-ab": {
+        "id": "aphph-138-ab",
+        "course_id": "APh/Ph 138 ab",
+        "name": "Quantum Hardware and Techniques",
+        "units": "9 units (3-0-6)",
+        "terms": "third term, a and b offered in alternating years",
+        "description": "This class covers multiple quantum technology platforms and related theoretical techniques, and will provide students with broad knowledge in quantum science and engineering. It will be split into modules covering various topics including solid state quantum bits, topological quantum matter, trapped atoms and ions, applications of near-term quantum computers, superconducting qubits. Topics will alternate from year to year.",
+        "offered": true,
+        "instructors": "Faraon, Nadj-Perge.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125 abc or Ph 127 ab or Ph 137 ab or instructor's permission.",
+        "prereqs": [
+            "ph-127-ab",
+            "ph-125-abc",
+            "phaph-137-abc"
+        ]
+    },
+    "ph-139": {
+        "id": "ph-139",
+        "course_id": "Ph 139",
+        "name": "Introduction to Elementary Particle Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course provides an introduction to particle physics which includes Standard Model, Feynman diagrams, matrix elements, electroweak theory, QCD, gauge theories, the Higgs mechanism, neutrino mixing, astro-particle physics/cosmology, accelerators, experimental techniques, important historical and recent results, physics beyond the Standard Model, and major open questions in the field.",
+        "offered": true,
+        "instructors": "Weinstein.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125 ab or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ph-125-abc"
+        ]
+    },
+    "aphphms-152": {
+        "id": "aphphms-152",
+        "course_id": "APh/Ph/MS 152",
+        "name": "Fundamentals of Fluid Flow in Small Scale Systems",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Research efforts in many areas of applied science and engineering are increasingly focused on microsystems involving active or passive fluid flow confined to 1D, 2D or 3D platforms. Intrinsically large ratios of surface to volume can incur unusual surface forces and boundary effects essential to operation of microdevices for applications such as optofluidics, bioengineering, green energy harvesting and nanofilm lithography. This course offers a concise treatment of the fundamentals of fluidic behavior in small scale systems. Examples will be drawn from pulsatile, oscillatory and capillary flows, active and passive spreading of liquid dots and films, thermocapillary and electrowetting systems, and instabilities leading to self-sustaining patterns. Students must have working knowledge of vector calculus, ODEs, basic PDEs, and complex variables.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Troian.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: ACM 95/100 ab or equivalent.",
+        "prereqs": [
+            "acm-95100-ab"
+        ]
+    },
+    "aphphaems-153": {
+        "id": "aphphaems-153",
+        "course_id": "APh/Ph/Ae/MS 153",
+        "name": "Fundamentals of Energy and Mass Transport in Small Scale Systems",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "The design of instrumentation for cooling, sensing or measurement in microsystems requires special knowledge of the evolution and propagation of thermal and concentration gradients in confined geometries, which ultimately control the degree of maximum energy and mass exchange. A significant challenge facing the microelectronics industry, for example, is mitigation of hot spots in densely packed high power chips for artificial intelligence to prevent thermal runaway. This course offers a concise treatment of the fundamentals of mass and energy transport by examining steady and unsteady diffusive and convective processes in small confined systems. Contrasts with macroscale behavior caused by the effects of small scale confinement and reduced dimensionality will be examined. Sample problems will be drawn from systems in applied physics, material science, electrical and bioengineering. Students must have working knowledge of vector calculus, ODEs, basic PDEs, and complex variables.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Troian.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: ACM 95/100 ab or equivalent.",
+        "prereqs": [
+            "acm-95100-ab"
+        ]
+    },
+    "ph-171": {
+        "id": "ph-171",
+        "course_id": "Ph 171",
+        "name": "Reading and Independent Study",
+        "units": "Units in accordance with work accomplished",
+        "terms": "",
+        "description": "Occasionally, advanced work involving reading, special problems, or independent study is carried out under the supervision of an instructor. Approval of the instructor and of the student's departmental adviser must be obtained before registering. Graded pass/fail.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-172": {
+        "id": "ph-172",
+        "course_id": "Ph 172",
+        "name": "Research in Physics",
+        "units": "Units in accordance with work accomplished",
+        "terms": "",
+        "description": "Undergraduate students registering for 6 or more units of Ph 172 must provide a brief written summary of their work to the option rep at the end of the term. Approval of the student's research supervisor and departmental adviser must be obtained before registering. Graded pass/fail.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-177": {
+        "id": "ph-177",
+        "course_id": "Ph 177",
+        "name": "Advanced Experimental Physics",
+        "units": "9 units (0-4-5)",
+        "terms": "second, third terms",
+        "description": "A one-term laboratory course which will require students to design, assemble, calibrate, and use an apparatus to conduct a nontrivial experiment involving quantum optics or other current research area of physics. Students will work as part of a small team to reproduce the results of a published research paper. Each team will be guided by an instructor who will meet weekly with the students; the students are each expected to spend an average of 4 hours/week in the laboratory and the remainder for study and design. Enrollment is limited. Permission of the instructors required.",
+        "offered": true,
+        "instructors": "Rice.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 6, Ph 106 a, Ph 125 a or equivalents.",
+        "prereqs": [
+            "ph-6",
+            "ph-125-abc",
+            "ph-106-abc"
+        ]
+    },
+    "cnsbiphcsnb-187": {
+        "id": "cnsbiphcsnb-187",
+        "course_id": "CNS/Bi/Ph/CS/NB 187",
+        "name": "Neural Computation",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course aims at a quantitative understanding of how the nervous system computes. The goal is to link phenomena across scales from membrane proteins to cells, circuits, brain systems, and behavior. We will learn how to formulate these connections in terms of mathematical models, how to test these models experimentally, and how to interpret experimental data quantitatively. The concepts will be developed with motivation from some of the fascinating phenomena of animal behavior, such as: aerobatic control of insect flight, precise localization of sounds, sensing of single photons, reliable navigation and homing, rapid decision-making during escape, one-shot learning, and large-capacity recognition memory.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Meister.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: introductory neuroscience (Bi 150 or equivalent); mathematical methods (Bi 195 or equivalent); scientific programming.",
+        "prereqs": []
+    },
+    "ph-198": {
+        "id": "ph-198",
+        "course_id": "Ph 198",
+        "name": "Special Topics in Physics",
+        "units": "Units in accordance with work accomplished",
+        "terms": "",
+        "description": "Topics will vary year to year and may include hands-on laboratory work, team projects and a survey of modern physics research.",
+        "offered": true,
+        "instructors": "Staff.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-201": {
+        "id": "ph-201",
+        "course_id": "Ph 201",
+        "name": "Candidacy Physics Fitness",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "The course will review problem solving techniques and physics applications from the undergraduate physics college curriculum. In particular, we will touch on the main topics covered in the written candidacy exam: classical mechanics, electromagnetism, statistical mechanics and quantum physics, optics, basic mathematical methods of physics, and the physical origin of everyday phenomena.",
+        "offered": true,
+        "instructors": "Endres.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-203": {
+        "id": "ph-203",
+        "course_id": "Ph 203",
+        "name": "Nuclear Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "An introduction and overview of modern topics in nuclear physics, including models and structure of nucleons, nuclei and nuclear matter, the electroweak interaction of nuclei, and nuclear/neutrino astrophysics.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125 or equivalent.",
+        "prereqs": [
+            "ph-125-abc"
+        ]
+    },
+    "ph-205-abc": {
+        "id": "ph-205-abc",
+        "course_id": "Ph 205 abc",
+        "name": "Relativistic Quantum Field Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Topics: the Dirac equation, second quantization, quantum electrodynamics, scattering theory, Feynman diagrams, non-Abelian gauge theories, Higgs symmetry-breaking, anomalies, the Weinberg-Salam model, and renormalization.",
+        "offered": true,
+        "instructors": "Wise.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125.",
+        "prereqs": [
+            "ph-125-abc"
+        ]
+    },
+    "phcs-219-abc": {
+        "id": "phcs-219-abc",
+        "course_id": "Ph/CS 219 abc",
+        "name": "Quantum Computation",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "The theory of quantum information and quantum computation. Overview of classical information theory, compression of quantum information, transmission of quantum information through noisy channels, quantum error-correcting codes, quantum cryptography and teleportation. Overview of classical complexity theory, quantum complexity, efficient quantum algorithms, fault-tolerant quantum computation, physical implementations of quantum computation.",
+        "offered": true,
+        "instructors": "Kitaev, Preskill.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 125 ab or equivalent.",
+        "prereqs": [
+            "ph-125-abc"
+        ]
+    },
+    "phaph-223-ab": {
+        "id": "phaph-223-ab",
+        "course_id": "Ph/APh 223 ab",
+        "name": "Advanced Condensed-Matter Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "second, third terms",
+        "description": "Advanced topics in condensed-matter physics, with emphasis on the effects of interactions, symmetry, and topology in many-body systems. Ph/APh 223 a covers second quantization, Hartree-Fock theory of the electron gas, Mott insulators and quantum magnetism, spin liquids, bosonization, and the integer and fractional quantum Hall effect. Ph/APh 223 b continues with superfluidity and superconductivity; topics include the Bose-Hubbard model, Ginzburg-Landau theory, BCS theory, tunneling signatures of superconductivity, Josephson junctions, superconducting qubits, and topological superconductivity.",
+        "offered": true,
+        "instructors": "Alicea.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 135 or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ph-135"
+        ]
+    },
+    "ph-229-abc": {
+        "id": "ph-229-abc",
+        "course_id": "Ph 229 abc",
+        "name": "Advanced Mathematical Methods of Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "second, third terms",
+        "description": "Advanced topics in geometry and topology that are widely used in modern theoretical physics. Emphasis will be on understanding and applications more than on rigor and proofs. First term will cover basic concepts in topology and manifold theory. Second term will include Riemannian geometry, fiber bundles, characteristic classes, and index theorems. Third term will include anomalies in gauge-field theories and the theory of Riemann surfaces, with emphasis on applications to string theory.\n Part c not offered 2024-25.",
+        "offered": true,
+        "instructors": "Simmons-Duffin.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 129 abc or equivalent.",
+        "prereqs": [
+            "ph-129-abc"
+        ]
+    },
+    "ph-230-abc": {
+        "id": "ph-230-abc",
+        "course_id": "Ph 230 abc",
+        "name": "Elementary Particle Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "First term: Standard model, including electroweak and strong interactions, symmetries and symmetry breaking (including the Higgs mechanism), parton model and quark confinement, anomalies. Second and third terms: more on nonperturbative phenomena, including chiral symmetry breaking, instantons, the 1/N expansion, lattice gauge theories, and topological solitons. Other topics include topological field theory, precision electroweak, flavor physics, conformal field theory and the AdS/CFT correspondence, supersymmetry, Grand Unified Theories, and Physics Beyond the Standard Model.\n Part b and part c not offered 2024-25.",
+        "offered": true,
+        "instructors": "Zurek.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 205 abc or equivalent.",
+        "prereqs": [
+            "ph-205-abc"
+        ]
+    },
+    "ph-231-ab": {
+        "id": "ph-231-ab",
+        "course_id": "Ph 231 ab",
+        "name": "Advanced Topics in Statistical Mechanics",
+        "units": "9 units (3-0-6)",
+        "terms": "second, third terms",
+        "description": "The course covers rigorous results in classical and quantum statistical mechanics of lattice systems. Winter quarter: basic lattice models, existence of the thermodynamic limit, phase transitions at positive temperature, Hohenberg-Mermin-Wagner and Goldstone theorems. Spring quarter: C*-algebraic approach to statistical mechanics, locality and dynamics in quantum systems (Lieb-Robinson bounds), topological invariants of gapped quantum systems at zero temperature, Symmetry Protected Topological Phases.",
+        "offered": true,
+        "instructors": "Kapustin.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 127 or equivalent.",
+        "prereqs": [
+            "ph-127-ab"
+        ]
+    },
+    "ph-232": {
+        "id": "ph-232",
+        "course_id": "Ph 232",
+        "name": "Introduction to Topological Field Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "Topological field theories are the simplest examples of quantum field theories which, in a sense, are exactly solvable and generally covariant. During the past twenty years they have been the main source of interaction between physics and mathematics. Thus, ideas from gauge theory led to the discovery of new topological invariants for 3-manifolds and 4-manifolds. By now, topological quantum field theory (TQFT) has evolved into a vast subject, and the main goal of this course is to give an accessible introduction to this elegant subject.",
+        "offered": true,
+        "instructors": "Kapustin, Simmons-Duffin.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 205.",
+        "prereqs": [
+            "ph-205-abc"
+        ]
+    },
+    "ph-235-ab": {
+        "id": "ph-235-ab",
+        "course_id": "Ph 235 ab",
+        "name": "Theoretical Cosmology and Astroparticle Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "Cosmology in an expanding universe, inflation, big bang nucleosynthesis, baryogenesis, neutrino and nuclear astrophysics. Second term: Cosmological perturbation theory and the cosmic microwave background, structure formation, theories of dark matter.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: General Relativity at the level of Ph 236 a, and Quantum Field Theory at the level of Ph 205 a.",
+        "prereqs": [
+            "ph-236-abc",
+            "ph-205-abc"
+        ]
+    },
+    "ph-236-abc": {
+        "id": "ph-236-abc",
+        "course_id": "Ph 236 abc",
+        "name": "General Relativity",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "A systematic exposition of Einstein's general theory of relativity and its applications to gravitational waves, black holes, relativistic stars, causal structure of space-time, cosmology and brane worlds. Given in alternate years.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: a mastery of special relativity at the level of Goldstein's Classical Mechanics, or of Jackson's Classical Electrodynamics.",
+        "prereqs": []
+    },
+    "ph-237": {
+        "id": "ph-237",
+        "course_id": "Ph 237",
+        "name": "Gravitational Radiation",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Special topics in Gravitational-wave Detection. Physics of interferometers, limits of measurement, coherent quantum feedback, noise, data analysis.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 106 b, Ph 12 b or equivalents.",
+        "prereqs": [
+            "ph-12-abc",
+            "ph-106-abc"
+        ]
+    },
+    "ph-242-ab": {
+        "id": "ph-242-ab",
+        "course_id": "Ph 242 ab",
+        "name": "Physics Seminar",
+        "units": "4 units (2-0-2)",
+        "terms": "first, second terms",
+        "description": "An introduction to independent research, including training in relevant professional skills and discussion of current Caltech research areas with Caltech faculty, postdocs, and students. One meeting per week plus student projects. Registration restricted to first-year graduate students in physics.",
+        "offered": true,
+        "instructors": "Hsieh.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ph-250-ab": {
+        "id": "ph-250-ab",
+        "course_id": "Ph 250 ab",
+        "name": "Introduction to String Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "second, third terms",
+        "description": "Ph 250 a will cover the worldsheet formulation of string theory, including conformal field theory, supersymmetry, the emergence of gravity, scattering amplitudes, T-duality, and D-branes. We will also discuss how to build semi-realistic models of elementary particle physics from string theory. Ph 250 b will cover advanced topics such as non-perturbative dualities, Calabi-Yau geometry and mirror symmetry, black holes, the holographic principle and its relation to quantum information theory, and constraints on gravitational theories.",
+        "offered": true,
+        "instructors": "Ooguri.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "Prerequisites: Ph 205 or equivalent.",
+        "prereqs": [
+            "ph-205-abc"
+        ]
+    },
+    "ph-300": {
+        "id": "ph-300",
+        "course_id": "Ph 300",
+        "name": "Thesis Research",
+        "units": "Units in accordance with work accomplished",
+        "terms": "",
+        "description": "Ph 300 is elected in place of Ph 172 when the student has progressed to the point where research leads directly toward the thesis for the degree of Doctor of Philosophy. Approval of the student's research supervisor and department adviser or registration representative must be obtained before registering. Graded pass/fail.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ph",
+        "prereq_text": "",
+        "prereqs": []
+    }
+}

@@ -1,0 +1,2259 @@
+{
+    "cs-1": {
+        "id": "cs-1",
+        "course_id": "CS 1",
+        "name": "Introduction to Computer Programming",
+        "units": "9 units (3-4-2)",
+        "terms": "first, third terms",
+        "description": "A course on computer programming emphasizing the program design process and pragmatic programming skills. It will use the Python programming language and will not assume previous programming experience. Material covered will include data types, variables, assignment, control structures, functions, scoping, compound data, string processing, modules, basic input/output (terminal and file), as well as more advanced topics such as recursion, exception handling and object-oriented programming. Program development and maintenance skills including debugging, testing, and documentation will also be taught. Assignments will include problems drawn from fields such as graphics, numerics, networking, and games. At the end of the course, students will be ready to learn other programming languages in courses such as CS 11, and will also be ready to take more in-depth courses such as CS 2 and CS 4.",
+        "offered": true,
+        "instructors": "Blank, Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-1",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-1-x": {
+        "id": "cs-1-x",
+        "course_id": "CS 1 x",
+        "name": "Intermediate Computer Programming",
+        "units": "6 units (2-2-2)",
+        "terms": "first term",
+        "description": "Students must be placed into this course via the CS placement test. An intermediate course on computer programming emphasizing the program design process and pragmatic programming skills. It will use the Java programming language and will assume previous programming experience such as an AP CS A course. Material will focus on more advanced topics such as recursion, exception handling and object-oriented programming. Program development and maintenance skills including debugging, testing, and documentation will also be taught. Assignments will include problems drawn from fields such as graphics, numerics, networking, and games. At the end of the course, students will be ready to learn other programming languages in courses such as CS 11, and will also be ready to take more in-depth courses such as CS 2 and CS 4",
+        "offered": true,
+        "instructors": "Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-1-x",
+        "prereq_text": "Prerequisites: Enrollment by instructor permission only.",
+        "prereqs": []
+    },
+    "cs-2": {
+        "id": "cs-2",
+        "course_id": "CS 2",
+        "name": "Introduction to Programming Methods",
+        "units": "9 units (3-5-1)",
+        "terms": "second term",
+        "description": "CS 2 is a demanding course in programming languages and computer science. Topics covered include data structures, including lists, trees, and graphs; implementation and performance analysis of fundamental algorithms; algorithm design principles, in particular recursion and dynamic programming; Heavy emphasis is placed on the use of compiled languages and development tools, including source control and debugging. The course includes weekly laboratory exercises and projects covering the lecture material and program design. The course is intended to establish a foundation for further work in many topics in the computer science option.",
+        "offered": true,
+        "instructors": "Blank",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-2",
+        "prereq_text": "Prerequisites: CS 1 or equivalent.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cs-3": {
+        "id": "cs-3",
+        "course_id": "CS 3",
+        "name": "Introduction to Software Design",
+        "units": "9 units (2-6-1)",
+        "terms": "third term",
+        "description": "CS 3 is a practical introduction to designing large programs in a low-level language. Heavy emphasis is placed on documentation, testing, and software architecture. Students will work in teams in two 5-week long projects. In the first half of the course, teams will focus on testing and extensibility. In the second half of the course, teams will use POSIX APIs, as well as their own code from the first five weeks, to develop a large software deliverable. Software engineering topics covered include code reviews, testing and testability, code readability, API design, refactoring, and documentation.",
+        "offered": true,
+        "instructors": "Blank, Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-3",
+        "prereq_text": "Prerequisites: CS 2 or equivalent.",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "cs-4": {
+        "id": "cs-4",
+        "course_id": "CS 4",
+        "name": "Fundamentals of Computer Programming",
+        "units": "9 units (3-4-2)",
+        "terms": "second term",
+        "description": "This course gives students the conceptual background necessary to construct and analyze programs, which includes specifying computations, understanding evaluation models, and using major programming language constructs (functions and procedures, conditionals, recursion and looping, scoping and environments, compound data, side effects, higher-order functions and functional programming, and object-oriented programming). It emphasizes key issues that arise in programming and in computation in general, including time and space complexity, choice of data representation, and abstraction management. This course is intended for students with some programming background who want a deeper understanding of the conceptual issues involved in computer programming.",
+        "offered": true,
+        "instructors": "Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-4",
+        "prereq_text": "Prerequisites: CS 1 or instructor's permission.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "macs-6106-abc": {
+        "id": "macs-6106-abc",
+        "course_id": "Ma/CS 6/106 abc",
+        "name": "Introduction to Discrete Mathematics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: syntax and semantics of propositional and first-order logic. Introduction to the Godel completeness and incompleteness theorems. Elements of computability theory and computational complexity. Discussion of the P=NP problem.",
+        "offered": true,
+        "instructors": "T. Yu, Babecki, Ervin",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/macs-6106-abc",
+        "prereq_text": "Prerequisites: for Ma/CS 6 c, Ma/CS 6 a or Ma 5 a or instructor's permission.",
+        "prereqs": []
+    },
+    "cms-9": {
+        "id": "cms-9",
+        "course_id": "CMS 9",
+        "name": "Introduction to Computer Science Research",
+        "units": "1 unit (1-0-0)",
+        "terms": "first term",
+        "description": "",
+        "offered": true,
+        "instructors": "Low",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cms-9",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ids-9": {
+        "id": "ids-9",
+        "course_id": "IDS 9",
+        "name": "Introduction to Information and Data Systems Research",
+        "units": "1 unit (1-0-0)",
+        "terms": "second term",
+        "description": "This course will introduce students to research areas in IDS through weekly overview talks by Caltech faculty and aimed at first-year undergraduates. Others may wish to take the course to gain an understanding of the scope of research in computer science. Graded pass/fail.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/ids-9",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "eecs-10-ab": {
+        "id": "eecs-10-ab",
+        "course_id": "EE/CS 10 ab",
+        "name": "Introduction to Digital Logic and Embedded Systems",
+        "units": "6 units (2-3-1)",
+        "terms": "second, third terms",
+        "description": "This course is intended to give the student a basic understanding of the major hardware and software principles involved in the specification and design of embedded systems. The course will cover basic digital logic, programmable logic devices, CPU and embedded system architecture, and embedded systems programming principles (interfacing to hardware, events, user interfaces, and multi-tasking).",
+        "offered": true,
+        "instructors": "George",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecs-10-ab",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "acm-11": {
+        "id": "acm-11",
+        "course_id": "ACM 11",
+        "name": "Introduction to Computational Science and Engineering",
+        "units": "6 units (2-2-2)",
+        "terms": "third term",
+        "description": "This course is intended to serve as a practical introduction to the methods of computational science and engineering for students in all majors. The goal is to provide students exposure to and hands-on experience with commonly-used computational methods in science and engineering, with theoretical considerations confined to a level appropriate for first-year undergraduate students. Topics covered include computational simulation by discretization in space and time, numerical solution of linear and nonlinear equations, optimization, uncertainty quantification, and function approximation via interpolation and regression. Emphasis is on understanding trade-offs between computational effort and accuracy, and on developing working knowledge of how these tools can be used to solve a wide range of problems arising in applied math, science, and engineering. Assignments and in-class activities use MATLAB. No prior experience with MATLAB expected.",
+        "offered": true,
+        "instructors": "Carlson",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-11",
+        "prereq_text": "Prerequisites: Ma 1 ab, Co-requisite Ma 1 c. CS 1 or prior programming experience recommended.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cs-11": {
+        "id": "cs-11",
+        "course_id": "CS 11",
+        "name": "Computer Language Lab",
+        "units": "3 units (0-3-0)",
+        "terms": "first, second, and third terms",
+        "description": "A self-paced lab that provides students with extra practice and supervision in transferring their programming skills to a particular programming language. The course can be used for any language of the student's choosing, subject to approval by the instructor. A series of exercises guide students through the pragmatic use of the chosen language, building their familiarity, experience, and style. More advanced students may propose their own programming project as the target demonstration of their new language skills. This course is available for undergraduate students only. Graduate students should register for CS 111. CS 11 may be repeated for credit of up to a total of nine units.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-11",
+        "prereq_text": "Prerequisites: CS 1 or instructor's permission.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cs-12": {
+        "id": "cs-12",
+        "course_id": "CS 12",
+        "name": "Student-Taught Topics in Computing",
+        "units": "variable units between 1 and 9",
+        "terms": "first, second, third terms",
+        "description": "Each section covers a topic in computing with associated sets or projects. Sections are designed and taught by an undergraduate student under the supervision of a CMS faculty member. CS 12 may be repeated for credit of up to a total of nine units.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-12",
+        "prereq_text": "Prerequisites: CS 1 or instructor's permission.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cs-13": {
+        "id": "cs-13",
+        "course_id": "CS 13",
+        "name": "Mathematical Foundations of Computer Science",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course introduces key mathematical concepts used in computer science, and in particular it prepares students for proof-based CS courses such as CS 21 and CS 38. Mathematical topics are illustrated via applications in Computer Science. CS 1 is a co-requisite as there will be a small number of programming assignments. The course covers basic set theory, induction and inductive structures (e.g., lists and trees), asymptotic analysis, and elementary combinatorics, number theory, and graph theory. Applications include number representation, basic cryptography, basic algorithms on trees, numbers, and polynomials, social network graphs, compression, and simple error-correcting codes.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Blank",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-13",
+        "prereq_text": "Prerequisites: CS 1.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cs-19-ab": {
+        "id": "cs-19-ab",
+        "course_id": "CS 19 ab",
+        "name": "Introduction to Computer Science in Industry",
+        "units": "2 units (1-0-1)",
+        "terms": "first term",
+        "description": "This course will introduce students to CS in industry through weekly overview talks by alums and engineers in industry. It is aimed at first and second year undergraduates. Others may wish to take the course to gain an understanding of the scope of computer science in industry. Additionally students will complete short weekly assignments aimed at preparing them for interactions with industry. Graded pass/fail.\n Part b not offered 2024-25.",
+        "offered": true,
+        "instructors": "Ralph",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-19-ab",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-21": {
+        "id": "cs-21",
+        "course_id": "CS 21",
+        "name": "Decidability and Tractability",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course introduces the formal foundations of computer science, the fundamental limits of computation, and the limits of efficient computation. Topics will include automata and Turing machines, decidability and undecidability, reductions between computational problems, and the theory of NP-completeness.",
+        "offered": true,
+        "instructors": "Umans",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-21",
+        "prereq_text": "Prerequisites: CS 2 (may be taken concurrently).",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "cs-22": {
+        "id": "cs-22",
+        "course_id": "CS 22",
+        "name": "Data Structures & Parallelism",
+        "units": "9 units (3-6-0)",
+        "terms": "second term",
+        "description": "CS 22 is a demanding course that covers implementation, correctness, and analysis of data structures and some parallel algorithms. This course is intended for students who have already taken a data structures course at the level of CS 2. Topics include implementation and analysis of skip lists, trees, hashing, and heaps as well as various algorithms (including string matching, parallel sorting, parallel prefix). The course includes weekly written and programming assignments covering the lecture material.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Blank",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-22",
+        "prereq_text": "Prerequisites: CS 2 or instructor's permission.",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "cs-24": {
+        "id": "cs-24",
+        "course_id": "CS 24",
+        "name": "Introduction to Computing Systems",
+        "units": "9 units (3-3-3)",
+        "terms": "first term",
+        "description": "Basic introduction to computer systems, including hardware-software interface, computer architecture, and operating systems. Course emphasizes computer system abstractions and the hardware and software techniques necessary to support them, including virtualization (e.g., memory, processing, communication), dynamic resource management, and common-case optimization, isolation, and naming.",
+        "offered": true,
+        "instructors": "Blank",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-24",
+        "prereq_text": "Prerequisites: CS 2 and CS 3.",
+        "prereqs": [
+            "cs-2",
+            "cs-3"
+        ]
+    },
+    "cs-38": {
+        "id": "cs-38",
+        "course_id": "CS 38",
+        "name": "Algorithms",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course introduces techniques for the design and analysis of efficient algorithms. Major design techniques (the greedy approach, divide and conquer, dynamic programming, linear programming) will be introduced through a variety of algebraic, graph, and optimization problems. Methods for identifying intractability (via NP-completeness) will be discussed.",
+        "offered": true,
+        "instructors": "Mahadev,Ralph",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-38",
+        "prereq_text": "Prerequisites: CS 2; Ma/CS 6 a or Ma 121 a; and CS 21.",
+        "prereqs": [
+            "cs-2",
+            "macs-6106-abc",
+            "cs-21"
+        ]
+    },
+    "cs-42": {
+        "id": "cs-42",
+        "course_id": "CS 42",
+        "name": "Computer Science Education in K-14 Settings",
+        "units": "6 units (2-2-2)",
+        "terms": "second term",
+        "description": "This course will focus on computer science education in K-14 settings. Students will gain an understanding of the current state of computer science education within the United States, develop curricula targeted at students from diverse backgrounds, and gain hands on teaching experience. Through readings from educational psychology and neuropsychology, students will become familiar with various pedagogical methods and theories of learning, while applying these in practice as part of a teaching group partnered with a local school or community college. Each week students are expected to spend about 2 hours teaching, 2 hours developing curricula, and 2 hours on readings and individual exercises. Pass/Fail only. May not be repeated.",
+        "offered": true,
+        "instructors": "Ralph, Wierman",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-42",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cseeme-75-abc": {
+        "id": "cseeme-75-abc",
+        "course_id": "CS/EE/ME 75 abc",
+        "name": "Multidisciplinary Systems Engineering",
+        "units": "3 units (2-0-1), 6 units (2-0-4), or 9 units (2-0-7) first term; 6 units (2-3-1), 9 units (2-6-1), or 12 units (2-9-1) second and third terms",
+        "terms": "first, second, third terms",
+        "description": "This course presents the fundamentals of modern multidisciplinary systems engineering in the context of a substantial design project. Students from a variety of disciplines will conceive, design, implement, and operate a system involving electrical, information, and mechanical engineering components. Specific tools will be provided for setting project goals and objectives, managing interfaces between component subsystems, working in design teams, and tracking progress against tasks. Students will be expected to apply knowledge from other courses at Caltech in designing and implementing specific subsystems. During the first two terms of the course, students will attend project meetings and learn some basic tools for project design, while taking courses in CS, EE, and ME that are related to the course project. During the third term, the entire team will build, document, and demonstrate the course design project, which will differ from year to year. First-year undergraduate students must receive permission from the lead instructor to enroll.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cseeme-75-abc",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "acm-80-abc": {
+        "id": "acm-80-abc",
+        "course_id": "ACM 80 abc",
+        "name": "Undergraduate Thesis",
+        "units": "9 units",
+        "terms": "first, second, third terms",
+        "description": "Individual research project, carried out under the supervision of a member of the ACM faculty (or other faculty as approved by the ACM undergraduate option representative). Projects must include significant design effort. Written report required. Open only to upper class students. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-80-abc",
+        "prereq_text": "Prerequisites: instructor's permission, which should be obtained sufficiently early to allow time for planning the research.",
+        "prereqs": []
+    },
+    "cs-80-abc": {
+        "id": "cs-80-abc",
+        "course_id": "CS 80 abc",
+        "name": "Undergraduate Thesis",
+        "units": "9 units",
+        "terms": "first, second, third terms",
+        "description": "Individual research project, carried out under the supervision of a member of the computer science faculty (or other faculty as approved by the computer science undergraduate option representative). Projects must include significant design effort. Written report required. Open only to upperclass students. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-80-abc",
+        "prereq_text": "Prerequisites: instructor's permission, which should be obtained sufficiently early to allow time for planning the research.",
+        "prereqs": []
+    },
+    "acm-81-abc": {
+        "id": "acm-81-abc",
+        "course_id": "ACM 81 abc",
+        "name": "Undergraduate Projects in Applied and Computational Mathematics",
+        "units": "",
+        "terms": "first, second, third terms",
+        "description": "Supervised research or development in ACM by undergraduates. The topic must be approved by the project supervisor, and a formal final report must be presented on completion of research. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-81-abc",
+        "prereq_text": "Prerequisites: Consent of supervisor is required before registering.",
+        "prereqs": []
+    },
+    "cs-81-abc": {
+        "id": "cs-81-abc",
+        "course_id": "CS 81 abc",
+        "name": "Undergraduate Projects in Computer Science",
+        "units": "",
+        "terms": "",
+        "description": "Supervised research or development in computer science by undergraduates. The topic must be approved by the project supervisor, and a formal final report must be presented on completion of research. This course can (with approval) be used to satisfy the project requirement for the CS major. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-81-abc",
+        "prereq_text": "Prerequisites: Consent of supervisor is required before registering.",
+        "prereqs": []
+    },
+    "cds-90-abc": {
+        "id": "cds-90-abc",
+        "course_id": "CDS 90 abc",
+        "name": "Senior Thesis in Control and Dynamical Systems",
+        "units": "9 units (0-0-9)",
+        "terms": "first, second, third terms",
+        "description": "Research in control and dynamical systems, supervised by a Caltech faculty member. The topic selection is determined by the adviser and the student and is subject to approval by the CDS faculty. First and second terms: midterm progress report and oral presentation during finals week. Third term: completion of thesis and final presentation. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-90-abc",
+        "prereq_text": "Prerequisites: CDS 110 or CDS 112 (may be taken concurrently).",
+        "prereqs": [
+            "cds-110"
+        ]
+    },
+    "cs-90": {
+        "id": "cs-90",
+        "course_id": "CS 90",
+        "name": "Undergraduate Reading in Computer Science",
+        "units": "",
+        "terms": "",
+        "description": "Supervised reading in computer science by undergraduates. The topic must be approved by the reading supervisor, and a formal final report must be presented on completion of the term. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-90",
+        "prereq_text": "Prerequisites: Consent of supervisor is required before registering.",
+        "prereqs": []
+    },
+    "acm-95100-ab": {
+        "id": "acm-95100-ab",
+        "course_id": "ACM 95/100 ab",
+        "name": "Introductory Methods of Applied Mathematics for the Physical Sciences",
+        "units": "12 units (4-0-8)",
+        "terms": "second, third terms",
+        "description": "Complex analysis: analyticity, Laurent series, contour integration, residue calculus. Ordinary differential equations: linear initial value problems, linear boundary value problems, Sturm-Liouville theory, eigenfunction expansions, transform methods, Green's functions. Linear partial differential equations: heat equation, separation of variables, Laplace equation, transform methods, wave equation, method of characteristics, Green's functions.",
+        "offered": true,
+        "instructors": "Zuev, Hoffmann",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-95100-ab",
+        "prereq_text": "Prerequisites: Ma 1 abc, Ma 2 or equivalents.",
+        "prereqs": []
+    },
+    "acmids-101-ab": {
+        "id": "acmids-101-ab",
+        "course_id": "ACM/IDS 101 ab",
+        "name": "Methods of Applied Mathematics",
+        "units": "12 units (4-4-4)",
+        "terms": "first, second terms",
+        "description": "First term: Brief review of the elements of complex analysis and complex-variable methods. Asymptotic expansions, asymptotic evaluation of integrals (Laplace method, stationary phase, steepest descents), perturbation methods, WKB theory, boundary-layer theory, matched asymptotic expansions with first-order and high-order matching. Method of multiple scales for oscillatory systems. Second term: Applied spectral theory, special functions, generalized eigenfunction expansions, convergence theory. Gibbs and Runge phenomena and their resolution. Chebyshev expansion and Fourier Continuation methods. Review of numerical stability theory for time evolution. Fast spectrally-accurate PDE solvers for linear and nonlinear Partial Differential Equations in general domains. Integral-equations methods for linear partial differential equation in general domains (Laplace, Helmholtz, Schroedinger, Maxwell, Stokes). Homework problems in both 101 a and 101 b include theoretical questions as well as programming implementations of the mathematical and numerical methods studied in class.",
+        "offered": true,
+        "instructors": "Bruno",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-101-ab",
+        "prereq_text": "Prerequisites: Math 2/102 and ACM 95 ab or equivalent.",
+        "prereqs": [
+            "acm-95100-ab"
+        ]
+    },
+    "cs-101": {
+        "id": "cs-101",
+        "course_id": "CS 101",
+        "name": "Special Topics in Computer Science",
+        "units": "",
+        "terms": "Offered by announcement",
+        "description": "",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-101",
+        "prereq_text": "Prerequisites: Prerequisites specified by instructor.",
+        "prereqs": []
+    },
+    "cs-102-abc": {
+        "id": "cs-102-abc",
+        "course_id": "CS 102 abc",
+        "name": "Seminar in Computer Science",
+        "units": "3, 6, or 9 units as arranged with the instructor",
+        "terms": "",
+        "description": "Instructor's permission required.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-102-abc",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-103-abc": {
+        "id": "cs-103-abc",
+        "course_id": "CS 103 abc",
+        "name": "Reading in Computer Science",
+        "units": "3, 6, or 9 units as arranged with the instructor",
+        "terms": "",
+        "description": "Instructor's permission required.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-103-abc",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "acmids-104": {
+        "id": "acmids-104",
+        "course_id": "ACM/IDS 104",
+        "name": "Applied Linear Algebra",
+        "units": "9 units (3-1-5)",
+        "terms": "first term",
+        "description": "This is an intermediate linear algebra course aimed at a diverse group of students, including junior and senior majors in applied mathematics, sciences and engineering. The focus is on applications. Matrix factorizations play a central role. Topics covered include linear systems, vector spaces and bases, inner products, norms, minimization, the Cholesky factorization, least squares approximation, data fitting, interpolation, orthogonality, the QR factorization, ill-conditioned systems, discrete Fourier series and the fast Fourier transform, eigenvalues and eigenvectors, the spectral theorem, optimization principles for eigenvalues, singular value decomposition, condition number, principal component analysis, the Schur decomposition, methods for computing eigenvalues, non-negative matrices, graphs, networks, random walks, the Perron-Frobenius theorem, PageRank algorithm.",
+        "offered": true,
+        "instructors": "Zuev",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-104",
+        "prereq_text": "Prerequisites: Ma 1 abc, some familiarity with MATLAB, e.g. ACM 11 is desired.",
+        "prereqs": [
+            "acm-11"
+        ]
+    },
+    "acmee-106-ab": {
+        "id": "acmee-106-ab",
+        "course_id": "ACM/EE 106 ab",
+        "name": "Introductory Methods of Computational Mathematics",
+        "units": "12 units (3-0-9)",
+        "terms": "first, second terms",
+        "description": "The sequence covers the introductory methods in both theory and implementation of numerical linear algebra, approximation theory, ordinary differential equations, and partial differential equations. The linear algebra parts cover basic methods such as direct and iterative solution of large linear systems, including LU decomposition, splitting method (Jacobi iteration, Gauss-Seidel iteration); eigenvalue and vector computations including the power method, QR iteration and Lanczos iteration; nonlinear algebraic solvers. The approximation theory includes data fitting; interpolation using Fourier transform, orthogonal polynomials and splines; least square method, and numerical quadrature. The ODE parts include initial and boundary value problems. The PDE parts include finite difference and finite element for elliptic/parabolic/hyperbolic equations. Study of numerical PDE will include stability analysis. Programming is a significant part of the course.",
+        "offered": true,
+        "instructors": "Hou",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmee-106-ab",
+        "prereq_text": "Prerequisites: For ACM/EE 106 a, Ma 1 abc, Ma 2, Ma 3, ACM 11; for ACM/EE 106 b, ACM 95/100 ab or equivalent.",
+        "prereqs": [
+            "acm-11",
+            "acm-95100-ab"
+        ]
+    },
+    "cmsacmids-107-ab": {
+        "id": "cmsacmids-107-ab",
+        "course_id": "CMS/ACM/IDS 107 ab",
+        "name": "Linear Analysis with Applications",
+        "units": "12 units (3-0-9)",
+        "terms": "first term",
+        "description": "Part a: Covers the basic algebraic, geometric, and topological properties of normed linear spaces, inner-product spaces and linear maps. Emphasis is placed both on rigorous mathematical development and on applications to control theory, data analysis and partial differential equations. Topics: Completeness, Banach spaces (l_p, L_p), Hilbert spaces (weighted l_2, L_2 spaces), introduction to Fourier transform, Fourier series and Sobolev spaces, Banach spaces of linear operators, duality and weak convergence, density, separability, completion, Schauder bases, continuous and compact embedding, compact operators, orthogonality, Lax-Milgram, Spectral Theorem and SVD for compact operators, integral operators, Jordan normal form. Part b: Continuation of ACM 107a, developing new material and providing further details on some topics already covered. Emphasis is placed both on rigorous mathematical development and on applications to control theory, data analysis and partial differential equations.Topics: Review of Banach spaces, Hilbert spaces, Linear Operators, and Duality, Hahn-Banach Theorem, Open Mapping and Closed Graph Theorem, Uniform Boundedness Principle, The Fourier transform (L1, L2, Schwartz space theory), Sobolev spaces (W^s,p, H^s), Sobolev embedding theorem, Trace theorem Spectral Theorem, Compact operators, Ascoli Arzela theorem, Contraction Mapping Principle, with applications to the Implicit Function Theorem and ODEs, Calculus of Variations (differential calculus, existence of extrema, Gamma-convergence, gradient flows) Applications to Inverse Problems (Tikhonov regularization, imaging applications).",
+        "offered": true,
+        "instructors": "Stuart",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmsacmids-107-ab",
+        "prereq_text": "Prerequisites: ACM/IDS 104 or equivalent, Ma 1b or equivalent.",
+        "prereqs": [
+            "acmids-104"
+        ]
+    },
+    "acm-109": {
+        "id": "acm-109",
+        "course_id": "ACM 109",
+        "name": "Mathematical Modelling",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Prerequisites ACM 95/100 ab or equivalent. This course gives an overview of different mathematical models used to describe a variety of phenomena arising in the biological, engineering, physical and social sciences. Emphasis will be placed on the principles used to develop these models, and on the unity and cross-cutting nature of the mathematical and computational tools used to study them. Applications will include quantum, atomistic and continuum modeling of materials; epidemics, reacting-diffusing systems; crowd modeling and opinion formation. Mathematical tools will include ordinary, partial and stochastic differential equations, as well as Markov chains and other stochastic processes.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Stuart",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-109",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cds-110": {
+        "id": "cds-110",
+        "course_id": "CDS 110",
+        "name": "Analysis and Design of Feedback Control Systems",
+        "units": "9 units (3-3-3)",
+        "terms": "first term",
+        "description": "An introduction to analysis and design of feedback control systems in the time and frequency domain, with an emphasis on state space methods, robustness, and design tradeoffs. Linear input/output systems, including input/output response via convolution, reachability, and observability. State feedback methods, including eigenvalue placement, linear quadratic regulators, and model predictive control. Output feedback including estimators and two-degree of freedom design. Input/output modeling via transfer functions and frequency domain analysis of performance and robustness, including the use of Bode and Nyquist plots. Robustness, tradeoffs and fundamental limits, including the effects of external disturbances and unmodeled dynamics, sensitivity functions, and the Bode integral formula.",
+        "offered": true,
+        "instructors": "Mazumdar",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-110",
+        "prereq_text": "Prerequisites: Ma 1 abc and Ma 2/102 or equivalents.",
+        "prereqs": []
+    },
+    "hpsplcs-110": {
+        "id": "hpsplcs-110",
+        "course_id": "HPS/Pl/CS 110",
+        "name": "Causation and Explanation",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "An examination of theories of causation and explanation in philosophy and neighboring disciplines. Topics discussed may include probabilistic and counterfactual treatments of causation, the role of statistical evidence and experimentation in causal inference, and the deductive-nomological model of explanation. The treatment of these topics by important figures from the history of philosophy such as Aristotle, Descartes, and Hume may also be considered.",
+        "offered": true,
+        "instructors": "Eberhardt",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/hpsplcs-110",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-111": {
+        "id": "cs-111",
+        "course_id": "CS 111",
+        "name": "Graduate Programming Practicum",
+        "units": "3 units (0-3-0)",
+        "terms": "first, second, and third terms",
+        "description": "A self-paced lab that provides students with extra practice and supervision in transferring their programming skills to a particular programming language. The course can be used for any language of the student's choosing, subject to approval by the instructor. A series of exercises guide the student through the pragmatic use of the chosen language, building their familiarity, experience, and style. More advanced students may propose their own programming project as the target demonstration of their new language skills. This course is available for graduate students only. CS 111 may be repeated for credit of up to a total of nine units. Undergraduates should register for CS 11.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-111",
+        "prereq_text": "Prerequisites: CS 1 or equivalent.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "ecacmcs-112": {
+        "id": "ecacmcs-112",
+        "course_id": "Ec/ACM/CS 112",
+        "name": "Bayesian Statistics",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course provides an introduction to Bayesian Statistics and its applications to data analysis in various fields. Topics include: discrete models, regression models, hierarchical models, model comparison, and MCMC methods. The course combines an introduction to basic theory with a hands-on emphasis on learning how to use these methods in practice so that students can apply them in their own work. Previous familiarity with frequentist statistics is useful but not required.",
+        "offered": true,
+        "instructors": "Rangel",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/ecacmcs-112",
+        "prereq_text": "Prerequisites: Ma 3, ACM/EE/IDS 116 or equivalent.",
+        "prereqs": [
+            "acmeeids-116"
+        ]
+    },
+    "cs-115": {
+        "id": "cs-115",
+        "course_id": "CS 115",
+        "name": "Functional Programming",
+        "units": "9 units (3-4-2)",
+        "terms": "third term",
+        "description": "This course is a both a theoretical and practical introduction to functional programming, a paradigm which allows programmers to work at an extremely high level of abstraction while simultaneously avoiding large classes of bugs that plague more conventional imperative and object-oriented languages. The course will introduce and use the lazy functional language Haskell exclusively. Topics include: recursion, first-class functions, higher-order functions, algebraic data types, polymorphic types, function composition, point-free style, proving functions correct, lazy evaluation, pattern matching, lexical scoping, type classes, and modules. Some advanced topics such as monad transformers, parser combinators, dynamic typing, and existential types are also covered.",
+        "offered": true,
+        "instructors": "Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-115",
+        "prereq_text": "Prerequisites: CS 1 and CS 4.",
+        "prereqs": [
+            "cs-1",
+            "cs-4"
+        ]
+    },
+    "acmeeids-116": {
+        "id": "acmeeids-116",
+        "course_id": "ACM/EE/IDS 116",
+        "name": "Introduction to Probability Models",
+        "units": "9 units (3-1-5)",
+        "terms": "first term",
+        "description": "This course introduces students to the fundamental concepts, methods, and models of applied probability and stochastic processes. The course is application oriented and focuses on the development of probabilistic thinking and intuitive feel of the subject rather than on a more traditional formal approach based on measure theory. The main goal is to equip science and engineering students with necessary probabilistic tools they can use in future studies and research. Topics covered include sample spaces, events, probabilities of events, discrete and continuous random variables, expectation, variance, correlation, joint and marginal distributions, independence, moment generating functions, law of large numbers, central limit theorem, random vectors and matrices, random graphs, Gaussian vectors, branching, Poisson, and counting processes, general discrete- and continuous-timed processes, auto- and cross-correlation functions, stationary processes, power spectral densities.",
+        "offered": true,
+        "instructors": "Zuev",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmeeids-116",
+        "prereq_text": "Prerequisites: Ma 3 or EE 55, some familiarity with MATLAB, e.g. ACM 11, is desired.",
+        "prereqs": [
+            "acm-11"
+        ]
+    },
+    "cs-116": {
+        "id": "cs-116",
+        "course_id": "CS 116",
+        "name": "Reasoning about Program Correctness",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course presents the use of logic and formal reasoning to prove the correctness of sequential and concurrent programs. Topics in logic include propositional logic, basics of first-order logic, and the use of logic notations for specifying programs. The course presents a programming notation and its formal semantics, Hoare logic and its use in proving program correctness, predicate transformers and weakest preconditions, and fixed-point theory and its application to proofs of programs.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-116",
+        "prereq_text": "Prerequisites: CS 1 or equivalent.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cmsacm-117": {
+        "id": "cmsacm-117",
+        "course_id": "CMS/ACM 117",
+        "name": "Probability Theory and Computational Mathematics",
+        "units": "12 units (3-0-9)",
+        "terms": "first term",
+        "description": "",
+        "offered": true,
+        "instructors": "Tropp",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmsacm-117",
+        "prereq_text": "Prerequisites: ACM 104 and ACM 116; or instructor's permission.",
+        "prereqs": [
+            "acmids-104",
+            "acmeeids-116"
+        ]
+    },
+    "macs-117-abc": {
+        "id": "macs-117-abc",
+        "course_id": "Ma/CS 117 abc",
+        "name": "Computability Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "Various approaches to computability theory, e.g., Turing machines, recursive functions, Markov algorithms; proof of their equivalence. Church's thesis. Theory of computable functions and effectively enumerable sets. Decision problems. Undecidable problems: word problems for groups, solvability of Diophantine equations (Hilbert's 10th problem). Relations with mathematical logic and the G\u00f6del incompleteness theorems. Decidable problems, from number theory, algebra, combinatorics, and logic. Complexity of decision procedures. Inherently complex problems of exponential and superexponential difficulty. Feasible (polynomial time) computations. Polynomial deterministic vs. nondeterministic algorithms, NP-complete problems and the P = NP question.\n Part c not offered 2024-25.",
+        "offered": true,
+        "instructors": "Ervin",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/macs-117-abc",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent, or instructor's permission.",
+        "prereqs": []
+    },
+    "acm-118": {
+        "id": "acm-118",
+        "course_id": "ACM 118",
+        "name": "Stochastic Processes and Regression",
+        "units": "12 units (3-0-9)",
+        "terms": "second term",
+        "description": "",
+        "offered": true,
+        "instructors": "Owhadi",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-118",
+        "prereq_text": "Prerequisites: CMS/ACM/IDS 107 or equivalent, ACM 116 or equivalent, or permission of the instructor.",
+        "prereqs": [
+            "cmsacmids-107-ab",
+            "acmeeids-116"
+        ]
+    },
+    "cs-118": {
+        "id": "cs-118",
+        "course_id": "CS 118",
+        "name": "Automata-Theoretic Software Analysis",
+        "units": "9 units (3-3-3)",
+        "terms": "second term",
+        "description": "An introduction to the use of automata theory in the formal analysis of both concurrent and sequentially executing software systems. The course covers the use of logic model checking with linear temporal logic and interactive techniques for property-based static source code analysis.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-118",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "eecs-119-abc": {
+        "id": "eecs-119-abc",
+        "course_id": "EE/CS 119 abc",
+        "name": "Advanced Digital Systems Design",
+        "units": "9 units (3-3-3) first, second term; 9 units (1-8-0) third term",
+        "terms": "first, second, third terms",
+        "description": "Advanced digital design as it applies to the design of systems using PLDs and ASICs (in particular, gate arrays and standard cells). The course covers both design and implementation details of various systems and logic device technologies. The emphasis is on the practical aspects of ASIC design, such as timing, testing, and fault grading. Topics include synchronous design, state machine design, arithmetic circuit design, application-specific parallel computer design, design for testability, CPLDs, FPGAs, VHDL, standard cells, timing analysis, fault vectors, and fault grading. Students are expected to design and implement both systems discussed in the class as well as self-proposed systems using a variety of technologies and tools.\n Given in alternate years;offered 2024-25.",
+        "offered": true,
+        "instructors": "George",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecs-119-abc",
+        "prereq_text": "Prerequisites: EE/CS 10 a or CS 24.",
+        "prereqs": [
+            "eecs-10-ab",
+            "cs-24"
+        ]
+    },
+    "csph-120": {
+        "id": "csph-120",
+        "course_id": "CS/Ph 120",
+        "name": "Quantum Cryptography",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course is an introduction to quantum cryptography: how to use quantum effects, such as quantum entanglement and uncertainty, to implement cryptographic tasks with levels of security that are impossible to achieve classically. The course covers the fundamental ideas of quantum information that form the basis for quantum cryptography, such as entanglement and quantifying quantum knowledge. We will introduce the security definition for quantum key distribution and see protocols and proofs of security for this task. We will also discuss the basics of device-independent quantum cryptography as well as other cryptographic tasks and protocols, such as bit commitment or position-based cryptography.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csph-120",
+        "prereq_text": "Prerequisites: Ma 1 b, Ph 2 b or Ph 12 b, CS 21, CS 38 or equivalent recommended (or instructor's permission).",
+        "prereqs": [
+            "cs-21",
+            "cs-38"
+        ]
+    },
+    "csids-121": {
+        "id": "csids-121",
+        "course_id": "CS/IDS 121",
+        "name": "Relational Databases",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Introduction to the basic theory and usage of relational database systems. It covers the relational data model, relational algebra, and the Structured Query Language (SQL). The course introduces the basics of database schema design and covers the entity-relationship model, functional dependency analysis, and normal forms. Additional topics include other query languages based on the relational calculi, data-warehousing and dimensional analysis, writing and using stored procedures, working with hierarchies and graphs within relational databases, and an overview of transaction processing and query evaluation. Extensive hands-on work with SQL databases.",
+        "offered": true,
+        "instructors": "Hovik",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csids-121",
+        "prereq_text": "Prerequisites: CS 1 or equivalent.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "cmsacmee-122": {
+        "id": "cmsacmee-122",
+        "course_id": "CMS/ACM/EE 122",
+        "name": "Mathematical Optimization",
+        "units": "12 units (4-0-8)",
+        "terms": "first term",
+        "description": "",
+        "offered": true,
+        "instructors": "Chandrasekaran",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmsacmee-122",
+        "prereq_text": "Prerequisites: ACM 11 and ACM 104, or instructor's permission.",
+        "prereqs": [
+            "acm-11",
+            "acmids-104"
+        ]
+    },
+    "cs-124": {
+        "id": "cs-124",
+        "course_id": "CS 124",
+        "name": "Operating Systems",
+        "units": "12 units (3-6-3)",
+        "terms": "third term",
+        "description": "This course explores the major themes and components of modern operating systems, such as kernel architectures, the process abstraction and process scheduling, system calls, concurrency within the OS, virtual memory management, and file systems. Students must work in groups to complete a series of challenging programming projects, implementing major components of an instructional operating system. Most programming is in C, although some IA32 assembly language programming is also necessary. Familiarity with the material in CS 24 is strongly advised before attempting this course.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Pinkston",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-124",
+        "prereq_text": "Prerequisites: CS 24.",
+        "prereqs": [
+            "cs-24"
+        ]
+    },
+    "eecsmede-125": {
+        "id": "eecsmede-125",
+        "course_id": "EE/CS/MedE 125",
+        "name": "Digital Circuit Design with FPGAs and VHDL",
+        "units": "9 units (3-6-0)",
+        "terms": "third term",
+        "description": "Study of programmable logic devices (FPGAs). Detailed study of the VHDL language, accompanied by tutorials of popular synthesis and simulation tools. Review of combinational circuits (both logic and arithmetic), followed by VHDL code for combinational circuits and corresponding FPGA-implemented designs. Review of sequential circuits, followed by VHDL code for sequential circuits and corresponding FPGA-implemented designs. Review of finite state machines, followed by VHDL code for state machines and corresponding FPGA-implemented designs. Final project. The course includes a wide selection of real-world projects, implemented and tested using FPGA boards.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecsmede-125",
+        "prereq_text": "Prerequisites: EE/CS 10 or equivalent.",
+        "prereqs": [
+            "eecs-10-ab"
+        ]
+    },
+    "eemacs-126-ab": {
+        "id": "eemacs-126-ab",
+        "course_id": "EE/Ma/CS 126 ab",
+        "name": "Information Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "This class treats Shannon's mathematical theory of communication and the tools used to derive and understand it. The class is organized around fundamental questions and their solutions, leading to central results such as Shannon's source coding, channel coding, and rate-distortion theorems. Quantities that arise en route to these solutions include entropy, relative entropy, and mutual information for discrete and continuous random variables. The course explores the calculation of fundamental communication limits like entropy rate, capacity, and rate-distortion functions under a variety of source and communication channel models (e.g., memoryless, Markov, ergodic, and Gaussian). The course begins with a foundational discussion of the simplest communication scenarios and then expands to include topics like universal source coding, the role of side information in source coding and communications, and the generalization of earlier results to network systems. Network information theory topics include multiuser data compression and communication over multiple access channels, broadcast channels, and multiterminal networks. Philosophical and practical implications of the theory are also explored. This course, when combined with EE 112, EE/Ma/CS/IDS 127, EE/CS 161, and EE/CS/IDS 167, should prepare the student for research in information theory, coding theory, wireless communications, and/or data compression.\n Part b not offered 2024-25",
+        "offered": true,
+        "instructors": "Effros",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eemacs-126-ab",
+        "prereq_text": "Prerequisites: Ma 3.",
+        "prereqs": []
+    },
+    "idsecps-126": {
+        "id": "idsecps-126",
+        "course_id": "IDS/Ec/PS 126",
+        "name": "Applied Data Analysis",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "Fundamentally, this course is about making arguments with numbers and data. Data analysis for its own sake is often quite boring, but becomes crucial when it supports claims about the world. A convincing data analysis starts with the collection and cleaning of data, a thoughtful and reproducible statistical analysis of it, and the graphical presentation of the results. This course will provide students with the necessary practical skills, chiefly revolving around statistical computing, to conduct their own data analysis. This course is not an introduction to statistics or computer science. I assume that students are familiar with at least basic probability and statistical concepts up to and including regression.",
+        "offered": true,
+        "instructors": "Katz",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/idsecps-126",
+        "prereq_text": "Prerequisites: Ma 3/103 or ACM/EE/IDS 116, Ec 122 or IDS/ACM/CS 157 or Ma 112 a.",
+        "prereqs": [
+            "acmeeids-116",
+            "idsacmcs-157"
+        ]
+    },
+    "amacm-127": {
+        "id": "amacm-127",
+        "course_id": "AM/ACM 127",
+        "name": "Calculus of Variations",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "First and second variations; Euler-Lagrange equation; Hamiltonian formalism; action principle; Hamilton-Jacobi theory; stability; local and global minima; direct methods and relaxation; isoperimetric inequality; asymptotic methods and gamma convergence; selected applications to mechanics, materials science, control theory and numerical methods.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/amacm-127",
+        "prereq_text": "Prerequisites: ACM 95/100.",
+        "prereqs": [
+            "acm-95100-ab"
+        ]
+    },
+    "eemacsids-127": {
+        "id": "eemacsids-127",
+        "course_id": "EE/Ma/CS/IDS 127",
+        "name": "Error-Correcting Codes",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course develops from first principles the theory and practical implementation of the most important techniques for combating errors in digital transmission and storage systems. Topics include highly symmetric linear codes, such as Hamming, Reed-Muller, and Polar codes; algebraic block codes, such as Reed-Solomon and BCH codes, including a self-contained introduction to the theory of finite fields; and low-density parity-check codes. Students will become acquainted with encoding and decoding algorithms, design principles and performance evaluation of codes.\n not offered 2024-25.",
+        "offered": true,
+        "instructors": "Kostina",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eemacsids-127",
+        "prereq_text": "Prerequisites: EE 55 or equivalent.",
+        "prereqs": []
+    },
+    "cs-128": {
+        "id": "cs-128",
+        "course_id": "CS 128",
+        "name": "Interactive Theorem Proving",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course introduces students to the modern practice of interactive tactic-based theorem proving using the Coq theorem prover. Topics will be drawn from logic, programming languages and the theory of computation. Topics will include: proof by induction, lists, higher-order functions, polymorphism, dependently-typed functional programming, constructive logic, the Curry-Howard correspondence, modeling imperative programs, and other topics if time permits. Students will be graded partially on attendance and will be expected to participate in proving theorems in class.",
+        "offered": true,
+        "instructors": "Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-128",
+        "prereq_text": "Prerequisites: CS 4 or instructor's permission.",
+        "prereqs": [
+            "cs-4"
+        ]
+    },
+    "mecsee-129": {
+        "id": "mecsee-129",
+        "course_id": "ME/CS/EE 129",
+        "name": "Experimental Robotics",
+        "units": "9 units (1-7-1)",
+        "terms": "third term",
+        "description": "",
+        "offered": true,
+        "instructors": "Niemeyer",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/mecsee-129",
+        "prereq_text": "Prerequisites: some experience with (i) Python programming (CS1, CS2, or equivalent), (ii) Hardware, Sensors, and Signal Processing (EE/ME7, ME8, EE1, or similar), and/or (iii) Robotic Devices (ME13, ME72, or related), as evidenced to the instructor.   Not recommended for first-year students.",
+        "prereqs": [
+            "cs-1",
+            "cs-2"
+        ]
+    },
+    "cs-130": {
+        "id": "cs-130",
+        "course_id": "CS 130",
+        "name": "Software Engineering",
+        "units": "9 units (3-3-3)",
+        "terms": "second term",
+        "description": "This course presents a survey of software engineering principles relevant to all aspects of the software development lifecycle. Students will examine industry best practices in the areas of software specification, development, project management, testing, and release management, including a review of the relevant research literature. Assignments give students the opportunity to explore these topics in depth. Programming assignments use Python and Git, and students should be familiar with Python at a CS 1 level, and Git at a CS 2/CS 3 level, before taking the course.",
+        "offered": true,
+        "instructors": "Pinkston",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-130",
+        "prereq_text": "Prerequisites: CS 2 and CS 3 (or equivalent).",
+        "prereqs": [
+            "cs-2",
+            "cs-3"
+        ]
+    },
+    "cds-131": {
+        "id": "cds-131",
+        "course_id": "CDS 131",
+        "name": "Linear Systems Theory",
+        "units": "12 units (3-0-9)",
+        "terms": "second term",
+        "description": "Basic system concepts; state-space and I/O representation. Properties of linear systems, including stability, performance, robustness. Reachability, observability, minimality, state and output-feedback. Brief introduction to optimal control and control of networked and nonlinear systems. Motivating case studies from tech, biology, neuroscience, and medical systems.",
+        "offered": true,
+        "instructors": "Doyle",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-131",
+        "prereq_text": "Prerequisites: Ma 1 b, Ma 2, ACM/IDS 104 or equivalent (may be taken concurrently).",
+        "prereqs": [
+            "acmids-104"
+        ]
+    },
+    "cs-131": {
+        "id": "cs-131",
+        "course_id": "CS 131",
+        "name": "Programming Languages",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "CS 131 is a course on programming languages and their implementation. It teaches students how to program in a number of simplified languages representing the major programming paradigms in use today (imperative, object-oriented, and functional). It will also teach students how to build and modify the implementations of these languages. Emphasis will not be on syntax or parsing but on the essential differences in these languages and their implementations. Both dynamically-typed and statically-typed languages will be implemented. Relevant theory will be covered as needed. Implementations will mostly be interpreters, but some features of compilers will be covered if time permits. Enrollment limited to 30 students.",
+        "offered": true,
+        "instructors": "Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-131",
+        "prereq_text": "Prerequisites: CS 4.",
+        "prereqs": [
+            "cs-4"
+        ]
+    },
+    "cs-132": {
+        "id": "cs-132",
+        "course_id": "CS 132",
+        "name": "Web Development",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "Covers full-stack web development with HTML5, CSS, client-side JS (ES6) and server-side JS (Node.js/Express) for web API development. Concepts including separation of concerns, the client-server relationship, user experience, accessibility, and security will also be emphasized throughout the course. Assignments will alternate between formal and semi-structured student-driven projects, providing students various opportunities to apply material to their individual interests. No prior web development background is required, though students who have prior experience may still benefit from learning best practices and HTML5/ES6 standards.",
+        "offered": true,
+        "instructors": "Hovik",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-132",
+        "prereq_text": "Prerequisites: CS 1 or equivalent.",
+        "prereqs": [
+            "cs-1"
+        ]
+    },
+    "mecsee-133-ab": {
+        "id": "mecsee-133-ab",
+        "course_id": "ME/CS/EE 133 ab",
+        "name": "Robotics",
+        "units": "9 units (3-2-4)",
+        "terms": "first, second terms",
+        "description": "The course develops the core concepts of robotics. The first quarter focuses on classical robotic manipulation, including topics in rigid body kinematics and dynamics. It develops planar and 3D kinematic formulations and algorithms for forward and inverse computations, Jacobians, and manipulability. The second quarter transitions to planning, navigation, and perception. Topics include configuration space, sample-based planners, A* and D* algorithms, to achieve collision-free motions. Course work transitions from homework and programming assignments to more open-ended team-based projects.",
+        "offered": true,
+        "instructors": "Niemeyer",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/mecsee-133-ab",
+        "prereq_text": "Prerequisites: ME/CS/EE 129, or Python programming experience, evidenced to instructor.",
+        "prereqs": [
+            "mecsee-129"
+        ]
+    },
+    "mecsee-134": {
+        "id": "mecsee-134",
+        "course_id": "ME/CS/EE 134",
+        "name": "Robotic Systems",
+        "units": "9 units (1-7-1)",
+        "terms": "second term",
+        "description": "This course builds up, and brings to practice, the elements of robotic systems at the intersection of hardware, kinematics and control, computer vision, and autonomous behaviors. It presents selected topics from these domains, focusing on their integration into a full sense-think-act robot. The lectures will drive team-based projects, progressing from building custom robotic arms (5 to 7 degrees of freedom) to writing all necessary software (utilizing the Robotics Operating system, ROS). Teams are required to implement and customize general concepts for their selected tasks. Working systems will autonomously operate and demonstrate their capabilities during final presentations.",
+        "offered": true,
+        "instructors": "Niemeyer",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/mecsee-134",
+        "prereq_text": "Prerequisites: ME/CS/EE 133 a, or with permission of instructor.",
+        "prereqs": [
+            "mecsee-133-ab"
+        ]
+    },
+    "eecsest-135": {
+        "id": "eecsest-135",
+        "course_id": "EE/CS/EST 135",
+        "name": "Power System Analysis",
+        "units": "9 units (3-3-3)",
+        "terms": "first term",
+        "description": "We are at the beginning of a historic transformation to decarbonize our energy system. This course introduces the basics of power systems analysis: phasor representation, 3-phase transmission system, transmission line models, transformer models, per-unit analysis, network matrix, power flow equations, power flow algorithms, optimal powerflow (OPF) problems, unbalanced power flow analysis and optimization,swing dynamics and stability.",
+        "offered": true,
+        "instructors": "Low",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecsest-135",
+        "prereq_text": "Prerequisites: EE 44, Ma 2, or equivalent.",
+        "prereqs": []
+    },
+    "eemacsids-136": {
+        "id": "eemacsids-136",
+        "course_id": "EE/Ma/CS/IDS 136",
+        "name": "Information Theory and Applications",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This class introduces information measures such as entropy, information divergence, mutual information, information density, and establishes the fundamental importance of those measures in data compression, statistical inference, and error control. The course does not require a prior exposure to information theory; it is complementary to EE 126a.",
+        "offered": true,
+        "instructors": "Kostina",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eemacsids-136",
+        "prereq_text": "Prerequisites: EE 55 or equivalent.",
+        "prereqs": []
+    },
+    "cs-137": {
+        "id": "cs-137",
+        "course_id": "CS 137",
+        "name": "Real-World Algorithm Implementation",
+        "units": "12 units (0-3-9)",
+        "terms": "third term",
+        "description": "This course introduces algorithms in the context of their usage in the real world. The course covers compression, semi-numerical algorithms, RSA cryptography, parsing, and string matching. The goal of the course is for students to see how to use theoretical algorithms in real-world contexts, focusing both on correctness and the nitty-gritty details and optimizations. Students will choose to implement projects based on depth in an area or breadth to cover all the topics.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Blank",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-137",
+        "prereq_text": "Prerequisites: CS 24.",
+        "prereqs": [
+            "cs-24"
+        ]
+    },
+    "cs-138": {
+        "id": "cs-138",
+        "course_id": "CS 138",
+        "name": "Computer Algorithms",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course is identical to CS 38. Only graduate students for whom this is the first algorithms course are allowed to register for CS 138. See the CS 38 entry for prerequisites and course description.",
+        "offered": true,
+        "instructors": "Mahadev, Ralph",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-138",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cmscsids-139": {
+        "id": "cmscsids-139",
+        "course_id": "CMS/CS/IDS 139",
+        "name": "Analysis and Design of Algorithms",
+        "units": "12 units (3-0-9)",
+        "terms": "first term",
+        "description": "This course develops core principles for the analysis and design of algorithms. Basic material includes mathematical techniques for analyzing performance in terms of resources, such as time, space, and randomness. The course introduces the major paradigms for algorithm design, including greedy methods, divide-and-conquer, dynamic programming, linear and semidefinite programming, randomized algorithms, and online learning.\n Not offered 2024-25",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmscsids-139",
+        "prereq_text": "Prerequisites: Ma 2, Ma 3, Ma/CS 6 a, CS 21, CS 38/138, and ACM/EE/IDS 116 or CMS/ACM/EE 122 or equivalent.",
+        "prereqs": [
+            "macs-6106-abc",
+            "cs-21",
+            "cs-38",
+            "cs-138",
+            "acmeeids-116",
+            "cmsacmee-122"
+        ]
+    },
+    "maacmids-140-abc": {
+        "id": "maacmids-140-abc",
+        "course_id": "Ma/ACM/IDS 140 abc",
+        "name": "Probability",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "This course begins with an overview of measure theory, followed by topics that include random walks, the strong law of large numbers, the central limit theorem, martingales, Markov chains, characteristic functions, Poisson processes, and Brownian motion. Towards the end, some further topics may be covered, such as stochastic calculus, stochastic differential equations, Gaussian processes, random graphs, Markov chain mixing, random matrix theory, and interacting particle systems.",
+        "offered": true,
+        "instructors": "Tamuz, El-Maazouz, Zhang",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/maacmids-140-abc",
+        "prereq_text": "Prerequisites: For 140 a, Ma 108 b is strongly recommended.",
+        "prereqs": []
+    },
+    "cs-141": {
+        "id": "cs-141",
+        "course_id": "CS 141",
+        "name": "Hack Society: Projects from the Public Sector",
+        "units": "9 units (0-0-9)",
+        "terms": "third term",
+        "description": "There is a large gap between the public and private sectors' effective use of technology. This gap presents an opportunity for the development of innovative solutions to problems faced by society. Students will develop technology-based projects that address this gap. Course material will offer an introduction to the design, development, and analysis of digital technology with examples derived from services typically found in the public sector.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Ralph",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-141",
+        "prereq_text": "Prerequisites: CS/IDS 142, 143, CMS/CS/EE/IDS 144, or permission from instructor.",
+        "prereqs": [
+            "cseeids-143",
+            "cmscsecee-144"
+        ]
+    },
+    "maacm-142-ab": {
+        "id": "maacm-142-ab",
+        "course_id": "Ma/ACM 142 ab",
+        "name": "Ordinary and Partial Differential Equations",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "The mathematical theory of ordinary and partial differential equations, including a discussion of elliptic regularity, maximal principles, solubility of equations. The method of characteristics.\n Part b not offered 2024-25.",
+        "offered": true,
+        "instructors": "Looi",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/maacm-142-ab",
+        "prereq_text": "Prerequisites: Ma 108; Ma 109 is desirable.",
+        "prereqs": []
+    },
+    "cseeids-143": {
+        "id": "cseeids-143",
+        "course_id": "CS/EE/IDS 143",
+        "name": "Networks: Algorithms & Architecture",
+        "units": "12 units (3-4-5)",
+        "terms": "first term",
+        "description": "Social networks, the web, and the internet are essential parts of our lives, and we depend on them every day. CS/EE/IDS 143 and CMS/CS/EE/IDS 144 study how they work and the \"big\" ideas behind our networked lives. In this course, the questions explored include: Why is an hourglass architecture crucial for the design of the Internet? Why doesn't the Internet collapse under congestion? How are cloud services so scalable? How do algorithms for wireless and wired networks differ? For all these questions and more, the course will provide a mixture of both mathematical analysis and hands-on labs. The course expects students to be comfortable with graph theory, probability, and basic programming.",
+        "offered": true,
+        "instructors": "Wierman",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cseeids-143",
+        "prereq_text": "Prerequisites: Ma 2, Ma 3, Ma/CS 6 a, and CS 38, or instructor permission.",
+        "prereqs": [
+            "macs-6106-abc",
+            "cs-38"
+        ]
+    },
+    "cmscsecee-144": {
+        "id": "cmscsecee-144",
+        "course_id": "CMS/CS/Ec/EE 144",
+        "name": "Networks: Structure & Economics",
+        "units": "12 units (3-4-5)",
+        "terms": "second term",
+        "description": "",
+        "offered": true,
+        "instructors": "Mazumdar",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmscsecee-144",
+        "prereq_text": "Prerequisites: Ma 2, Ma 3, Ma/CS 6 a, and CS 38, or instructor permission.",
+        "prereqs": [
+            "macs-6106-abc",
+            "cs-38"
+        ]
+    },
+    "csee-145": {
+        "id": "csee-145",
+        "course_id": "CS/EE 145",
+        "name": "Projects in Networking",
+        "units": "9 units (0-0-9)",
+        "terms": "third term",
+        "description": "Students are expected to execute a substantial project in networking, write up a report describing their work, and make a presentation.",
+        "offered": true,
+        "instructors": "Wierman",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csee-145",
+        "prereq_text": "Prerequisites: Either CMS/CS/EE/IDS 144 or CS/IDS 142 in the preceding term, or instructor permission.",
+        "prereqs": [
+            "cmscsecee-144"
+        ]
+    },
+    "csee-146": {
+        "id": "csee-146",
+        "course_id": "CS/EE 146",
+        "name": "Control and Optimization of Networks",
+        "units": "9 units (3-3-3)",
+        "terms": "second term",
+        "description": "This is a research-oriented course meant for undergraduates and beginning graduate students who want to learn about current research topics in networks such as the Internet, power networks, social networks, etc. The topics covered in the course will vary, but will be pulled from current research in the design, analysis, control, and optimization of networks.",
+        "offered": true,
+        "instructors": "Low",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csee-146",
+        "prereq_text": "Prerequisites: Ma 2, Ma 3 or instructor's permission.",
+        "prereqs": []
+    },
+    "eecs-147": {
+        "id": "eecs-147",
+        "course_id": "EE/CS 147",
+        "name": "Digital Ventures Design",
+        "units": "9 units (3-3-3)",
+        "terms": "first term",
+        "description": "This course aims to offer the scientific foundations of analysis, design, development, and launching of innovative digital products and study elements of their success and failure. The course provides students with an opportunity to experience combined team-based design, engineering, and entrepreneurship. The lectures present a disciplined step-by-step approach to develop new ventures based on technological innovation in this space, and with invited speakers, cover topics such as market analysis, user/product interaction and design, core competency and competitive position, customer acquisition, business model design, unit economics and viability, and product planning. Throughout the term students will work within an interdisciplinary team of their peers to conceive an innovative digital product concept and produce a business plan and a working prototype. The course project culminates in a public presentation and a final report. Every year the course and projects focus on a particular emerging technology theme.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecs-147",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "eecnscs-148": {
+        "id": "eecnscs-148",
+        "course_id": "EE/CNS/CS 148",
+        "name": "Advanced Topics in Vision: Large Language and Vision Models",
+        "units": "12 units (3-0-9)",
+        "terms": "third term",
+        "description": "",
+        "offered": true,
+        "instructors": "Perona, Gkioxari",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecnscs-148",
+        "prereq_text": "Prerequisites: CMS/CS/CNS/EE/IDS 155, undergraduate calculus, linear algebra, statistics, computer programming, machine learning. Experience programming in Python, Numpy and PyTorch.",
+        "prereqs": [
+            "cmscscnseeids-155"
+        ]
+    },
+    "csec-149": {
+        "id": "csec-149",
+        "course_id": "CS/Ec 149",
+        "name": "Algorithmic Economics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course will equip students to engage with active research at the intersection of social and information sciences, including: algorithmic game theory and mechanism design; auctions; matching markets; and learning in games.",
+        "offered": true,
+        "instructors": "Niemeyer",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csec-149",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "csids-150-ab": {
+        "id": "csids-150-ab",
+        "course_id": "CS/IDS 150 ab",
+        "name": "Probability and Algorithms",
+        "units": "9 units (3-0-6)",
+        "terms": "first, third terms",
+        "description": "Part a: The probabilistic method and randomized algorithms. Deviation bounds, k-wise independence, graph problems, identity testing, derandomization and parallelization, metric space embeddings, local lemma. Part b: Further topics such as weighted sampling, epsilon-biased sample spaces, advanced deviation inequalities, rapidly mixing Markov chains, analysis of boolean functions, expander graphs, and other gems in the design and analysis of probabilistic algorithms. Parts a & b are given in alternate years.",
+        "offered": true,
+        "instructors": "Schulman",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csids-150-ab",
+        "prereq_text": "Prerequisites: part a: CS 38 and Ma 5 abc; part b: part a or another introductory course in discrete probability.",
+        "prereqs": [
+            "cs-38"
+        ]
+    },
+    "cs-151": {
+        "id": "cs-151",
+        "course_id": "CS 151",
+        "name": "Complexity Theory",
+        "units": "12 units (3-0-9)",
+        "terms": "third term",
+        "description": "This course describes a diverse array of complexity classes that are used to classify problems according to the computational resources (such as time, space, randomness, or parallelism) required for their solution. The course examines problems whose fundamental nature is exposed by this framework, the known relationships between complexity classes, and the numerous open problems in the area.",
+        "offered": true,
+        "instructors": "Umans",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-151",
+        "prereq_text": "Prerequisites: CS 21 and CS 38, or instructor's permission.",
+        "prereqs": [
+            "cs-21",
+            "cs-38"
+        ]
+    },
+    "cs-152": {
+        "id": "cs-152",
+        "course_id": "CS 152",
+        "name": "Introduction to Cryptography",
+        "units": "12 units (3-0-9)",
+        "terms": "first term",
+        "description": "This course is an introduction to the foundations of cryptography. The first part of the course introduces fundamental constructions in private-key cryptography, including one-way functions, pseudo-random generators and authentication, and in public-key cryptography, including trapdoor one-way functions, collision-resistant hash functions and digital signatures. The second part of the course covers selected topics such as interactive protocols and zero knowledge, the learning with errors problem and homomorphic encryption, and quantum cryptography: quantum money, quantum key distribution. The course is mostly theoretical and requires mathematical maturity. There will be a small programming component.",
+        "offered": true,
+        "instructors": "Mahadev",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-152",
+        "prereq_text": "Prerequisites: Ma 1 b, CS 21, CS 38 or equivalent recommended.",
+        "prereqs": [
+            "cs-21",
+            "cs-38"
+        ]
+    },
+    "csids-153": {
+        "id": "csids-153",
+        "course_id": "CS/IDS 153",
+        "name": "Current Topics in Theoretical Computer Science",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "May be repeated for credit, with permission of the instructor. Students in this course will study an area of current interest in theoretical computer science. The lectures will cover relevant background material at an advanced level and present results from selected recent papers within that year's chosen theme. Students will be expected to read and present a research paper.",
+        "offered": true,
+        "instructors": "Umans",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csids-153",
+        "prereq_text": "Prerequisites: CS 21 and CS 38, or instructor's permission.",
+        "prereqs": [
+            "cs-21",
+            "cs-38"
+        ]
+    },
+    "acmids-154": {
+        "id": "acmids-154",
+        "course_id": "ACM/IDS 154",
+        "name": "Inverse Problems and Data Assimilation",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Models in applied mathematics often have input parameters that are uncertain; observed data can be used to learn about these parameters and thereby to improve predictive capability. The purpose of the course is to describe the mathematical and algorithmic principles of this area. The topic lies at the intersection of fields including inverse problems, differential equations, machine learning and uncertainty quantification. Applications will be drawn from the physical, biological and data sciences.",
+        "offered": true,
+        "instructors": "Carlson",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-154",
+        "prereq_text": "Prerequisites: Basic differential equations, linear algebra, probability and statistics: ACM/IDS 104, ACM/EE 106 ab, ACM/EE/IDS 116, IDS/ACM/CS 157 or equivalent.",
+        "prereqs": [
+            "acmids-104",
+            "acmee-106-ab",
+            "acmeeids-116",
+            "idsacmcs-157"
+        ]
+    },
+    "cmscscnseeids-155": {
+        "id": "cmscscnseeids-155",
+        "course_id": "CMS/CS/CNS/EE/IDS 155",
+        "name": "Machine Learning & Data Mining",
+        "units": "12 units (3-3-6)",
+        "terms": "second term",
+        "description": "",
+        "offered": true,
+        "instructors": "Yue",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmscscnseeids-155",
+        "prereq_text": "Prerequisites: CS/CNS/EE 156 a. Having a sufficient background in algorithms, linear algebra, calculus, probability, and statistics, is highly recommended.",
+        "prereqs": [
+            "cscnsee-156-ab"
+        ]
+    },
+    "cscnsee-156-ab": {
+        "id": "cscnsee-156-ab",
+        "course_id": "CS/CNS/EE 156 ab",
+        "name": "Learning Systems",
+        "units": "9 units (3-1-5)",
+        "terms": "first, third terms",
+        "description": "Introduction to the theory, algorithms, and applications of automated learning. How much information is needed to learn a task, how much computation is involved, and how it can be accomplished. Special emphasis will be given to unifying the different approaches to the subject coming from statistics, function approximation, optimization, pattern recognition, and neural networks.",
+        "offered": true,
+        "instructors": "Abu-Mostafa",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cscnsee-156-ab",
+        "prereq_text": "Prerequisites: Ma 2 and CS 2, or equivalent.",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "idsacmcs-157": {
+        "id": "idsacmcs-157",
+        "course_id": "IDS/ACM/CS 157",
+        "name": "Statistical Inference",
+        "units": "9 units (3-2-4)",
+        "terms": "third term",
+        "description": "Statistical Inference is a branch of mathematical engineering that studies ways of extracting reliable information from limited data for learning, prediction, and decision making in the presence of uncertainty. This is an introductory course on statistical inference. The main goals are: develop statistical thinking and intuitive feel for the subject; introduce the most fundamental ideas, concepts, and methods of statistical inference; and explain how and why they work, and when they don't. Topics covered include summarizing data, fundamentals of survey sampling, statistical functionals, jackknife, bootstrap, methods of moments and maximum likelihood, hypothesis testing, p-values, the Wald, Student's t-, permutation, and likelihood ratio tests, multiple testing, scatterplots, simple linear regression, ordinary least squares, interval estimation, prediction, graphical residual analysis.",
+        "offered": true,
+        "instructors": "Zuev",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/idsacmcs-157",
+        "prereq_text": "Prerequisites: ACM/EE/IDS 116, Ma 3.",
+        "prereqs": [
+            "acmeeids-116"
+        ]
+    },
+    "idsacmcs-158": {
+        "id": "idsacmcs-158",
+        "course_id": "IDS/ACM/CS 158",
+        "name": "Fundamentals of Statistical Learning",
+        "units": "9 units (3-3-3)",
+        "terms": "second term",
+        "description": "The main goal of the course is to provide an introduction to the central concepts and core methods of statistical learning, an interdisciplinary field at the intersection of applied mathematics, statistical inference, and machine learning. The course focuses on the mathematics and statistics of methods developed for learning from data. Students will learn what methods for statistical learning exist, how and why they work (not just what tasks they solve and in what built-in functions they are implemented), and when they are expected to perform poorly. The course is oriented for upper level undergraduate students in IDS, ACM, and CS and graduate students from other disciplines who have sufficient background in linear algebra, probability, and statistics. The course is a natural continuation of IDS/ACM/CS 157 and it can be viewed as a statistical analog of CMS/CS/CNS/EE/IDS 155. Topics covered include elements of statistical decision theory, regression and classification problems, nearest-neighbor methods, curse of dimensionality, linear regression, model selection, cross-validation, subset selection, shrinkage methods, ridge regression, LASSO, logistic regression, linear and quadratic discriminant analysis, support-vector machines, tree-based methods, bagging, and random forests.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Zuev",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/idsacmcs-158",
+        "prereq_text": "Prerequisites: ACM/IDS 104, ACM/EE/IDS 116, IDS/ACM/CS 157.",
+        "prereqs": [
+            "acmids-104",
+            "acmeeids-116",
+            "idsacmcs-157"
+        ]
+    },
+    "cscnseeids-159": {
+        "id": "cscnseeids-159",
+        "course_id": "CS/CNS/EE/IDS 159",
+        "name": "Advanced Topics in Machine Learning",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course focuses on current topics in machine learning research. This is a paper reading course, and students are expected to understand material directly from research articles. Students are also expected to present in class, and to do a final project.",
+        "offered": true,
+        "instructors": "Yue",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cscnseeids-159",
+        "prereq_text": "Prerequisites: CS 155; strong background in statistics, probability theory, algorithms, and linear algebra; background in optimization is a plus as well.",
+        "prereqs": [
+            "cmscscnseeids-155"
+        ]
+    },
+    "eecsids-160": {
+        "id": "eecsids-160",
+        "course_id": "EE/CS/IDS 160",
+        "name": "Fundamentals of Information Transmission and Storage",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Basics of information theory: entropy, mutual information, source and channel coding theorems. Basics of coding theory: error-correcting codes for information transmission and storage, block codes, algebraic codes, sparse graph codes. Basics of digital communications: sampling, quantization, digital modulation, matched filters, equalization.",
+        "offered": true,
+        "instructors": "Kostina",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecsids-160",
+        "prereq_text": "Prerequisites: EE 55 or equivalent.",
+        "prereqs": []
+    },
+    "eecs-161": {
+        "id": "eecs-161",
+        "course_id": "EE/CS 161",
+        "name": "Big Data Networks",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Next generation networks will have tens of billions of nodes forming cyber-physical systems and the Internet of Things. A number of fundamental scientific and technological challenges must be overcome to deliver on this vision. This course will focus on (1) How to boost efficiency and reliability in large networks; the role of network coding, distributed storage, and distributed caching; (2) How to manage wireless access on a massive scale; modern random access and topology formation techniques; and (3) New vistas in big data networks, including distributed computing over networks and crowdsourcing. A selected subset of these problems, their mathematical underpinnings, state-of-the-art solutions, and challenges ahead will be covered.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecs-161",
+        "prereq_text": "Prerequisites: Linear Algebra ACM/IDS 104 and Introduction to Probability Models ACM/EE/IDS 116 or their equivalents.",
+        "prereqs": [
+            "acmids-104",
+            "acmeeids-116"
+        ]
+    },
+    "csids-162": {
+        "id": "csids-162",
+        "course_id": "CS/IDS 162",
+        "name": "Data, Algorithms and Society",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course examines algorithms and data practices in fields such as machine learning, privacy, and communication networks through a social lens. We will draw upon theory and practices from art, media, computer science and technology studies to critically analyze algorithms and their implementations within society. The course includes projects, lectures, readings, and discussions. Students will learn mathematical formalisms, critical thinking and creative problem solving to connect algorithms to their practical implementations within social, cultural, economic, legal and political contexts. Enrollment by application. Taught concurrently with VC 72 and can only be taken once as CS/IDS 162 or VC 72.",
+        "offered": true,
+        "instructors": "Mushkin, Ralph",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csids-162",
+        "prereq_text": "Prerequisites: CS 38 and CS 155 or 156 a.",
+        "prereqs": [
+            "cs-38",
+            "cmscscnseeids-155",
+            "cscnsee-156-ab"
+        ]
+    },
+    "cs-163": {
+        "id": "cs-163",
+        "course_id": "CS 163",
+        "name": "Projects in Machine Learning",
+        "units": "9 units (0-1-8)",
+        "terms": "first",
+        "description": "This is a project-based course for students looking to gain practical experience in machine learning. Students are expected to be proficient in basic machine learning. Students will work in groups. Each group will be provided a project topic to work on along with domain expert advisors.",
+        "offered": true,
+        "instructors": "Bouman",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-163",
+        "prereq_text": "Prerequisites: CS 155 or equivalent.",
+        "prereqs": [
+            "cmscscnseeids-155"
+        ]
+    },
+    "cs-164": {
+        "id": "cs-164",
+        "course_id": "CS 164",
+        "name": "Compilers",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course covers the construction of compilers: programs which convert program source code to machine code which is directly executable on modern hardware. The course takes a bottom-up approach: a series of compilers will be built, all of which generate assembly code for x86 processors, with each compiler adding features. The final compiler will compile a full-fledged high-level programming language to assembly language. Topics covered include register allocation, conditionals, loops and dataflow analysis, garbage collection, lexical scoping, and type checking. This course is programming intensive. All compilers will be written in the OCaml programming language.",
+        "offered": true,
+        "instructors": "Vanier",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-164",
+        "prereq_text": "Prerequisites: CS 4 or instructor's permission. CS 24 and CS 131 are strongly recommended but not required. Limit 20 students.",
+        "prereqs": [
+            "cs-4",
+            "cs-24",
+            "cs-131"
+        ]
+    },
+    "cscnseeids-165": {
+        "id": "cscnseeids-165",
+        "course_id": "CS/CNS/EE/IDS 165",
+        "name": "Foundations of Machine Learning and Statistical Inference",
+        "units": "12 units (3-3-6)",
+        "terms": "second term",
+        "description": "The course assumes students are comfortable with analysis, probability, statistics, and basic programming. This course will cover core concepts in machine learning and statistical inference. The ML concepts covered are spectral methods (matrices and tensors), non-convex optimization, probabilistic models, neural networks, representation theory, and generalization. In statistical inference, the topics covered are detection and estimation, sufficient statistics, Cramer-Rao bounds, Rao-Blackwell theory, variational inference, and multiple testing. In addition to covering the core concepts, the course encourages students to ask critical questions such as: How relevant is theory in the age of deep learning? What are the outstanding open problems? Assignments will include exploring failure modes of popular algorithms, in addition to traditional problem-solving type questions.",
+        "offered": true,
+        "instructors": "Anandkumar",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cscnseeids-165",
+        "prereq_text": "Prerequisites: CMS/ACM/EE 122, ACM/EE/IDS 116, CS 156 a, ACM/CS/IDS 157 or instructor's permission.",
+        "prereqs": [
+            "cmsacmee-122",
+            "acmeeids-116",
+            "cscnsee-156-ab",
+            "idsacmcs-157"
+        ]
+    },
+    "cseeids-166": {
+        "id": "cseeids-166",
+        "course_id": "CS/EE/IDS 166",
+        "name": "Computational Cameras",
+        "units": "12 units (3-3-6)",
+        "terms": "third term",
+        "description": "Computational cameras overcome the limitations of traditional cameras, by moving part of the image formation process from hardware to software. In this course, we will study this emerging multi-disciplinary field at the intersection of signal processing, applied optics, computer graphics, and vision. At the start of the course, we will study modern image processing and image editing pipelines, including those encountered on DSLR cameras and mobile phones. Then we will study the physical and computational aspects of tasks such as coded photography, light-field imaging, astronomical imaging, medical imaging, and time-of-flight cameras. The course has a strong hands-on component, in the form of homework assignments and a final project. In the homework assignments, students will have the opportunity to implement many of the techniques covered in the class. Example homework assignments include building an end-to-end HDR (High Dynamic Range) imaging pipeline, implementing Poisson image editing, refocusing a light-field image, and making your own lensless \"scotch-tape\" camera.\n Not offered 2024-25",
+        "offered": false,
+        "instructors": "Bouman",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cseeids-166",
+        "prereq_text": "Prerequisites: ACM 104 or ACM 107 or equivalent.",
+        "prereqs": [
+            "acmids-104",
+            "cmsacmids-107-ab"
+        ]
+    },
+    "eecsids-167": {
+        "id": "eecsids-167",
+        "course_id": "EE/CS/IDS 167",
+        "name": "Introduction to Data Compression and Storage",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "The course will introduce the students to the basic principles and techniques of codes for data compression and storage. The students will master the basic algorithms used for lossless and lossy compression of digital and analog data and the major ideas behind coding for flash memories. Topics include the Huffman code, the arithmetic code, Lempel-Ziv dictionary techniques, scalar and vector quantizers, transform coding; codes for constrained storage systems.\n Given in alternate years; not offered 2024-25.",
+        "offered": true,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecsids-167",
+        "prereq_text": "Prerequisites: Ma 3 or ACM/EE/IDS 116.",
+        "prereqs": [
+            "acmeeids-116"
+        ]
+    },
+    "mecsee-169": {
+        "id": "mecsee-169",
+        "course_id": "ME/CS/EE 169",
+        "name": "Mobile Robots",
+        "units": "9 units (1-7-1)",
+        "terms": "third term",
+        "description": "Mobile robots need to perceive their environment and localize themselves with respect to maps thereof. They further require planners to move along collision-free paths. This course builds up mobile robots in team-based projects. Teams will write all necessary software from low-level hardware I/O to high level algorithms, using the robotic operating system (ROS). The final systems will autonomously maneuver to reach their goals or track various objectives.",
+        "offered": true,
+        "instructors": "Niemeyer",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/mecsee-169",
+        "prereq_text": "Prerequisites: ME/CS/EE 133 b, or with permission of instructor.",
+        "prereqs": [
+            "mecsee-133-ab"
+        ]
+    },
+    "acmeeids-170": {
+        "id": "acmeeids-170",
+        "course_id": "ACM/EE/IDS 170",
+        "name": "Mathematics of Signal Processing",
+        "units": "12 units (3-0-9)",
+        "terms": "third term",
+        "description": "This course covers classical and modern approaches to problems in signal processing. Problems may include denoising, deconvolution, spectral estimation, direction-of-arrival estimation, array processing, independent component analysis, system identification, filter design, and transform coding. Methods rely heavily on linear algebra, convex optimization, and stochastic modeling. In particular, the class will cover techniques based on least-squares and on sparse modeling. Throughout the course, a computational viewpoint will be emphasized.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Hassibi",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmeeids-170",
+        "prereq_text": "Prerequisites: ACM/IDS 104, CMS/ACM/EE 122, and ACM/EE/IDS 116; or instructor's permission.",
+        "prereqs": [
+            "acmids-104",
+            "cmsacmee-122",
+            "acmeeids-116"
+        ]
+    },
+    "cscns-171": {
+        "id": "cscns-171",
+        "course_id": "CS/CNS 171",
+        "name": "Computer Graphics Laboratory",
+        "units": "12 units (3-6-3)",
+        "terms": "first term",
+        "description": "This is a challenging course that introduces the basic ideas behind computer graphics and some of its fundamental algorithms. Topics include graphics input and output, the graphics pipeline, sampling and image manipulation, three-dimensional transformations and interactive modeling, basics of physically based modeling and animation, simple shading models and their hardware implementation, and some of the fundamental algorithms of scientific visualization. Students will be required to perform significant implementations.",
+        "offered": true,
+        "instructors": "Barr",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cscns-171",
+        "prereq_text": "Prerequisites: Extensive programming experience and proficiency in linear algebra, starting with CS 2 and Ma 1 b.",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "csids-172": {
+        "id": "csids-172",
+        "course_id": "CS/IDS 172",
+        "name": "Distributed Computing",
+        "units": "9 units (3-2-4)",
+        "terms": "first term",
+        "description": "Programming distributed systems. Mechanics for cooperation among concurrent agents. Programming sensor networks and cloud computing applications. Applications of machine learning and statistics by using parallel computers to aggregate and analyze data streams from sensors.",
+        "offered": true,
+        "instructors": "Chandy",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csids-172",
+        "prereq_text": "Prerequisites: CS 24, CS 38.",
+        "prereqs": [
+            "cs-24",
+            "cs-38"
+        ]
+    },
+    "cscns-174": {
+        "id": "cscns-174",
+        "course_id": "CS/CNS 174",
+        "name": "Computer Graphics Projects",
+        "units": "12 units (3-6-3)",
+        "terms": "third term",
+        "description": "This laboratory class offers students an opportunity for independent work including recent computer graphics research. In coordination with the instructor, students select a computer graphics modeling, rendering, interaction, or related algorithm and implement it. Students are required to present their work in class and discuss the results of their implementation and possible improvements to the basic methods. May be repeated for credit with instructor's permission.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Barr",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cscns-174",
+        "prereq_text": "Prerequisites: Extensive programming experience, CS/CNS 171 or instructor's permission.",
+        "prereqs": [
+            "cscns-171"
+        ]
+    },
+    "eecsmede-175": {
+        "id": "eecsmede-175",
+        "course_id": "EE/CS/MedE 175",
+        "name": "Advanced Topics in Digital Design with FPGAs and VHDL",
+        "units": "9 units (3-6-0)",
+        "terms": "third term",
+        "description": "Quick review of the VHDL language and RTL concepts. Dealing with sophisticated, multi-dimensional data types in VHDL. Dealing with multiple time domains. Transfer of control versus data between clock domains. Clock division and multiplication. Using PLLs. Dealing with global versus local and synchronous versus asynchronous resets. How to measure maximum speed in FPGAs (for both registered and unregistered circuits). The (often) hard task of time closure. The subtleties of the time behavior in state machines (a major source of errors in large, complex designs). Introduction to simulation. Construction of VHDL testbenches for automated testing. Dealing with files in simulation. All designs are physically implemented using FPGA boards.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/eecsmede-175",
+        "prereq_text": "Prerequisites: EE/CS/MedE 125 or equivalent.",
+        "prereqs": [
+            "eecsmede-125"
+        ]
+    },
+    "cs-176": {
+        "id": "cs-176",
+        "course_id": "CS 176",
+        "name": "Computer Graphics Research",
+        "units": "9 units (3-3-3)",
+        "terms": "second term",
+        "description": "The course will go over recent research results in computer graphics, covering subjects from mesh processing (acquisition, compression, smoothing, parameterization, adaptive meshing), simulation for purposes of animation, rendering (both photo- and nonphotorealistic), geometric modeling primitives (image based, point based), and motion capture and editing. Other subjects may be treated as they appear in the recent literature. The goal of the course is to bring students up to the frontiers of computer graphics research and prepare them for their own research.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-176",
+        "prereq_text": "Prerequisites: CS/CNS 171, or 173, or 174.",
+        "prereqs": [
+            "cscns-171",
+            "cscns-174"
+        ]
+    },
+    "csacm-177-ab": {
+        "id": "csacm-177-ab",
+        "course_id": "CS/ACM 177 ab",
+        "name": "Discrete Differential Geometry: Theory and Applications",
+        "units": "9 units (3-3-3)",
+        "terms": "second term",
+        "description": "Working knowledge of multivariate calculus and linear algebra as well as fluency in some implementation language is expected. Subject matter covered: differential geometry of curves and surfaces, classical exterior calculus, discrete exterior calculus, sampling and reconstruction of differential forms, low dimensional algebraic and computational topology, Morse theory, Noether's theorem, Helmholtz-Hodge decomposition, structure preserving time integration, connections and their curvatures on complex line bundles. Applications include elastica and rods, surface parameterization, conformal surface deformations, computation of geodesics, tangent vector field design, connections, discrete thin shells, fluids, electromagnetism, and elasticity.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csacm-177-ab",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "csids-178": {
+        "id": "csids-178",
+        "course_id": "CS/IDS 178",
+        "name": "Numerical Algorithms and their Implementation",
+        "units": "9 units (3-3-3)",
+        "terms": "third term",
+        "description": "This course gives students the understanding necessary to choose and implement basic numerical algorithms as needed in everyday programming practice. Concepts include: sources of numerical error, stability, convergence, ill-conditioning, and efficiency. Algorithms covered include solution of linear systems (direct and iterative methods), orthogonalization, SVD, interpolation and approximation, numerical integration, solution of ODEs and PDEs, transform methods (Fourier, Wavelet), and low rank approximation such as multipole expansions.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/csids-178",
+        "prereq_text": "Prerequisites: CS 2.",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "cs-179": {
+        "id": "cs-179",
+        "course_id": "CS 179",
+        "name": "GPU Programming",
+        "units": "9 units (3-3-3)",
+        "terms": "third term",
+        "description": "Some experience with computer graphics algorithms preferred. The use of Graphics Processing Units for computer graphics rendering is well known, but their power for general parallel computation is only recently being explored. Parallel algorithms running on GPUs can often achieve up to 100x speedup over similar CPU algorithms. This course covers programming techniques for the Graphics processing unit, focusing on visualization and simulation of various systems. Labs will cover specific applications in graphics, mechanics, and signal processing. The course will use nVidia's parallel computing architecture, CUDA. Labwork requires extensive programming.",
+        "offered": true,
+        "instructors": "Barr",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-179",
+        "prereq_text": "Prerequisites: Good working knowledge of C/C++.",
+        "prereqs": []
+    },
+    "acmids-180-ab": {
+        "id": "acmids-180-ab",
+        "course_id": "ACM/IDS 180 ab",
+        "name": "Multiscale Modeling",
+        "units": "12 units (3-0-9)",
+        "terms": "first, third terms",
+        "description": "Part a: Multiscale methodology for partial differential equations (PDEs) and for stochastic differential equations (SDEs). Basic theory of underlying PDEs; basic theory of Gaussian processes; basic theory of SDEs; multiscale expansions. Part b: Transition from quantum to continuum modeling of materials. Schrodinger equation and semi-classical limit; molecular dynamics and kinetic theory; kinetic theory, Boltzmann equation and continuum mechanics.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-180-ab",
+        "prereq_text": "Prerequisites: CMS 107, CMS 117 or explicit email permission from instructor.",
+        "prereqs": [
+            "cmsacmids-107-ab",
+            "cmsacm-117"
+        ]
+    },
+    "cs-180": {
+        "id": "cs-180",
+        "course_id": "CS 180",
+        "name": "Master\u2019s Thesis Research",
+        "units": "",
+        "terms": "",
+        "description": "",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-180",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "bibecs-183": {
+        "id": "bibecs-183",
+        "course_id": "Bi/BE/CS 183",
+        "name": "Introduction to Computational Biology and Bioinformatics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Biology is becoming an increasingly data-intensive science. Many of the data challenges in the biological sciences are distinct from other scientific disciplines because of the complexity involved. This course will introduce key computational, probabilistic, and statistical methods that are common in computational biology and bioinformatics. We will integrate these theoretical aspects to discuss solutions to common challenges that reoccur throughout bioinformatics including algorithms and heuristics for tackling DNA sequence alignments, phylogenetic reconstructions, evolutionary analysis, and population and human genetics. We will discuss these topics in conjunction with common applications including the analysis of high throughput DNA sequencing data sets and analysis of gene expression from RNA-Seq data sets.",
+        "offered": true,
+        "instructors": "Guttman, Thomson",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/bibecs-183",
+        "prereq_text": "Prerequisites: Bi 8, CS 2, Ma 3; or BE/Bi 103 a; or instructor's permission.",
+        "prereqs": [
+            "cs-2"
+        ]
+    },
+    "cnsbieecsnb-186": {
+        "id": "cnsbieecsnb-186",
+        "course_id": "CNS/Bi/EE/CS/NB 186",
+        "name": "Vision: From Computational Theory to Neuronal Mechanisms",
+        "units": "12 units (4-4-4)",
+        "terms": "Second term",
+        "description": "Lecture, laboratory, and project course aimed at understanding visual information processing, in both machines and the mammalian visual system. The course will emphasize an interdisciplinary approach aimed at understanding vision at several levels: computational theory, algorithms, psychophysics, and hardware (i.e., neuroanatomy and neurophysiology of the mammalian visual system). The course will focus on early vision processes, in particular motion analysis, binocular stereo, brightness, color and texture analysis, visual attention and boundary detection. Students will be required to hand in approximately three homework assignments as well as complete one project integrating aspects of mathematical analysis, modeling, physiology, psychophysics, and engineering.\n Given in alternate years; not offered 2024-25.",
+        "offered": true,
+        "instructors": "Meister, Perona, Shimojo",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cnsbieecsnb-186",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cnsbiphcsnb-187": {
+        "id": "cnsbiphcsnb-187",
+        "course_id": "CNS/Bi/Ph/CS/NB 187",
+        "name": "Neural Computation",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course aims at a quantitative understanding of how the nervous system computes. The goal is to link phenomena across scales from membrane proteins to cells, circuits, brain systems, and behavior. We will learn how to formulate these connections in terms of mathematical models, how to test these models experimentally, and how to interpret experimental data quantitatively. The concepts will be developed with motivation from some of the fascinating phenomena of animal behavior, such as: aerobatic control of insect flight, precise localization of sounds, sensing of single photons, reliable navigation and homing, rapid decision-making during escape, one-shot learning, and large-capacity recognition memory.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Meister",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cnsbiphcsnb-187",
+        "prereq_text": "Prerequisites: introductory neuroscience (Bi 150 or equivalent); mathematical methods (Bi 195 or equivalent); scientific programming.",
+        "prereqs": []
+    },
+    "acm-190": {
+        "id": "acm-190",
+        "course_id": "ACM 190",
+        "name": "Reading and Independent Study",
+        "units": "",
+        "terms": "",
+        "description": "Graded pass/fail only.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-190",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cds-190": {
+        "id": "cds-190",
+        "course_id": "CDS 190",
+        "name": "Independent Work in Control and Dynamical Systems",
+        "units": "",
+        "terms": "first, second, third terms",
+        "description": "Research project in control and dynamical systems, supervised by a CDS faculty member.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-190",
+        "prereq_text": "Prerequisites: CDS 110.",
+        "prereqs": [
+            "cds-110"
+        ]
+    },
+    "becscnsbi-191-ab": {
+        "id": "becscnsbi-191-ab",
+        "course_id": "BE/CS/CNS/Bi 191 ab",
+        "name": "Biomolecular Computation",
+        "units": "9 units (3-0-6) a; (2-4-3) b",
+        "terms": "second, third terms",
+        "description": "This course investigates computation by molecular systems, emphasizing models of computation based on the underlying physics, chemistry, and organization of biological cells. We will explore programmability, complexity, simulation of, and reasoning about abstract models of chemical reaction networks, molecular folding, molecular self-assembly, and molecular motors, with an emphasis on universal architectures for computation, control, and construction within molecular systems. If time permits, we will also discuss biological example systems such as signal transduction, genetic regulatory networks, and the cytoskeleton; physical limits of computation, reversibility, reliability, and the role of noise, DNA-based computers and DNA nanotechnology. Part a develops fundamental results; part b is a reading and research course: classic and current papers will be discussed, and students will do projects on current research topics.",
+        "offered": true,
+        "instructors": "Winfree",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/becscnsbi-191-ab",
+        "prereq_text": "Prerequisites: None. Recommended: BE/ChE 163, CS 21, or equivalent.",
+        "prereqs": [
+            "cs-21"
+        ]
+    },
+    "becs-196-ab": {
+        "id": "becs-196-ab",
+        "course_id": "BE/CS 196 ab",
+        "name": "Design and Construction of Programmable Molecular Systems",
+        "units": "a is 12 units (2-4-6) ; b is 9 units (2-4-3)",
+        "terms": "a is second term; b is third term.",
+        "description": "This course will introduce students to the conceptual frameworks and tools of computer science as applied to molecular engineering, as well as to the practical realities of synthesizing and testing their designs in the laboratory. In part a, students will design and construct DNA circuits and self-assembled DNA nanostructures, as well as quantitatively analyze the designs and the experimental data. Students will learn laboratory techniques including fluorescence spectroscopy and atomic force microscopy and will use software tools and program in Mathematica. Part b is an open-ended design and build project requiring instructor's permission for enrollment. Limited enrollment.",
+        "offered": true,
+        "instructors": "Qian",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/becs-196-ab",
+        "prereq_text": "Prerequisites: none.",
+        "prereqs": []
+    },
+    "ids-197": {
+        "id": "ids-197",
+        "course_id": "IDS 197",
+        "name": "Undergraduate Reading in the Information and Data Sciences",
+        "units": "",
+        "terms": "first, second, third terms",
+        "description": "Supervised reading in the information and data sciences by undergraduates. The topic must be approved by the reading supervisor and a formal final report must be presented on completion of the term. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/ids-197",
+        "prereq_text": "Prerequisites: Consent of supervisor is required before registering.",
+        "prereqs": []
+    },
+    "ids-198": {
+        "id": "ids-198",
+        "course_id": "IDS 198",
+        "name": "Undergraduate Projects in Information and Data Sciences",
+        "units": "",
+        "terms": "first, second, third terms",
+        "description": "Supervised research in the information and data sciences. The topic must be approved by the project supervisor and a formal report must be presented upon completion of the research. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/ids-198",
+        "prereq_text": "Prerequisites: Consent of supervisor is required before registering.",
+        "prereqs": []
+    },
+    "ids-199": {
+        "id": "ids-199",
+        "course_id": "IDS 199",
+        "name": "Undergraduate thesis in the Information and Data Sciences",
+        "units": "9 units (1-0-8)",
+        "terms": "first, second, third terms",
+        "description": "Individual research project, carried out under the supervision of a faculty member and approved by the option representative. Projects must include significant design effort and a written Report is required. Open only to upperclass students. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/ids-199",
+        "prereq_text": "Prerequisites: instructor's permission, which should be obtained sufficiently early to allow time for planning the research.",
+        "prereqs": []
+    },
+    "acm-201": {
+        "id": "acm-201",
+        "course_id": "ACM 201",
+        "name": "Partial Differential Equations",
+        "units": "12 units (4-0-8)",
+        "terms": "first term",
+        "description": "This course offers an introduction to the theory of Partial Differential Equations (PDEs) commonly encountered across mathematics, engineering and science. The goal of the course is to study properties of different classes of linear and nonlinear PDEs (elliptic, parabolic and hyperbolic) and the behavior of their solutions using tools from functional analysis with an emphasis on applications. We will discuss representative models from different areas such as: heat equation, wave equation, advection-reaction-diffusion equation, conservation laws, shocks, predator prey models, Burger's equation, kinetic equations, gradient flows, transport equations, integral equations, Helmholtz and Schr\u00f6dinger equations and Stoke's flow. In this course you will use analytical tools such as Gauss's theorem, Green's functions, weak solutions, existence and uniqueness theory, Sobolev spaces, well-posedness theory, asymptotic analysis, Fredholm theory, Fourier transforms and spectral theory. More advanced topics include: Perron's method, applications to irrotational flow, elasticity, electrostatics, special solutions, vibrations, Huygens' principle, Eikonal equations, spherical means, retarded potentials, water waves, various approximations, dispersion relations, Maxwell equations, gas dynamics, Riemann problems, single- and double-layer potentials, Navier-Stokes equations, Reynolds number, potential flow, boundary layer theory, subsonic, supersonic and transonic flow.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-201",
+        "prereq_text": "Prerequisites: ACM 95/100 ab, ACM/IDS 101 ab, ACM 11 or equivalent.",
+        "prereqs": [
+            "acm-95100-ab",
+            "acmids-101-ab",
+            "acm-11"
+        ]
+    },
+    "acmids-204": {
+        "id": "acmids-204",
+        "course_id": "ACM/IDS 204",
+        "name": "Topics in Linear Algebra and Convexity",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "The content of this course varies from year to year among advanced subjects in linear algebra, convex analysis, and related fields. Specific topics for the class include matrix analysis, operator theory, convex geometry, or convex algebraic geometry. Lectures and homework will require the ability to understand and produce mathematical proofs.\n Offered 2024-25.",
+        "offered": true,
+        "instructors": "Tropp",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-204",
+        "prereq_text": "Prerequisites: CMS 107a and CMS/ACM 122; or instructor's permission.",
+        "prereqs": [
+            "cmsacmids-107-ab",
+            "cmsacmee-122"
+        ]
+    },
+    "acm-206": {
+        "id": "acm-206",
+        "course_id": "ACM 206",
+        "name": "Topics in Computational Mathematics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course provides an introduction to Monte Carlo methods with applications in Bayesian computing and rare event sampling. Topics include Markov chain Monte Carlo (MCMC), Gibbs samplers, Langevin samplers, MCMC for infinite-dimensional problems, convergence of MCMC, parallel tempering, umbrella sampling, forward flux sampling, and sequential Monte Carlo. Emphasis is placed both on rigorous mathematical development and on practical coding experience.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Tropp",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-206",
+        "prereq_text": "Prerequisites: ACM 106 ab; linear algebra at the level of ACM 104 or ACM 107; probability theory at the level of ACM 116 or ACM 117; some programming experience.",
+        "prereqs": [
+            "acmee-106-ab",
+            "acmids-104",
+            "cmsacmids-107-ab",
+            "acmeeids-116",
+            "cmsacm-117"
+        ]
+    },
+    "acm-210": {
+        "id": "acm-210",
+        "course_id": "ACM 210",
+        "name": "Numerical Methods for PDEs",
+        "units": "9 units (3-0-6)",
+        "terms": "third terms",
+        "description": "Finite difference and finite volume methods for hyperbolic problems. Stability and error analysis of nonoscillatory numerical schemes: i) linear convection: Lax equivalence theorem, consistency, stability, convergence, truncation error, CFL condition, Fourier stability analysis, von Neumann condition, maximum principle, amplitude and phase errors, group velocity, modified equation analysis, Fourier and eigenvalue stability of systems, spectra and pseudospectra of nonnormal matrices, Kreiss matrix theorem, boundary condition analysis, group velocity and GKS normal mode analysis; ii) conservation laws: weak solutions, entropy conditions, Riemann problems, shocks, contacts, rarefactions, discrete conservation, Lax-Wendroff theorem, Godunov's method, Roe's linearization, TVD schemes, high-resolution schemes, flux and slope limiters, systems and multiple dimensions, characteristic boundary conditions; iii) adjoint equations: sensitivity analysis, boundary conditions, optimal shape design, error analysis. Interface problems, level set methods for multiphase flows, boundary integral methods, fast summation algorithms, stability issues. Spectral methods: Fourier spectral methods on infinite and periodic domains. Chebyshev spectral methods on finite domains. Spectral element methods and h-p refinement. Multiscale finite element methods for elliptic problems with multiscale coefficients.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-210",
+        "prereq_text": "Prerequisites: ACM 11, 106 or instructor's permission.",
+        "prereqs": [
+            "acm-11",
+            "acmee-106-ab"
+        ]
+    },
+    "cds-212": {
+        "id": "cds-212",
+        "course_id": "CDS 212",
+        "name": "Optimal Control and Estimation",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Advanced topics in optimization-based design of control, optimal control, and estimation/filtering. Optimal control theory using calculus of variations, Hamilton-Jacobi-Bellman equation, Pontryagin's maximum principle, and optimal control applications including reinforcement learning and model predictive control. Kalman filtering, Bayesian filtering, and nonlinear filtering methods for autonomous systems.",
+        "offered": true,
+        "instructors": "Chung",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-212",
+        "prereq_text": "Prerequisites: CDS 110 (or equivalent) and CDS 131.",
+        "prereqs": [
+            "cds-110",
+            "cds-131"
+        ]
+    },
+    "acmids-213": {
+        "id": "acmids-213",
+        "course_id": "ACM/IDS 213",
+        "name": "Topics in Optimization",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Material varies year-to-year. Example topics include discrete optimization, convex and computational algebraic geometry, numerical methods for large-scale optimization, and convex geometry.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-213",
+        "prereq_text": "Prerequisites: ACM/IDS 104, CMS/ACM/EE 122.",
+        "prereqs": [
+            "acmids-104",
+            "cmsacmee-122"
+        ]
+    },
+    "acmids-216": {
+        "id": "acmids-216",
+        "course_id": "ACM/IDS 216",
+        "name": "Markov Chains, Discrete Stochastic Processes and Applications",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Stable laws, Markov chains, classification of states, ergodicity, von Neumann ergodic theorem, mixing rate, stationary/equilibrium distributions and convergence of Markov chains, Markov chain Monte Carlo and its applications to scientific computing, Metropolis Hastings algorithm, coupling from the past, martingale theory and discrete time martingales, rare events, law of large deviations, Chernoff bounds.",
+        "offered": true,
+        "instructors": "Owhadi",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acmids-216",
+        "prereq_text": "Prerequisites: ACM/EE/IDS 116 or equivalent.",
+        "prereqs": [
+            "acmeeids-116"
+        ]
+    },
+    "acm-217": {
+        "id": "acm-217",
+        "course_id": "ACM 217",
+        "name": "Advanced Topics in Probability",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Topic varies by year. 2023-24: Random matrix theory. This class introduces some fundamental random matrix models with applications in computational mathematics, statistics, signal processing, algorithms, and other areas. The focus is on finite-dimensional examples and comparisons with ideal models. Specific topics may include the independent sum model, matrix concentration inequalities, geometric random matrix theory, classical ensembles and their limiting spectral properties, universality laws, and free probability. Lectures and homework will require the ability to understand and produce mathematical proofs.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Tropp",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-217",
+        "prereq_text": "Prerequisites: CMS 107a and CMS/ACM 117; or instructor's permission.",
+        "prereqs": [
+            "cmsacmids-107-ab",
+            "cmsacm-117"
+        ]
+    },
+    "phcs-219-abc": {
+        "id": "phcs-219-abc",
+        "course_id": "Ph/CS 219 abc",
+        "name": "Quantum Computation",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "The theory of quantum information and quantum computation. Overview of classical information theory, compression of quantum information, transmission of quantum information through noisy channels, quantum error-correcting codes, quantum cryptography and teleportation. Overview of classical complexity theory, quantum complexity, efficient quantum algorithms, fault-tolerant quantum computation, physical implementations of quantum computation.",
+        "offered": true,
+        "instructors": "Kitaev, Preskill",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/phcs-219-abc",
+        "prereq_text": "Prerequisites: Ph 125 ab or equivalent.",
+        "prereqs": []
+    },
+    "cds-231": {
+        "id": "cds-231",
+        "course_id": "CDS 231",
+        "name": "Robust Control Theory",
+        "units": "9 units (3-2-4)",
+        "terms": "third term",
+        "description": "Scalable analysis and synthesis of robust control systems. Motivation throughout from case studies in tech, neuro, bio, med, and socioeconomic networks. Co-design of sparse and limited (delayed, localized, quantized, saturating, noisy) sensing, communications, computing, and actuation using System Level Synthesis (SLS). Layering, localization, and distributed control. Computational scalability exploiting sparsity and structure. Uncertainty, including noise, disturbances, parametric uncertainty, unmodeled dynamics, and structured uncertainty (LTI/LTV). Tradeoffs, robustness versus efficiency, conservation laws and hard limits in time and frequency domain. Advanced topics, depending on class interest, can include interplay between automation, optimization, control, modeling and system identification, and machine learning, and nonlinear dynamics and sum of squares, global stability, regions of attraction.",
+        "offered": true,
+        "instructors": "Doyle",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-231",
+        "prereq_text": "Prerequisites: CMS/ACM/IDS 107, CMS/ACM/EE 122, and CDS 131 (or equivalents).",
+        "prereqs": [
+            "cmsacmids-107-ab",
+            "cmsacmee-122",
+            "cds-131"
+        ]
+    },
+    "aeacmme-232-ab": {
+        "id": "aeacmme-232-ab",
+        "course_id": "Ae/ACM/ME 232 ab",
+        "name": "Computational Fluid Dynamics",
+        "units": "9 units (3-0-6)",
+        "terms": "second, third terms",
+        "description": "Development and analysis of algorithms used in the solution of fluid mechanics problems. Numerical analysis of discretization schemes for partial differential equations including interpolation, integration, spatial discretization, systems of ordinary differential equations; stability, accuracy, aliasing, Gibbs and Runge phenomena, numerical dissipation and dispersion; boundary conditions. Survey of finite difference, finite element, finite volume and spectral approximations for the numerical solution of the incompressible and compressible Euler and Navier-Stokes equations, including shock-capturing methods.",
+        "offered": true,
+        "instructors": "Bae, Meiron",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/aeacmme-232-ab",
+        "prereq_text": "Prerequisites: Ae/APh/CE/ME 101 abc or equivalent; ACM 100 ab or equivalent; ACM 104.",
+        "prereqs": [
+            "acm-95100-ab",
+            "acmids-104"
+        ]
+    },
+    "cds-232": {
+        "id": "cds-232",
+        "course_id": "CDS 232",
+        "name": "Nonlinear Dynamics",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course studies nonlinear dynamical systems beginning from first principles. Topics include: existence and uniqueness properties of solutions to nonlinear ODEs, stability of nonlinear systems from the perspective of Lyapunov, and behavior unique to nonlinear systems; for example: stability of periodic orbits, Poincar\u00e9 maps and stability/invariance of sets. The dynamics of robotic systems will be used as a motivating example.",
+        "offered": true,
+        "instructors": "Ames",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-232",
+        "prereq_text": "Prerequisites: CMS/ACM/IDS 107 and CDS 231.",
+        "prereqs": [
+            "cmsacmids-107-ab",
+            "cds-231"
+        ]
+    },
+    "cds-233": {
+        "id": "cds-233",
+        "course_id": "CDS 233",
+        "name": "Nonlinear Control",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course studies nonlinear control systems from Lyapunov perspective. Beginning with feedback linearization and the stabilization of feedback linearizable system, these concepts are related to control Lyapunov functions, and corresponding stabilization results in the context of optimization based controllers. Advanced topics that build upon these core results will be discussed including: stability of periodic orbits, controller synthesis through virtual constraints, safety-critical controllers, and the role of physical constraints and actuator limits. The control of robotic systems will be used as a motivating example.",
+        "offered": true,
+        "instructors": "Ames",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-233",
+        "prereq_text": "Prerequisites: CDS 231 and CDS 232.",
+        "prereqs": [
+            "cds-231",
+            "cds-232"
+        ]
+    },
+    "mecdsee-234-ab": {
+        "id": "mecdsee-234-ab",
+        "course_id": "ME/CDS/EE 234 ab",
+        "name": "Advanced Robotics: Planning",
+        "units": "9 units (3-3-3)",
+        "terms": "second, third terms",
+        "description": "Advanced topics in robotic motion planning and navigation, including inertial navigation, simultaneous localization and mapping, Markov Decision Processes, Stochastic Receding Horizon Control, Risk-Aware planning, robotic coverage planning, and multi-robot coordination. Course work will consist of homework, programming projects, and labs. Given in alternate years.",
+        "offered": true,
+        "instructors": "Burdick",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/mecdsee-234-ab",
+        "prereq_text": "Prerequisites: ME/CS/EE 133 b, or equivalent. ME/CS/EE 133 a preferred.",
+        "prereqs": [
+            "mecsee-133-ab"
+        ]
+    },
+    "mecds-235-ab": {
+        "id": "mecds-235-ab",
+        "course_id": "ME/CDS 235 ab",
+        "name": "Advanced Robotics: Kinematics",
+        "units": "9 units (3-3-3)",
+        "terms": "second, third terms",
+        "description": "Advanced topics in robot kinematics and robotic mechanisms. Topics include a Lie Algebraic viewpoint on kinematics and robot dynamics, a review of robotic mechanisms, and a detailed development of robotic grasping and manipulation. Given in alternate years.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/mecds-235-ab",
+        "prereq_text": "Prerequisites: ME/CS/EE 133 a, or equivalent.",
+        "prereqs": [
+            "mecsee-133-ab"
+        ]
+    },
+    "cds-242": {
+        "id": "cds-242",
+        "course_id": "CDS 242",
+        "name": "Hybrid Systems: Dynamics and Control",
+        "units": "9 units (3-2-4)",
+        "terms": "third term",
+        "description": "This class studies hybrid dynamical systems: systems that display both discrete and continuous dynamics. This includes topics on dynamic properties unique to hybrid system: stability types, hybrid periodic orbits, Zeno equilibria and behavior. Additionally, the nonlinear control of these systems will be considered in the context of feedback linearization and control Lyapunov functions. Applications to mechanical systems undergoing impacts will be considered, with a special emphasis on bipedal robotic walking.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-242",
+        "prereq_text": "Prerequisites: CDS 231 and CDS 232.",
+        "prereqs": [
+            "cds-231",
+            "cds-232"
+        ]
+    },
+    "cds-243": {
+        "id": "cds-243",
+        "course_id": "CDS 243",
+        "name": "Adaptive Control",
+        "units": "4 units (2-0-2)",
+        "terms": "third term",
+        "description": "Specification and design of control systems that operate in the presence of uncertainties and unforeseen events. Robust and optimal linear control methods, including LQR, LQG and LTR control. Design and analysis of model reference adaptive control (MRAC) for nonlinear uncertain dynamical systems with extensions to output feedback. Given in alternate years.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-243",
+        "prereq_text": "Prerequisites: CDS 231 and CDS 232.",
+        "prereqs": [
+            "cds-231",
+            "cds-232"
+        ]
+    },
+    "cds-244": {
+        "id": "cds-244",
+        "course_id": "CDS 244",
+        "name": "System Identification",
+        "units": "4 units (2-0-2)",
+        "terms": "third term",
+        "description": "Mathematical treatment of system identification methods for dynamical systems, with applications. Nonlinear dynamics and models for parameter identification. Gradient and least-squares estimators and variants. System identification with adaptive predictors and state observers. Parameter estimation in the presence of non-parametric uncertainties. Introduction to adaptive control.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-244",
+        "prereq_text": "Prerequisites: CDS 231 and CDS 232.",
+        "prereqs": [
+            "cds-231",
+            "cds-232"
+        ]
+    },
+    "cds-245": {
+        "id": "cds-245",
+        "course_id": "CDS 245",
+        "name": "Data-driven Control",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Mathematical treatment of data-driven machine learning methods for controlling robotic and dynamical systems with various uncertainties. Gradient and least-squares estimators and variants for dynamical systems for system identification and residual learning. Adaptive control methods for online adaptation and combination with deep learning. Learning-based control certificates such as neural Lyapunov functions and neural contraction metrics.",
+        "offered": true,
+        "instructors": "Chung",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-245",
+        "prereq_text": "Prerequisites: CDS 131 and CDS 232.",
+        "prereqs": [
+            "cds-131",
+            "cds-232"
+        ]
+    },
+    "cmsecids-248": {
+        "id": "cmsecids-248",
+        "course_id": "CMS/Ec/IDS 248",
+        "name": "Topics in Learning and Games",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "This course is an advanced topics course intended for graduate students with a background in optimization, linear systems theory, probability and statistics, and an interest in learning, game theory, and decision making more broadly. We will cover the basics of game theory including equilibrium notions and efficiency, learning algorithms for equilibrium seeking, and discuss connections to optimization, machine learning, and decision theory. While there will be some initial overview of game theory, the focus of the course will be on modern topics in learning as applied to games in both cooperative and non-cooperative settings. We will also discuss games of partial information and stochastic games as well as hierarchical decision-making problems (e.g., incentive and information design).\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cmsecids-248",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "aecdsme-251-ab": {
+        "id": "aecdsme-251-ab",
+        "course_id": "Ae/CDS/ME 251 ab",
+        "name": "Closed Loop Flow Control",
+        "units": "9 units (3-0-6 a, 1-6-1 b)",
+        "terms": "second, third term",
+        "description": "This course seeks to introduce students to recent developments in theoretical and practical aspects of applying control to flow phenomena and fluid systems. Lecture topics in the second term drawn from: the objectives of flow control; a review of relevant concepts from classical and modern control theory; high-fidelity and reduced-order modeling; principles and design of actuators and sensors. Third term: laboratory work in open- and closed-loop control of boundary layers, turbulence, aerodynamic forces, bluff body drag, combustion oscillations and flow-acoustic oscillations.\n Not offered 2024-25",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/aecdsme-251-ab",
+        "prereq_text": "Prerequisites: ACM 100 abc, Ae/APh/CE/ME 101 abc or equivalent.",
+        "prereqs": [
+            "acm-95100-ab"
+        ]
+    },
+    "acm-256": {
+        "id": "acm-256",
+        "course_id": "ACM 256",
+        "name": "Special Topics in Applied Mathematics",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "Measure transport is a rich mathematical topic at the intersection of analysis, probability and optimization. The core idea behind this theory is to rearrange the mass of a reference measure to match a target measure. In particular, optimal transport seeks a rearrangement that transports mass with minimal cost. The theory of optimal transport dates back to Monge in 1781, with significant advancements by Kantorovich in 1942 and later in the '90s, e.g. by Brenier. In recent years, measure transport has become an indispensable tool for representing probability distributions and for defining measures of similarity between distributions. These methods enjoy applications in image retrieval, signal and image representation, inverse problems, cancer detection, texture and color modelling, shape and image registration, and machine learning, to name a few. This class will introduce the foundations of measure transport, present its connections and applications in various fields, and lastly explore modern computational methods for finding discrete and continuous transport maps, e.g. Sinkhorn's algorithm and normalizing flows.",
+        "offered": true,
+        "instructors": "Hoffmann",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-256",
+        "prereq_text": "Prerequisites: Familiarity with analysis and probability, e.g. ACM 105 and ACM 116 is desired.",
+        "prereqs": [
+            "acmeeids-116"
+        ]
+    },
+    "acm-257": {
+        "id": "acm-257",
+        "course_id": "ACM 257",
+        "name": "Special Topics in Financial Mathematics",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "A basic knowledge of probability and statistics as well as transform methods for solving PDEs is assumed. This course develops some of the techniques of stochastic calculus and applies them to the theory of financial asset modeling. The mathematical concepts/tools developed will include introductions to random walks, Brownian motion, quadratic variation, and Ito-calculus. Connections to PDEs will be made by Feynman-Kac theorems. Concepts of risk-neutral pricing and martingale representation are introduced in the pricing of options. Topics covered will be selected from standard options, exotic options, American derivative securities, term-structure models, and jump processes.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-257",
+        "prereq_text": "Prerequisites: ACM 95/100 or instructor's permission.",
+        "prereqs": [
+            "acm-95100-ab"
+        ]
+    },
+    "acm-270": {
+        "id": "acm-270",
+        "course_id": "ACM 270",
+        "name": "Advanced Topics in Applied and Computational Mathematics",
+        "units": "Hours and units by arrangement",
+        "terms": "first, second, third terms",
+        "description": "Advanced topics in applied and computational mathematics that will vary according to student and instructor interest. May be repeated for credit.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-270",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cds-270": {
+        "id": "cds-270",
+        "course_id": "CDS 270",
+        "name": "Advanced Topics in Systems and Control",
+        "units": "Hours and units by arrangement; third term",
+        "terms": "",
+        "description": "Topics dependent on class interests and instructor. May be repeated for credit.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-270",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cms-270": {
+        "id": "cms-270",
+        "course_id": "CMS 270",
+        "name": "Advanced Topics in Computing and Mathematical Sciences",
+        "units": "",
+        "terms": "second term",
+        "description": "Advanced topics that will vary according to student and instructor interest. May be repeated for credit.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cms-270",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-274-abc": {
+        "id": "cs-274-abc",
+        "course_id": "CS 274 abc",
+        "name": "Topics in Computer Graphics",
+        "units": "9 units (3-3-3)",
+        "terms": "first, second, third terms",
+        "description": "Each term will focus on some topic in computer graphics, such as geometric modeling, rendering, animation, human-computer interaction, or mathematical foundations. The topics will vary from year to year. May be repeated for credit with instructor's permission.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-274-abc",
+        "prereq_text": "Prerequisites: instructor's permission.",
+        "prereqs": []
+    },
+    "cs-280": {
+        "id": "cs-280",
+        "course_id": "CS 280",
+        "name": "Research in Computer Science",
+        "units": "",
+        "terms": "",
+        "description": "Approval of student's research adviser and option adviser must be obtained before registering.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-280",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-282-abc": {
+        "id": "cs-282-abc",
+        "course_id": "CS 282 abc",
+        "name": "Reading in Computer Science",
+        "units": "6 units or more by arrangement",
+        "terms": "first, second, third terms",
+        "description": "Instructor's permission required.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-282-abc",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-286-abc": {
+        "id": "cs-286-abc",
+        "course_id": "CS 286 abc",
+        "name": "Seminar in Computer Science",
+        "units": "3, 6, or 9 units, at the instructor's discretion",
+        "terms": "",
+        "description": "Instructor's permission required.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-286-abc",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cs-287": {
+        "id": "cs-287",
+        "course_id": "CS 287",
+        "name": "Center for the Mathematics of Information Seminar",
+        "units": "3, 6, or 9 units, at the instructor's discretion",
+        "terms": "first, second, third terms",
+        "description": "Instructor's permission required.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cs-287",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cms-290-abc": {
+        "id": "cms-290-abc",
+        "course_id": "CMS 290 abc",
+        "name": "Computing and Mathematical Sciences Colloquium",
+        "units": "1 unit",
+        "terms": "first, second, third terms",
+        "description": "This course is a research seminar course covering topics at the intersection of mathematics, computation, and their applications. Students are asked to attend one seminar per week (from any seminar series on campus) on topics related to computing and mathematical sciences. This course is a requirement for first-year PhD students in the CMS department.",
+        "offered": true,
+        "instructors": "Hoffmann",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cms-290-abc",
+        "prereq_text": "Prerequisites: Registration is limited to graduate students in the CMS department only.",
+        "prereqs": []
+    },
+    "acm-300": {
+        "id": "acm-300",
+        "course_id": "ACM 300",
+        "name": "Research in Applied and Computational Mathematics",
+        "units": "",
+        "terms": "",
+        "description": "",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/acm-300",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cds-300-abc": {
+        "id": "cds-300-abc",
+        "course_id": "CDS 300 abc",
+        "name": "Research in Control and Dynamical Systems",
+        "units": "Hours and units by arrangement",
+        "terms": "",
+        "description": "Research in the field of control and dynamical systems. By arrangement with members of the staff, properly qualified graduate students are directed in research.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cds-300-abc",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "cms-300": {
+        "id": "cms-300",
+        "course_id": "CMS 300",
+        "name": "Research in Computing and Mathematical Sciences",
+        "units": "Hours and units by arrangement",
+        "terms": "",
+        "description": "Research in the field of computing and mathematical science. By arrangement with members of the staff, properly qualified graduate students are directed in research.",
+        "offered": true,
+        "instructors": "Staff",
+        "link": "https://www.cms.caltech.edu/academics/courses/academics/courses/cms-300",
+        "prereq_text": "",
+        "prereqs": []
+    }
+}

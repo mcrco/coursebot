@@ -1,0 +1,777 @@
+{
+    "ma-1-abc": {
+        "id": "ma-1-abc",
+        "course_id": "Ma 1 abc",
+        "name": "Calculus of One and Several Variables and Linear Algebra",
+        "units": "9 units (4-0-5)",
+        "terms": "first, second, third terms",
+        "description": "Special section of Ma 1 a, 12 units (5-0-7). Review of calculus. Complex numbers, Taylor polynomials, infinite series. Comprehensive presentation of linear algebra. Derivatives of vector functions, multiple integrals, line and path integrals, theorems of Green and Stokes. Ma 1 b, c is divided into two tracks: analytic and practical. Students will be given information helping them to choose a track at the end of the fall term. There will be a special section or sections of Ma 1 a for those students who, because of their background, require more calculus than is provided in the regular Ma 1 a sequence. These students will not learn series in Ma 1 a and will be required to take Ma 1 d.",
+        "offered": true,
+        "instructors": "Conlon, Gherman, Graber, Mantovan, Graber, Ni, T. Yu.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: high-school algebra, trigonometry, and calculus.",
+        "prereqs": []
+    },
+    "ma-1-d": {
+        "id": "ma-1-d",
+        "course_id": "Ma 1 d",
+        "name": "Series",
+        "units": "3 units (2-0-1)",
+        "terms": "second term",
+        "description": "This is a course intended for those students in the special calculus-intensive sections of Ma 1 a who did not have complex numbers, Taylor polynomials, and infinite series during Ma 1 a. It may not be taken by students who have passed the regular Ma 1 a.",
+        "offered": true,
+        "instructors": "Gherman.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: special section of Ma 1 a.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d"
+        ]
+    },
+    "ma-2102": {
+        "id": "ma-2102",
+        "course_id": "Ma 2/102",
+        "name": "Differential Equations",
+        "units": "9 units (4-0-5)",
+        "terms": "first term",
+        "description": "The course is aimed at providing an introduction to the theory of ordinary differential equations, with a particular emphasis on equations with well known applications ranging from physics to population dynamics. The material covered includes some existence and uniqueness results, first order linear equations and systems, exact equations, linear equations with constant coefficients, series solutions, regular singular equations, Laplace transform, and methods for the study of nonlinear equations (equilibria, stability, predator-prey equations, periodic solutions and limiting cycles).",
+        "offered": true,
+        "instructors": "Makarov, Hutchcroft.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 1 abc.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d"
+        ]
+    },
+    "ma-3103": {
+        "id": "ma-3103",
+        "course_id": "Ma 3/103",
+        "name": "Introduction to Probability and Statistics",
+        "units": "9 units (4-0-5)",
+        "terms": "second term",
+        "description": "This course is an introduction to the main ideas of probability and statistics. The first half is devoted to the fundamental concepts of probability theory, including basic combinatorics, random variables, independence, conditional probability, and the central limit theorem. The second half is devoted to statistical reasoning, including methods for the collection, organization, analysis, and interpretation of data. Topics covered will include parameter estimation, hypothesis testing, confidence intervals, Bayesian inference, and linear regression. The course will emphasize the application of statistics to engineering and the sciences.",
+        "offered": true,
+        "instructors": "Pachter and Halgrimmsdottir.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 1 abc.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d"
+        ]
+    },
+    "ma-4104": {
+        "id": "ma-4104",
+        "course_id": "Ma 4/104",
+        "name": "Introduction to Mathematical Chaos",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "An introduction to the mathematics of \"chaos.\" Period doubling universality, and related topics; interval maps, symbolic itineraries, stable/unstable manifold theorem, strange attractors, iteration of complex analytic maps, applications to multidimensional dynamics systems and real-world problems. Possibly some additional topics, such as Sarkovski's theorem, absolutely continuous invariant measures, sensitivity to initial conditions, and the horseshoe map.",
+        "offered": true,
+        "instructors": "Angelopoulos.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-5105-abc": {
+        "id": "ma-5105-abc",
+        "course_id": "Ma 5/105 abc",
+        "name": "Introduction to Abstract Algebra",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Introduction to groups, rings, fields, and modules. The first term is devoted to groups and includes treatments of semidirect products and Sylow's theorem. The second term discusses rings and modules and includes a proof that principal ideal domains have unique factorization and the classification of finitely generated modules over principal ideal domains. The third term covers field theory, Galois theory, and an introduction to character theory for finite groups.",
+        "offered": true,
+        "instructors": "Mantovan, Tang, Gherman.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "macs-6106-abc": {
+        "id": "macs-6106-abc",
+        "course_id": "Ma/CS 6/106 abc",
+        "name": "Introduction to Discrete Mathematics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "First term: a survey emphasizing graph theory, algorithms, and applications of algebraic structures. Graphs: paths, trees, circuits, breadth-first and depth-first searches, colorings, matchings. Enumeration techniques; formal power series; combinatorial interpretations. Topics from coding and cryptography, including Hamming codes and RSA. Second term: directed graphs; networks; combinatorial optimization; linear programming. Permutation groups; counting nonisomorphic structures. Topics from extremal graph and set theory, and partially ordered sets. Third term: syntax and semantics of propositional and first-order logic. Introduction to the Godel completeness and incompleteness theorems. Elements of computability theory and computational complexity. Discussion of the P=NP problem.",
+        "offered": true,
+        "instructors": "T. Yu, Babecki, Ervin.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: for Ma/CS 6 c, Ma/CS 6 a or Ma 5 a or instructor's permission.",
+        "prereqs": [
+            "macs-6106-abc",
+            "ma-5105-abc"
+        ]
+    },
+    "ma-7107": {
+        "id": "ma-7107",
+        "course_id": "Ma 7/107",
+        "name": "Number Theory for Beginners",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "Some of the fundamental ideas, techniques, and open problems of basic number theory will be introduced. Examples will be stressed. Topics include Euclidean algorithm, primes, Diophantine equations, including an + bn = cn and a2-db2 = \u00c2\u00b11, constructible numbers, composition of binary quadratic forms, and congruences.",
+        "offered": true,
+        "instructors": "Fu.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-8": {
+        "id": "ma-8",
+        "course_id": "Ma 8",
+        "name": "Problem Solving in Calculus",
+        "units": "3 units (3-0-0)",
+        "terms": "first term",
+        "description": "A three-hour per week hands-on class for those students in Ma 1 needing extra practice in problem solving in calculus.",
+        "offered": true,
+        "instructors": "Graber.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: simultaneous registration in Ma 1 a.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d"
+        ]
+    },
+    "ma-10": {
+        "id": "ma-10",
+        "course_id": "Ma 10",
+        "name": "Oral Presentation",
+        "units": "3 units (2-0-1)",
+        "terms": "first term",
+        "description": "Open for credit to anyone. First-year students must have instructor's permission to enroll. In this course, students will receive training and practice in presenting mathematical material before an audience. In particular, students will present material of their own choosing to other members of the class. There may also be elementary lectures from members of the mathematics faculty on topics of their own research interest.",
+        "offered": true,
+        "instructors": "Mantovan.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-11": {
+        "id": "ma-11",
+        "course_id": "Ma 11",
+        "name": "Mathematical Writing",
+        "units": "3 units (0-0-3)",
+        "terms": "third term",
+        "description": "Students will work with the instructor and a mentor to write and revise a self-contained paper dealing with a topic in mathematics. In the first week, an introduction to some matters of style and format will be given in a classroom setting. Some help with typesetting in TeX may be available. Students are encouraged to take advantage of the Hixon Writing Center\u2019s facilities. The mentor and the topic are to be selected in consultation with the instructor. It is expected that in most cases the paper will be in the style of a textbook or journal article, at the level of the student\u2019s peers (mathematics students at Caltech). Fulfills the Institute scientific writing requirement. Not offered on a pass/fail basis.",
+        "offered": false,
+        "instructors": "Marcolli.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: First-year students must have instructor\u2019s permission to enroll.",
+        "prereqs": []
+    },
+    "fsma-12": {
+        "id": "fsma-12",
+        "course_id": "FS/Ma 12",
+        "name": "First-Year Seminar: The Mathematics of Enzyme Kinetics",
+        "units": "6 units (2-0-4)",
+        "terms": "third term",
+        "description": "Enzymes are at the heart of biochemistry. We will begin with a down to earth discussion of how, as catalysts, they are used to convert substrate to product. Then we will model their activity by using explicit equations. Under ideal conditions, their dynamics are described by a system of first order differential equations. The difficulty will be seen to stem from them being non-linear. However, under a steady state hypothesis, they reduce to a simpler equation, whose solution can describe the late time behavior. The students will apply it to some specially chosen, real examples.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 1 ab.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d"
+        ]
+    },
+    "ma-13": {
+        "id": "ma-13",
+        "course_id": "Ma 13",
+        "name": "Problem Solving in Vector Calculus",
+        "units": "2 units (2-0-0)",
+        "terms": "second term",
+        "description": "A two-hour per week, hands-on class for those students enrolled in Ph 1 b needing extra practice with problem solving in vector calculus.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Concurrent registration in Ph 1 b.",
+        "prereqs": [
+            "ph-1-abc"
+        ]
+    },
+    "ma-14": {
+        "id": "ma-14",
+        "course_id": "Ma 14",
+        "name": "Student-Taught Topics in Mathematics",
+        "units": "3 units (3-0-0)",
+        "terms": "first, second, third terms",
+        "description": "Each section of Ma 14 covers a topic in mathematics with associated sets or projects. Sections are designed and taught by an undergraduate student (or students) under the supervision of a MA faculty member. Ma 14 may be repeated for credit of up to a total of nine units. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Staff.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 1 abc or instructor's permission.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d"
+        ]
+    },
+    "ma-17": {
+        "id": "ma-17",
+        "course_id": "Ma 17",
+        "name": "How to Solve It",
+        "units": "4 units (2-0-2)",
+        "terms": "first term",
+        "description": "There are many problems in elementary mathematics that require ingenuity for their solution. This is a seminar-type course on problem solving in areas of mathematics where little theoretical knowledge is required. Students will work on problems taken from diverse areas of mathematics; there is no prerequisite and the course is open to first-year. May be repeated for credit. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Dimitrov.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-20": {
+        "id": "ma-20",
+        "course_id": "Ma 20",
+        "name": "Frontiers in Mathematics",
+        "units": "1 unit (1-0-0)",
+        "terms": "first term",
+        "description": "Weekly seminar by a member of the math department or a visitor, to discuss their research at an introductory level. The course aims to introduce students to research areas in mathematics and help them gain an understanding of the scope of the field. Graded pass/fail.",
+        "offered": true,
+        "instructors": "Song.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Open for credit to first-year students and sophomores.",
+        "prereqs": []
+    },
+    "ma-92-abc": {
+        "id": "ma-92-abc",
+        "course_id": "Ma 92 abc",
+        "name": "Senior Thesis",
+        "units": "9 units (0-0-9)",
+        "terms": "first, second, third terms",
+        "description": "Open only to senior mathematics majors who are qualified to pursue independent reading and research. This research must be supervised by a faculty member. The research must begin in the first term of the senior year and will normally follow up on an earlier SURF or independent reading project. Two short presentations to a thesis committee are required: the first at the end of the first term and the second at the midterm week of the third term. A draft of the written thesis must be completed and distributed to the committee one week before the second presentation. Graded pass/fail in the first and second terms; a letter grade will be given in the third term.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: To register, the student must obtain permission of the mathematics undergraduate representative.",
+        "prereqs": []
+    },
+    "ma-97": {
+        "id": "ma-97",
+        "course_id": "Ma 97",
+        "name": "Research in Mathematics",
+        "units": "Units to be arranged in accordance with work accomplished",
+        "terms": "",
+        "description": "This course is designed to allow students to continue or expand summer research projects and to work on new projects. Students registering for more than 6 units of Ma 97 must submit a brief (no more than 3 pages) written report outlining the work completed to the undergraduate option rep at the end of the term. Approval from the research supervisor and student's adviser must be granted prior to registration. Graded pass/fail.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-98": {
+        "id": "ma-98",
+        "course_id": "Ma 98",
+        "name": "Independent Reading",
+        "units": "3-6 units by arrangement",
+        "terms": "",
+        "description": "Occasionally a reading course will be offered after student consultation with a potential supervisor. Topics, hours, and units by arrangement. Graded pass/fail.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-108-abc": {
+        "id": "ma-108-abc",
+        "course_id": "Ma 108 abc",
+        "name": "Classical Analysis",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "First term: structure of the real numbers, topology of metric spaces, a rigorous approach to differentiation in R^n. Second term: brief introduction to ordinary differential equations; Lebesgue integration and an introduction to Fourier analysis. Third term: the theory of functions of one complex variable.",
+        "offered": true,
+        "instructors": "Reeves, Looi, Caniato.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 1 or equivalent, or instructor\u2019s permission. May be taken concurrently with Ma 109.",
+        "prereqs": [
+            "ma-1-abc",
+            "ma-1-d",
+            "ma-109-abc"
+        ]
+    },
+    "ma-109-abc": {
+        "id": "ma-109-abc",
+        "course_id": "Ma 109 abc",
+        "name": "Introduction to Geometry and Topology",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "First term: aspects of point set topology, and an introduction to geometric and algebraic methods in topology. Second term: the differential geometry of curves and surfaces in two- and three-dimensional Euclidean space. Third term: an introduction to differentiable manifolds. Transversality, differential forms, and further related topics.",
+        "offered": true,
+        "instructors": "Jang, Ryoo.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 2 or equivalent. We recommend Ma 5 a and Ma 108 a be taken previously or concurrently.",
+        "prereqs": [
+            "ma-108-abc",
+            "ma-2102",
+            "ma-5105-abc"
+        ]
+    },
+    "ma-110-abc": {
+        "id": "ma-110-abc",
+        "course_id": "Ma 110 abc",
+        "name": "Analysis",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "First term: integration theory and basic real analysis: topological spaces, Hilbert space basics, Fejer's theorem, measure theory, measures as functionals, product measures, L^p -spaces, Baire category, Hahn- Banach theorem, Alaoglu's theorem, Krein-Millman theorem, countably normed spaces, tempered distributions and the Fourier transform. Second term: basic complex analysis: analytic functions, conformal maps and fractional linear transformations, idea of Riemann surfaces, elementary and some special functions, infinite sums and products, entire and meromorphic functions, elliptic functions. Third term: harmonic analysis; operator theory. Harmonic analysis: maximal functions and the Hardy-Littlewood maximal theorem, the maximal and Birkoff ergodic theorems, harmonic and subharmonic functions, theory of H^p -spaces and boundary values of analytic functions. Operator theory: compact operators, trace and determinant on a Hilbert space, orthogonal polynomials, the spectral theorem for bounded operators. If time allows, the theory of commutative Banach algebras.",
+        "offered": true,
+        "instructors": "Hein\u00e4vaara, Hutchcroft, Isett.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 108 or previous exposure to metric space topology, Lebesgue measure.",
+        "prereqs": [
+            "ma-108-abc"
+        ]
+    },
+    "ma-111-abc": {
+        "id": "ma-111-abc",
+        "course_id": "Ma 111 abc",
+        "name": "Topics in Analysis",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course will discuss advanced topics in analysis, which vary from year to year. Topics from previous years include potential theory, bounded analytic functions in the unit disk, probabilistic and combinatorial methods in analysis, operator theory, C*-algebras, functional analysis. The third term will cover special functions: gamma functions, hypergeometric functions, beta/Selberg integrals and $q$-analogues. Time permitting: orthogonal polynomials, Painleve transcendents and/or elliptic analogues.\n Part a and part b not offered 2024-25.",
+        "offered": true,
+        "instructors": "Hein\u00e4vaara.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 110 or instructor's permission.",
+        "prereqs": [
+            "ma-110-abc"
+        ]
+    },
+    "ma-112-ab": {
+        "id": "ma-112-ab",
+        "course_id": "Ma 112 ab",
+        "name": "Statistics",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "The first term covers general methods of testing hypotheses and constructing confidence sets, including regression analysis, analysis of variance, and nonparametric methods. The second term covers permutation methods and the bootstrap, point estimation, Bayes methods, and multistage sampling.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 2 a probability and statistics or equivalent.",
+        "prereqs": [
+            "ma-2102"
+        ]
+    },
+    "ma-116-abc": {
+        "id": "ma-116-abc",
+        "course_id": "Ma 116 abc",
+        "name": "Mathematical Logic and Axiomatic Set Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "First term: Introduction to first-order logic and model theory. The Godel Completeness Theorem. Definability, elementary equivalence, complete theories, categoricity. The Skolem-Lowenheim Theorems. The back and forth method and Ehrenfeucht-Fraisse games. Fraisse theory. Elimination of quantifiers, applications to algebra and further related topics if time permits. Second and third terms: Axiomatic set theory, ordinals and cardinals, the Axiom of Choice and the Continuum Hypothesis. Models of set theory, independence and consistency results. Topics in descriptive set theory, combinatorial set theory and large cardinals.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "macs-117-abc": {
+        "id": "macs-117-abc",
+        "course_id": "Ma/CS 117 abc",
+        "name": "Computability Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "Various approaches to computability theory, e.g., Turing machines, recursive functions, Markov algorithms; proof of their equivalence. Church's thesis. Theory of computable functions and effectively enumerable sets. Decision problems. Undecidable problems: word problems for groups, solvability of Diophantine equations (Hilbert's 10th problem). Relations with mathematical logic and the G\u00f6del incompleteness theorems. Decidable problems, from number theory, algebra, combinatorics, and logic. Complexity of decision procedures. Inherently complex problems of exponential and superexponential difficulty. Feasible (polynomial time) computations. Polynomial deterministic vs. nondeterministic algorithms, NP-complete problems and the P = NP question.\n Part c not offered 2024-25.",
+        "offered": true,
+        "instructors": "Ervin.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-118": {
+        "id": "ma-118",
+        "course_id": "Ma 118",
+        "name": "Topics in Mathematical Logic: Geometrical Paradoxes",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course will provide an introduction to the striking paradoxes that challenge our geometrical intuition. Topics to be discussed include geometrical transformations, especially rigid motions; free groups; amenable groups; group actions; equidecomposability and invariant measures; Tarski's theorem; the role of the axiom of choice; old and new paradoxes, including the Banach-Tarski paradox, the Laczkovich paradox (solving the Tarski circle-squaring problem), and the Dougherty-Foreman paradox (the solution of the Marczewski problem).\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-120-abc": {
+        "id": "ma-120-abc",
+        "course_id": "Ma 120 abc",
+        "name": "Abstract Algebra",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "This course will discuss advanced topics in algebra. Among them: an introduction to commutative algebra and homological algebra, infinite Galois theory, Kummer theory, Brauer groups, semisimiple algebras, Weddburn theorems, Jacobson radicals, representation theory of finite groups.",
+        "offered": true,
+        "instructors": "Svoboda, Dimitrov, Tang.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent or instructor's permission.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-121-ab": {
+        "id": "ma-121-ab",
+        "course_id": "Ma 121 ab",
+        "name": "Combinatorial Analysis",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "A survey of modern combinatorial mathematics, starting with an introduction to graph theory and extremal problems. Flows in networks with combinatorial applications. Counting, recursion, and generating functions. Theory of partitions. (0, 1)-matrices. Partially ordered sets. Latin squares, finite geometries, combinatorial designs, and codes. Algebraic graph theory, graph embedding, and coloring.",
+        "offered": true,
+        "instructors": "Gherman, Babecki.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-123": {
+        "id": "ma-123",
+        "course_id": "Ma 123",
+        "name": "Classification of Simple Lie Algebras",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course is an introduction to Lie algebras and the classification of the simple Lie algebras over the complex numbers. This will include Lie's theorem, Engel's theorem, the solvable radical, and the Cartan Killing trace form. The classification of simple Lie algebras proceeds in terms of the associated reflection groups and a classification of them in terms of their Dynkin diagrams.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-124": {
+        "id": "ma-124",
+        "course_id": "Ma 124",
+        "name": "Elliptic Curves",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "The ubiquitous elliptic curves will be analyzed from elementary, geometric, and arithmetic points of view. Possible topics are the group structure via the chord-and-tangent method, the Nagel-Lutz procedure for finding division points, Mordell's theorem on the finite generation of rational points, points over finite fields through a special case treated by Gauss, Lenstra's factoring algorithm, integral points. Other topics may include diophantine approximation and complex multiplication.",
+        "offered": true,
+        "instructors": "Fu.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5 or equivalent.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-125": {
+        "id": "ma-125",
+        "course_id": "Ma 125",
+        "name": "Algebraic Curves",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "An elementary introduction to the theory of algebraic curves. Topics to be covered will include affine and projective curves, smoothness and singularities, function fields, linear series, and the Riemann-Roch theorem. Possible additional topics would include Riemann surfaces, branched coverings and monodromy, arithmetic questions, introduction to moduli of curves.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "eemacs-126-ab": {
+        "id": "eemacs-126-ab",
+        "course_id": "EE/Ma/CS 126 ab",
+        "name": "Information Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "This class treats Shannon's mathematical theory of communication and the tools used to derive and understand it. The class is organized around fundamental questions and their solutions, leading to central results such as Shannon's source coding, channel coding, and rate-distortion theorems. Quantities that arise en route to these solutions include entropy, relative entropy, and mutual information for discrete and continuous random variables. The course explores the calculation of fundamental communication limits like entropy rate, capacity, and rate-distortion functions under a variety of source and communication channel models (e.g., memoryless, Markov, ergodic, and Gaussian). The course begins with a foundational discussion of the simplest communication scenarios and then expands to include topics like universal source coding, the role of side information in source coding and communications, and the generalization of earlier results to network systems. Network information theory topics include multiuser data compression and communication over multiple access channels, broadcast channels, and multiterminal networks. Philosophical and practical implications of the theory are also explored. This course, when combined with EE 112, EE/Ma/CS/IDS 127, EE/CS 161, and EE/CS/IDS 167, should prepare the student for research in information theory, coding theory, wireless communications, and/or data compression.\n Part b not offered 2024-25",
+        "offered": true,
+        "instructors": "Effros.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 3.",
+        "prereqs": [
+            "ma-3103"
+        ]
+    },
+    "eemacsids-127": {
+        "id": "eemacsids-127",
+        "course_id": "EE/Ma/CS/IDS 127",
+        "name": "Error-Correcting Codes",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course develops from first principles the theory and practical implementation of the most important techniques for combating errors in digital transmission and storage systems. Topics include highly symmetric linear codes, such as Hamming, Reed-Muller, and Polar codes; algebraic block codes, such as Reed-Solomon and BCH codes, including a self-contained introduction to the theory of finite fields; and low-density parity-check codes. Students will become acquainted with encoding and decoding algorithms, design principles and performance evaluation of codes.\n not offered 2024-25.",
+        "offered": true,
+        "instructors": "Kostina.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: EE 55 or equivalent.",
+        "prereqs": [
+            "ee-55"
+        ]
+    },
+    "ma-128": {
+        "id": "ma-128",
+        "course_id": "Ma 128",
+        "name": "Homological Algebra",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course introduces standard concepts and techniques in homological algebra. Topics will include Abelian and additive categories; Chain complexes, homotopies and the homotopy category; Derived functors; Yoneda extension and its ring structure; Homological dimension and Koszul complexe; Spectral sequences; Triangulated categories, and the derived category.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Math 120 abc or instructor's permission.",
+        "prereqs": []
+    },
+    "ma-130-abc": {
+        "id": "ma-130-abc",
+        "course_id": "Ma 130 abc",
+        "name": "Algebraic Geometry",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Plane curves, rational functions, affine and projective varieties, products, local properties, birational maps, divisors, differentials, intersection numbers, schemes, sheaves, general varieties, vector bundles, coherent sheaves, curves and surfaces.",
+        "offered": true,
+        "instructors": "Xu.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 120 (or Ma 5 plus additional reading).",
+        "prereqs": [
+            "ma-120-abc",
+            "ma-5105-abc"
+        ]
+    },
+    "ma-132-abc": {
+        "id": "ma-132-abc",
+        "course_id": "Ma 132 abc",
+        "name": "Topics in Algebraic Geometry",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This course will cover advanced topics in algebraic geometry that will vary from year to year. Topics will be listed on the math option website prior to the start of classes. Previous topics have included geometric invariant theory, moduli of curves, logarithmic geometry, Hodge theory, and toric varieties. This course can be repeated for credit.\n Part a and part b not offered 2024-25.",
+        "offered": true,
+        "instructors": "El-Maazouz.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 130 or instructor's permission.",
+        "prereqs": [
+            "ma-130-abc"
+        ]
+    },
+    "ma-135-ab": {
+        "id": "ma-135-ab",
+        "course_id": "Ma 135 ab",
+        "name": "Arithmetic Geometry",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "The course deals with aspects of algebraic geometry that have been found useful for number theoretic applications. Topics will be chosen from the following: general cohomology theories (\u00e9tale cohomology, flat cohomology, motivic cohomology, or p-adic Hodge theory), curves and Abelian varieties over arithmetic schemes, moduli spaces, Diophantine geometry, algebraic cycles.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 130.",
+        "prereqs": [
+            "ma-130-abc"
+        ]
+    },
+    "eemacsids-136": {
+        "id": "eemacsids-136",
+        "course_id": "EE/Ma/CS/IDS 136",
+        "name": "Information Theory and Applications",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "This class introduces information measures such as entropy, information divergence, mutual information, information density, and establishes the fundamental importance of those measures in data compression, statistical inference, and error control. The course does not require a prior exposure to information theory; it is complementary to EE 126a.",
+        "offered": true,
+        "instructors": "Kostina.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: EE 55 or equivalent.",
+        "prereqs": [
+            "ee-55"
+        ]
+    },
+    "maacmids-140-abc": {
+        "id": "maacmids-140-abc",
+        "course_id": "Ma/ACM/IDS 140 abc",
+        "name": "Probability",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "This course begins with an overview of measure theory, followed by topics that include random walks, the strong law of large numbers, the central limit theorem, martingales, Markov chains, characteristic functions, Poisson processes, and Brownian motion. Towards the end, some further topics may be covered, such as stochastic calculus, stochastic differential equations, Gaussian processes, random graphs, Markov chain mixing, random matrix theory, and interacting particle systems.",
+        "offered": true,
+        "instructors": "Tamuz, El-Maazouz, Zhang.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: For 140 a, Ma 108 b is strongly recommended.",
+        "prereqs": [
+            "ma-108-abc"
+        ]
+    },
+    "maacm-142-ab": {
+        "id": "maacm-142-ab",
+        "course_id": "Ma/ACM 142 ab",
+        "name": "Ordinary and Partial Differential Equations",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "The mathematical theory of ordinary and partial differential equations, including a discussion of elliptic regularity, maximal principles, solubility of equations. The method of characteristics.\n Part b not offered 2024-25.",
+        "offered": true,
+        "instructors": "Looi.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 108; Ma 109 is desirable.",
+        "prereqs": [
+            "ma-108-abc",
+            "ma-109-abc"
+        ]
+    },
+    "ma-145-abc": {
+        "id": "ma-145-abc",
+        "course_id": "Ma 145 abc",
+        "name": "Topics in Representation Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "second term",
+        "description": "This course will discuss the study of representations of a group (or related algebra) by linear transformations of a vector space. Topics will vary from year to year, and may include modular representation theory (representations of finite groups in finite characteristic), complex representations of specific families of groups (esp. the symmetric group) and unitary representations (and structure theory) of compact groups.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-146-ab": {
+        "id": "ma-146-ab",
+        "course_id": "Ma 146 ab",
+        "name": "Introduction to Knot Theory and Quantum Topology",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "Part a offers an introduction to knot theory: the problem of classification of knots, different knot types, basic (classical) invariants, and some elements of knot concordance. Part b moves from classical to quantum invariants: the Jones polynomial, colored Jones polynomial, and then more general quantum group invariants of knots and 3-manifolds. Part b also includes introduction to R-matrices, the Yang-Baxter equation, the Drinfeld-Kohno theorem and, if time permits, elements of categorification.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 109 or equivalent.",
+        "prereqs": [
+            "ma-109-abc"
+        ]
+    },
+    "ma-147-abc": {
+        "id": "ma-147-abc",
+        "course_id": "Ma 147 abc",
+        "name": "Dynamical Systems",
+        "units": "9 units (3-0-6)",
+        "terms": "second, third terms",
+        "description": "First term: real dynamics and ergodic theory. Second term: Hamiltonian dynamics. Third term: complex dynamics.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 108, Ma 109, or equivalent.",
+        "prereqs": [
+            "ma-108-abc",
+            "ma-109-abc"
+        ]
+    },
+    "ma-148-ab": {
+        "id": "ma-148-ab",
+        "course_id": "Ma 148 ab",
+        "name": "Topics in Mathematical Physics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second terms",
+        "description": "This course covers a range of topics in mathematical physics. The content will vary from year to year. Topics covered will include some of the following: Lagrangian and Hamiltonian formalism of classical mechanics; mathematical aspects of quantum mechanics: Schroedinger equation, spectral theory of unbounded operators, representation theoretic aspects; partial differential equations of mathematical physics (wave, heat, Maxwell, etc.); rigorous results in classical and/or quantum statistical mechanics; mathematical aspects of quantum field theory; general relativity for mathematicians. Geometric theory of quantum information and quantum entanglement based on information geometry and entropy.\n Part a not offered 2024-25.",
+        "offered": true,
+        "instructors": "Marcolli.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-151-abc": {
+        "id": "ma-151-abc",
+        "course_id": "Ma 151 abc",
+        "name": "Geometry and Topology",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Part a: Homology Theory. CW complexes, homology and calculation of homology groups, exact sequences, cohomology rings, Poincare duality. Part b: Homotopy Theory and K-theory. Fibrations, higher homotopy groups, and exact sequences of fibrations. Fiber bundles, Eilenberg-MacLane spaces, classifying spaces. K-theory, generalized cohomology theory, Bott periodicity. Part c: Basic Riemannian geometry: geometry of Riemannian manifolds, connections, curvature, Bianchi identities, completeness, geodesics, exponential map, Gauss's lemma, Jacobi fields, comparison theorems, relation between curvature and topology.",
+        "offered": true,
+        "instructors": "Chen, Ni, Song.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 109 abc or equivalent.",
+        "prereqs": [
+            "ma-109-abc"
+        ]
+    },
+    "ma-157-abc": {
+        "id": "ma-157-abc",
+        "course_id": "Ma 157 abc",
+        "name": "Topics in Geometry and Topology",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Part a: Characteristic classes. Stiefel--Whitney classes, Chern classes, Pontryagin classes, cobordism theory, Chern--Weil theory. Part b and c: Basic topics may vary from year to year and may include elements of Morse theory and the calculus of variations, locally symmetric spaces, special geometry, comparison theorems, relation between curvature and topology, metric functionals and flows, geometry in low dimensions.",
+        "offered": true,
+        "instructors": "Chen, Jang, Ryoo.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 151 or equivalent, or instructor's permission.",
+        "prereqs": [
+            "ma-151-abc"
+        ]
+    },
+    "ma-160-abc": {
+        "id": "ma-160-abc",
+        "course_id": "Ma 160 abc",
+        "name": "Number Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "In this course, the basic structures and results of algebraic number theory will be systematically introduced. Topics covered will include the theory of ideals/divisors in Dedekind domains, Dirichlet unit theorem and the class group, p-adic fields, ramification, Abelian extensions of local and global fields.",
+        "offered": true,
+        "instructors": "Fu, Flach.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 5.",
+        "prereqs": [
+            "ma-5105-abc"
+        ]
+    },
+    "ma-162-ab": {
+        "id": "ma-162-ab",
+        "course_id": "Ma 162 ab",
+        "name": "Topics in Number Theory",
+        "units": "9 units (3-0-6)",
+        "terms": "third term",
+        "description": "The course will discuss in detail some advanced topics in number theory, selected from the following: Galois representations, elliptic curves, modular forms, L-functions, special values, automorphic representations, p-adic theories, theta functions, regulators.\n Not offered 2024-25.",
+        "offered": false,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "Prerequisites: Ma 160.",
+        "prereqs": [
+            "ma-160-abc"
+        ]
+    },
+    "ma-191-abc": {
+        "id": "ma-191-abc",
+        "course_id": "Ma 191 abc",
+        "name": "Selected Topics in Mathematics",
+        "units": "9 units (3-0-6)",
+        "terms": "first, second, third terms",
+        "description": "Each term we expect to give between 0 and 6 (most often 2-3) topics courses in advanced mathematics covering an area of current research interest. These courses will be given as sections of 191. Students may register for this course multiple times even for multiple sections in a single term. The topics and instructors for each term and course descriptions will be listed on the math option website each term prior to the start of registration for that term.",
+        "offered": true,
+        "instructors": "Angelopoulos, Isett, Ryoo, Aluffi, Caniato, Chen, Reeves, Song.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ssma-214": {
+        "id": "ssma-214",
+        "course_id": "SS/Ma 214",
+        "name": "Mathematical Finance",
+        "units": "9 units (3-0-6)",
+        "terms": "first term",
+        "description": "A course on pricing financial derivatives, risk management, optimal portfolio selection, financial markets equilibria, and optimal compensation of managers using mathematical models. Students will be introduced to methods of Stochastic, Ito Calculus for models driven by Brownian motion.",
+        "offered": true,
+        "instructors": "Cvitanic.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-290": {
+        "id": "ma-290",
+        "course_id": "Ma 290",
+        "name": "Reading",
+        "units": "Hours and units by arrangement",
+        "terms": "",
+        "description": "Occasionally, advanced work is given through a reading course under the direction of an instructor.",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    },
+    "ma-390": {
+        "id": "ma-390",
+        "course_id": "Ma 390",
+        "name": "Research",
+        "units": "Units by arrangement",
+        "terms": "",
+        "description": "",
+        "offered": true,
+        "instructors": "No instructors provided.",
+        "link": "https://pma.caltech.edu/courses/department/ma",
+        "prereq_text": "",
+        "prereqs": []
+    }
+}
