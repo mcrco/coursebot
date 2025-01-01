@@ -34,7 +34,7 @@ class CourseRAG:
             """Retrieve information related to a query."""
             retrieved_docs = self.vector_store.similarity_search(query, k=8)
             serialized = "\n\n".join(
-                f"Source: {doc.metadata}\nContent: {doc.page_content}"
+                f"Source: {doc.metadata['source']}\nContent: {doc.page_content}"
                 for doc in retrieved_docs
             )
             return serialized, retrieved_docs
@@ -60,8 +60,9 @@ class CourseRAG:
                 "You are an assistant that helps with course selection at Caltech. "
                 "Use the following pieces of retrieved context about Caltech courses to "
                 "answer the question. If you don't know the answer, say that you don't know. "
-                "Do not answer questions that are irrelevant to Caltech courses, unless"
-                "it is tangentially related to topics relating to courses that the user"
+                "Cite the source of any information from the context you use in your response. "
+                "Do not answer questions that are irrelevant to Caltech courses, unless "
+                "it is tangentially related to topics relating to courses that the user "
                 "is inquiring about."
                 f"{docs_content}"
             )
@@ -94,3 +95,8 @@ class CourseRAG:
         state = {"messages": [{"role": "user", "content": input_message}]}
         final_state = self.graph.invoke(state)
         return final_state["messages"][-1].content
+
+    def complete(self, messages):
+        state = {"messages": messages}
+        final_state = self.graph.invoke(state)
+        return final_state["messages"][-1]
