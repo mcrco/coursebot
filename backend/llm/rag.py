@@ -12,7 +12,7 @@ import os
 
 class CourseRAG:
     def __init__(
-        self, model_code="gpt-4o-mini", embedding_model="text-embedding-3-small"
+        self, model_code="deepseek-chat", embedding_model="text-embedding-3-small"
     ):
         if not load_dotenv():
             print("Unable to get environment variables via pydotenv.")
@@ -20,7 +20,12 @@ class CourseRAG:
         pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
         self.index = pc.Index("caltech-courses")
 
-        self.llm = ChatOpenAI(model=model_code, temperature=1.0)
+        self.llm = ChatOpenAI(
+            model=model_code,
+            openai_api_key=os.environ["DEEPSEEK_API_KEY"],
+            openai_api_base="https://api.deepseek.com",
+            temperature=1.0,
+        )
         self.embeddings = OpenAIEmbeddings(model=embedding_model)
         self.vector_store = PineconeVectorStore(
             index=self.index, embedding=self.embeddings
@@ -32,7 +37,7 @@ class CourseRAG:
         @tool(response_format="content_and_artifact")
         def retrieve(query: str):
             """Retrieve information related to a query."""
-            retrieved_docs = self.vector_store.similarity_search(query, k=8)
+            retrieved_docs = self.vector_store.similarity_search(query, k=12)
             serialized = "\n\n".join(
                 f"Source: {doc.metadata['source']}\nContent: {doc.page_content}"
                 for doc in retrieved_docs
