@@ -12,11 +12,9 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'http://127.0.0.1:5000',
+                target: 'https://coursebot-backend.onrender.com',
                 changeOrigin: true,
             },
         },
-        origin: 'http://127.0.0.1',
-        port: 5173
     },
 })
