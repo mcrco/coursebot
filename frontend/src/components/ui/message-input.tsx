@@ -127,7 +127,7 @@ export function MessageInput({
         onPaste={onPaste}
         onKeyDown={onKeyDown}
         className={cn(
-          "w-full grow resize-none rounded-xl border border-slate-200 bg-white p-3 pr-24 text-sm ring-offset-white transition-[border] placeholder:text-slate-500 focus-visible:border-slate-900 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:bg-slate-950 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:border-slate-50",
+          "w-full grow resize-none rounded-xl border border-input bg-background p-3 pr-24 text-sm ring-offset-background transition-[border] placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
           showFileList && "pb-16",
           className
         )}
@@ -218,7 +218,7 @@ function FileUploadOverlay({ isDragging }: FileUploadOverlayProps) {
     <AnimatePresence>
       {isDragging && (
         <motion.div
-          className="pointer-events-none absolute inset-0 flex items-center justify-center space-x-2 rounded-xl border border-slate-200 border-dashed bg-white text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-400"
+          className="pointer-events-none absolute inset-0 flex items-center justify-center space-x-2 rounded-xl border border-dashed border-border bg-background text-sm text-muted-foreground"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

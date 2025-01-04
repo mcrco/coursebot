@@ -10,8 +10,8 @@ const chatBubbleVariants = cva(
   {
     variants: {
       isUser: {
-        true: "bg-slate-900 text-slate-50 dark:bg-slate-50 dark:text-slate-900",
-        false: "bg-slate-100 text-slate-950 dark:bg-slate-800 dark:text-slate-50",
+        true: "bg-primary text-primary-foreground",
+        false: "bg-muted text-foreground",
       },
       animation: {
         none: "",
@@ -109,7 +109,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
         </div>
 
         {role === "assistant" && actions ? (
-          <div className="absolute -bottom-4 right-2 flex space-x-1 rounded-lg border border-slate-200 bg-white p-1 opacity-0 transition-opacity group-hover/message:opacity-100 text-slate-950 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-50">
+          <div className="absolute -bottom-4 right-2 flex space-x-1 rounded-lg border bg-background p-1 opacity-0 transition-opacity group-hover/message:opacity-100 text-foreground">
             {actions}
           </div>
         ) : null}

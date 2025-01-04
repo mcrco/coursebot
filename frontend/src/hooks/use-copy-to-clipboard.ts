@@ -28,7 +28,7 @@ export function useCopyToClipboard({
         }, 2000)
       })
       .catch(() => {
-        toast.error("Failed to copy clipboard.")
+        toast.error("Failed to copy to clipboard.")
       })
   }, [text, copyMessage])
 
