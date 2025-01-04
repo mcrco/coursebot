@@ -5,7 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "langchain-google-genai>=2.0.7",
     "langchain>=0.3.13",
     "python-dotenv>=1.0.1",
     "langgraph>=0.2.60",
@@ -15,4 +14,5 @@ dependencies = [
     "pinecone[grpc]>=5.4.2",
     "langchain-pinecone>=0.0.1",
     "flask-cors>=5.0.0",
+    "gunicorn>=23.0.0",
 ]
