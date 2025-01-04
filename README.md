@@ -1,4 +1,4 @@
-- Try it out: [https://caltech-coursebot.onrender.com](https://caltech-coursebot.onrender.com)
+Try it out: [https://caltech-coursebot.onrender.com](https://caltech-coursebot.onrender.com)
 
 # Caltech Course Bot Overview
 - Deepseek v3
@@ -7,3 +7,4 @@
 # Demo
 ![demo picture](https://github.com/mcrco/coursebot/blob/main/demo/coursebot-home.png?raw=true)
 ![demo picture](https://github.com/mcrco/coursebot/blob/main/demo/coursebot-philo.png?raw=true)
+![demo picture](https://github.com/mcrco/coursebot/blob/main/demo/coursebot-end.png?raw=true)
