@@ -5,6 +5,8 @@ import { PromptSuggestions } from "./ui/prompt-suggestions";
 import { MessageList } from "./ui/message-list";
 import { MessageInput } from "./ui/message-input";
 
+const API_URL_BASE = import.meta.env.VITE_API_BASE_URL
+
 export const ChatWindow = () => {
     const [messages, setMessages] = useState<Array<Message>>([]);
     const [input, setInput] = useState("");
@@ -20,14 +22,19 @@ export const ChatWindow = () => {
             })), { role: queryMessage.role, content: queryMessage.content }]
         };
 
-        fetch('/api/query', {
+        fetch(API_URL_BASE + '/api/query', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(payload),
         })
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error. Status: ${response.status}`);
+                }
+                return response.json()
+            })
             .then((data) => {
                 setMessages([...messages, queryMessage, data.response]);
                 setLoading(false);
