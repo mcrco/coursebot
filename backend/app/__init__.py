@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
 from app.routes import api
+from dotenv import load_dotenv
+import os
 
 
 def create_app():
@@ -9,6 +11,8 @@ def create_app():
     """
     app = Flask(__name__)
     app.register_blueprint(api, url_prefix="/api")
-    CORS(app)
+    if not load_dotenv():
+        print("Could not load .env")
+    CORS(app, origins=[os.environ["ALLOWED_ORIGIN"]])
 
     return app
