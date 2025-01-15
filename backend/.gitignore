@@ -1,3 +1,4 @@
+json/
 .DS_STORE
 __pycache__/
 *.py[cod]

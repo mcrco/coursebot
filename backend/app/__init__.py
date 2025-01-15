@@ -13,6 +13,9 @@ def create_app():
     app.register_blueprint(api, url_prefix="/api")
     if not load_dotenv():
         print("Could not load .env")
+    print("allowed origin:", os.environ["ALLOWED_ORIGIN"])
+    app.config["CORS_HEADERS"] = "Content-Type"
+
     CORS(app, origins=[os.environ["ALLOWED_ORIGIN"]])
 
     return app

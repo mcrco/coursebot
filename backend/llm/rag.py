@@ -105,3 +105,11 @@ class CourseRAG:
         state = {"messages": messages}
         final_state = self.graph.invoke(state)
         return final_state["messages"][-1]
+
+    def stream_complete(self, messages):
+        state = {"messages": messages}
+        for chunk in self.graph.stream(state, stream_mode=["messages"]):
+            _, (message, metadata) = chunk
+            if metadata["langgraph_node"] == "generate":
+                yield message
+

@@ -14,7 +14,7 @@ export const ChatWindow = () => {
 
     const isEmpty = messages.length === 0;
 
-    const getCompletion = (queryMessage: Message) => {
+    const getCompletion = async (queryMessage: Message) => {
         const payload = {
             'messages': [...messages.map(message => ({
                 role: message.role,
@@ -22,23 +22,42 @@ export const ChatWindow = () => {
             })), { role: queryMessage.role, content: queryMessage.content }]
         };
 
-        fetch(API_URL_BASE + '/api/query', {
+        const response = await fetch(API_URL_BASE + '/api/query', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(payload),
-        })
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error. Status: ${response.status}`);
-                }
-                return response.json()
-            })
-            .then((data) => {
-                setMessages([...messages, queryMessage, data.response]);
-                setLoading(false);
-            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const reader = response.body?.getReader();
+        if (!reader) {
+            throw new Error('No reader available');
+        }
+
+        const decoder = new TextDecoder();
+        let content = "";
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value, { stream: true });
+            content += chunk;
+
+            const responseMessage = {
+                id: (messages.length + 1).toString(),
+                role: 'assistant',
+                content: content
+            }
+
+            setMessages([...messages, queryMessage, responseMessage])
+        }
+
+        setLoading(false);
     }
 
     const appendMessage = (message: { role: string, content: string }) => {
