@@ -46,6 +46,7 @@ export const ChatWindow = () => {
             if (done) break;
 
             const chunk = decoder.decode(value, { stream: true });
+            // console.log(chunk)
             content += chunk;
 
             const responseMessage = {

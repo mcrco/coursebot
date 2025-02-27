@@ -1,5 +1,7 @@
 from langchain_core.tools import tool
+
 from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import OpenAIEmbeddings
 from langchain_pinecone import Pinecone as PineconeVectorStore
 from langchain_core.messages import SystemMessage
@@ -20,12 +22,24 @@ class CourseRAG:
         pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
         self.index = pc.Index("caltech-courses")
 
-        self.llm = ChatOpenAI(
-            model=model_code,
-            openai_api_key=os.environ["DEEPSEEK_API_KEY"],
-            openai_api_base="https://api.deepseek.com",
-            temperature=1.0,
-        )
+        if "deepseek" in model_code:
+            self.llm = ChatOpenAI(
+                model=model_code,
+                openai_api_key=os.environ["DEEPSEEK_API_KEY"],
+                openai_api_base="https://api.deepseek.com",
+                temperature=1.0,
+            )
+        elif "gemini" in model_code:
+            self.llm = ChatGoogleGenerativeAI(
+                model=model_code,
+                temperature=1.0,
+                max_tokens=None,
+                timeout=None,
+                max_retries=2,
+            )
+        else:
+            raise Exception("invalid llm model code")
+
         self.embeddings = OpenAIEmbeddings(model=embedding_model)
         self.vector_store = PineconeVectorStore(
             index=self.index, embedding=self.embeddings
@@ -37,7 +51,7 @@ class CourseRAG:
         @tool(response_format="content_and_artifact")
         def retrieve(query: str):
             """Retrieve information related to a query."""
-            retrieved_docs = self.vector_store.similarity_search(query, k=16)
+            retrieved_docs = self.vector_store.similarity_search(query, k=32)
             serialized = "\n\n".join(
                 f"Source: {doc.metadata['source']}\nContent: {doc.page_content}"
                 for doc in retrieved_docs
@@ -63,7 +77,7 @@ class CourseRAG:
             )
             system_message_content = (
                 "You are an assistant that helps with course selection at Caltech. "
-                "Use the following pieces of retrieved context about Caltech courses to "
+                "Use the following contextual information about Caltech courses to "
                 "answer the question. If you don't know the answer, say that you don't know. "
                 "Cite the source of any information from the context you use in your response. "
                 "Do not answer questions that are irrelevant to Caltech courses, unless "
@@ -110,6 +124,6 @@ class CourseRAG:
         state = {"messages": messages}
         for chunk in self.graph.stream(state, stream_mode=["messages"]):
             _, (message, metadata) = chunk
+            # print(message, metadata)
             if metadata["langgraph_node"] == "generate":
                 yield message
-

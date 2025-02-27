@@ -3,7 +3,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 from llm.rag import CourseRAG
 
 api = Blueprint("api", __name__)
-rag = CourseRAG()
+rag = CourseRAG(model_code="gemini-2.0-flash")
 
 
 @api.route("/query", methods=["POST"])
@@ -19,7 +19,7 @@ def query():
 
     def generate():
         for message in response_generator:
+            # print(message.content)
             yield message.content
 
     return Response(generate(), mimetype="text/event-stream")
-
