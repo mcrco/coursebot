@@ -76,14 +76,19 @@ class CourseRAG:
                 for doc in recent_tool_messages
             )
             system_message_content = (
-                "You are an assistant that helps with course selection at Caltech. "
-                "Use the following contextual information about Caltech courses to "
-                "answer the question. If you don't know the answer, say that you don't know. "
-                "Cite the source of any information from the context you use in your response. "
-                "Do not answer questions that are irrelevant to Caltech courses, unless "
-                "it is tangentially related to topics relating to courses that the user "
-                "is inquiring about."
-                f"{docs_content}"
+                """
+                You are an assistant that helps with course selection at
+                Caltech. Use the following contextual information about Caltech
+                courses to answer the question. If you don't know the answer,
+                use the retrieve tool to search for information about the
+                caltech course catalog. If you still don't know the answer, say
+                that you don't know. Cite the source of any information from the
+                context you use in your response. Do not answer questions that
+                are irrelevant to Caltech courses, unless it is tangentially
+                related to topics relating to courses that the user is inquiring
+                about.
+                """
+                + f"{docs_content}"
             )
 
             conversation_messages = [
@@ -124,6 +129,6 @@ class CourseRAG:
         state = {"messages": messages}
         for chunk in self.graph.stream(state, stream_mode=["messages"]):
             _, (message, metadata) = chunk
-            # print(message, metadata)
-            if metadata["langgraph_node"] == "generate":
+            print(message, metadata)
+            if metadata["langgraph_node"] in ["query_or_respond", "generate"]:
                 yield message
