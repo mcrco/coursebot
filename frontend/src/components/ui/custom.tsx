@@ -49,22 +49,19 @@ const MessageList: React.FC<{
                         className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                     >
                         <div
-                            className={`flex gap-3 w-full ${
-                                message.role === "user" ? "w-auto flex-row-reverse" : "flex-row"
-                            }`}
+                            className={`flex gap-3 w-full ${message.role === "user" ? "w-auto flex-row-reverse" : "flex-row"
+                                }`}
                         >
-                            <div className="w-full">
-                                <Card className={`${message.role === "user" ? "bg-primary text-primary-foreground" : "border-none w-full"}`}>
-                                    <CardContent className={`${message.role === "user" ? "p-4" : "p-0"}`}>
-                                        <ReactMarkdown 
-                                            remarkPlugins={[remarkGfm]}
-                                            className="prose dark:prose-invert max-w-none"
-                                        >
-                                            {message.content}
-                                        </ReactMarkdown>
-                                    </CardContent>
-                                </Card>
-                            </div>
+                            <Card className={`${message.role === "user" ? "w-auto rounded-lg border" : "border-none w-full"} `}>
+                                <CardContent className={`markdown ${message.role === "user" ? "p-4 pb-0 w-auto" : "p-0"}`}>
+                                    <ReactMarkdown
+                                        remarkPlugins={[remarkGfm]}
+                                        className="prose dark:prose-invert max-w-none"
+                                    >
+                                        {message.content}
+                                    </ReactMarkdown>
+                                </CardContent>
+                            </Card>
                         </div>
                     </div>
                 ))}
@@ -123,18 +120,18 @@ const PromptSuggestions: React.FC<{
     suggestions: string[];
     append: (message: { role: string; content: string }) => void;
 }> = ({ label, suggestions, append }) => {
-    
+
     const [isMobile, setMobile] = useState(window.innerWidth < 768);
 
     useEffect(() => {
         const handleResize = () => {
             setMobile(window.innerWidth < 768);
         };
-    
+
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-    
+
     if (isMobile) {
         return (
             <div className="space-y-4 p-6">
@@ -154,7 +151,7 @@ const PromptSuggestions: React.FC<{
             </div>
         );
     }
-    
+
     return (
         <div className="space-y-4 p-6">
             <p className="text-center text-muted-foreground">{label}</p>
