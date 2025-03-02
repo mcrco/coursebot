@@ -129,6 +129,5 @@ class CourseRAG:
         state = {"messages": messages}
         for chunk in self.graph.stream(state, stream_mode=["messages"]):
             _, (message, metadata) = chunk
-            print(message, metadata)
             if metadata["langgraph_node"] in ["query_or_respond", "generate"]:
                 yield message
