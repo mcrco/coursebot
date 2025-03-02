@@ -79,7 +79,7 @@ const ChatForm: React.FC<{
     isPending: boolean;
     handleSubmit: (e: React.FormEvent) => void;
     children: () => React.ReactNode;
-}> = ({ className, isPending, handleSubmit, children }) => {
+}> = ({ className, handleSubmit, children }) => {
     return (
         <div className={`p-4 ${className}`}>
             <div className="p-2 rounded border">
