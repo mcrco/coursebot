@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import { Send, Loader2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -54,19 +52,16 @@ const MessageList: React.FC<{
                         className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                     >
                         <div
-                            className={`flex gap-3 max-w-4xl ${
-                                message.role === "user" ? "flex-row-reverse" : "flex-row"
-                            }`}
+                            className={`flex gap-3 max-w-xs md:max-w-md lg:max-w-lg ${message.role === "user" ? "flex-row-reverse" : "flex-row"
+                                }`}
                         >
-                            <div className="w-full">
+                            <Avatar className={`h-8 w-8 ${message.role === "assistant" ? "bg-primary" : "bg-secondary"}`}>
+                                {message.role === "assistant" ? "A" : "U"}
+                            </Avatar>
+                            <div>
                                 <Card className={`${message.role === "user" ? "bg-primary text-primary-foreground" : ""}`}>
-                                    <CardContent className={`p-3 ${message.role === "assistant" ? "p-6" : ""} prose prose-invert max-w-none`}>
-                                        <ReactMarkdown 
-                                            remarkPlugins={[remarkGfm]}
-                                            className="prose prose-invert max-w-none"
-                                        >
-                                            {message.content}
-                                        </ReactMarkdown>
+                                    <CardContent className="p-3">
+                                        <p>{message.content}</p>
                                     </CardContent>
                                 </Card>
                             </div>
