@@ -1,19 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Send, Loader2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Avatar } from "@/components/ui/avatar";
 
-// Define Message type to match your existing code
 type Message = {
     id: string;
     role: string;
     content: string;
 };
 
-// ChatContainer component
 const ChatContainer: React.FC<{
     className?: string;
     children: React.ReactNode;
@@ -25,7 +24,6 @@ const ChatContainer: React.FC<{
     );
 };
 
-// ChatMessages component
 const ChatMessages: React.FC<{
     messages: Message[];
     children: React.ReactNode;
@@ -33,7 +31,6 @@ const ChatMessages: React.FC<{
     return <div className="flex-1 overflow-hidden">{children}</div>;
 };
 
-// MessageList component
 const MessageList: React.FC<{
     messages: Message[];
 }> = ({ messages }) => {
@@ -45,23 +42,26 @@ const MessageList: React.FC<{
 
     return (
         <ScrollArea className="h-full p-4">
-            <div className="space-y-4">
+            <div className="space-y-6 mx-auto text-sm sm:text-sm md:text-base lg:text-md">
                 {messages.map((message) => (
                     <div
                         key={message.id}
                         className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                     >
                         <div
-                            className={`flex gap-3 max-w-xs md:max-w-md lg:max-w-lg ${message.role === "user" ? "flex-row-reverse" : "flex-row"
-                                }`}
+                            className={`flex gap-3 w-full ${
+                                message.role === "user" ? "w-auto flex-row-reverse" : "flex-row"
+                            }`}
                         >
-                            <Avatar className={`h-8 w-8 ${message.role === "assistant" ? "bg-primary" : "bg-secondary"}`}>
-                                {message.role === "assistant" ? "A" : "U"}
-                            </Avatar>
-                            <div>
-                                <Card className={`${message.role === "user" ? "bg-primary text-primary-foreground" : ""}`}>
-                                    <CardContent className="p-3">
-                                        <p>{message.content}</p>
+                            <div className="w-full">
+                                <Card className={`${message.role === "user" ? "bg-primary text-primary-foreground" : "border-none w-full"}`}>
+                                    <CardContent className={`${message.role === "user" ? "p-4" : "p-0"}`}>
+                                        <ReactMarkdown 
+                                            remarkPlugins={[remarkGfm]}
+                                            className="prose dark:prose-invert max-w-none"
+                                        >
+                                            {message.content}
+                                        </ReactMarkdown>
                                     </CardContent>
                                 </Card>
                             </div>
@@ -74,7 +74,6 @@ const MessageList: React.FC<{
     );
 };
 
-// ChatForm component
 const ChatForm: React.FC<{
     className?: string;
     isPending: boolean;
@@ -82,15 +81,16 @@ const ChatForm: React.FC<{
     children: () => React.ReactNode;
 }> = ({ className, isPending, handleSubmit, children }) => {
     return (
-        <div className={`p-3 border-t ${className}`}>
-            <form onSubmit={handleSubmit} className="flex gap-2">
-                {children()}
-            </form>
+        <div className={`p-4 ${className}`}>
+            <div className="p-2 rounded border">
+                <form onSubmit={handleSubmit} className="flex gap-2">
+                    {children()}
+                </form>
+            </div>
         </div>
     );
 };
 
-// MessageInput component
 const MessageInput: React.FC<{
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -103,7 +103,7 @@ const MessageInput: React.FC<{
                 placeholder="Type your message..."
                 value={value}
                 onChange={onChange}
-                className="flex-1"
+                className="flex-1 border-none focus-visible:ring-0"
                 disabled={isGenerating}
             />
             <Button type="submit" size="icon" disabled={isGenerating || !value.trim()}>
@@ -118,21 +118,52 @@ const MessageInput: React.FC<{
     );
 };
 
-// PromptSuggestions component
 const PromptSuggestions: React.FC<{
     label: string;
     suggestions: string[];
     append: (message: { role: string; content: string }) => void;
 }> = ({ label, suggestions, append }) => {
+    
+    const [isMobile, setMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setMobile(window.innerWidth < 768);
+        };
+    
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    
+    if (isMobile) {
+        return (
+            <div className="space-y-4 p-6">
+                <p className="text-center text-muted-foreground">{label}</p>
+                <div className="flex flex-col justify-center gap-4">
+                    {suggestions.map((suggestion, index) => (
+                        <Button
+                            key={index}
+                            variant="outline"
+                            className="text-center h-auto p-4 flex items-center whitespace-normal"
+                            onClick={() => append({ role: "user", content: suggestion })}
+                        >
+                            {suggestion}
+                        </Button>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+    
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 p-6">
             <p className="text-center text-muted-foreground">{label}</p>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-row justify-center gap-4">
                 {suggestions.map((suggestion, index) => (
                     <Button
                         key={index}
                         variant="outline"
-                        className="text-left h-auto whitespace-normal p-4"
+                        className="text-left h-auto p-4 flex items-center justify-center text-center max-w-1/10"
                         onClick={() => append({ role: "user", content: suggestion })}
                     >
                         {suggestion}
@@ -143,131 +174,4 @@ const PromptSuggestions: React.FC<{
     );
 };
 
-export const ChatWindow = () => {
-    const [messages, setMessages] = useState<Array<Message>>([]);
-    const [input, setInput] = useState("");
-    const [isLoading, setLoading] = useState(false);
-
-    const API_URL_BASE = import.meta.env.VITE_API_BASE_URL;
-    const isEmpty = messages.length === 0;
-
-    const getCompletion = async (queryMessage: Message) => {
-        const payload = {
-            messages: [
-                ...messages.map((message) => ({
-                    role: message.role,
-                    content: message.content,
-                })),
-                { role: queryMessage.role, content: queryMessage.content },
-            ],
-        };
-
-        const response = await fetch(API_URL_BASE + "/api/query", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload),
-        });
-
-        if (!response.ok) {
-            throw new Error("Network response was not ok");
-        }
-
-        const reader = response.body?.getReader();
-        if (!reader) {
-            throw new Error("No reader available");
-        }
-
-        const decoder = new TextDecoder();
-        let content = "";
-        while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-
-            const chunk = decoder.decode(value, { stream: true });
-            console.log(chunk);
-            content += chunk;
-
-            const responseMessage = {
-                id: (messages.length + 1).toString(),
-                role: "assistant",
-                content: content,
-            };
-
-            setMessages([...messages, queryMessage, responseMessage]);
-        }
-
-        setLoading(false);
-    };
-
-    const appendMessage = (message: { role: string; content: string }) => {
-        const newMessage = {
-            id: messages.length.toString(),
-            role: message.role,
-            content: message.content,
-        };
-        setMessages([...messages, newMessage]);
-        setLoading(true);
-        getCompletion(newMessage);
-    };
-
-    const submitMessage = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!input.trim()) return;
-        appendMessage({ role: "user", content: input });
-        setInput("");
-    };
-
-    // Placeholder for stop function
-    const stop = () => {
-        // Implement stop functionality if needed
-        setLoading(false);
-    };
-
-    return (
-        <ChatContainer className="h-screen max-h-full flex flex-col gap-6 justify-center">
-            {isEmpty ? (
-                <h1 className="text-3xl font-bold text-center">Caltech Course Bot</h1>
-            ) : (
-                <h1 className="text-xl font-bold text-center">Caltech Course Bot</h1>
-            )}
-
-            {isEmpty ? (
-                <div className="space-y-6">
-                    <PromptSuggestions
-                        label="Don't know what to ask? Try these prompts!"
-                        append={appendMessage}
-                        suggestions={[
-                            "Are there any tennis courses at Caltech?",
-                            "I like philosophizing time travel. Are there any classes about this?",
-                            "What do students think about Caltech's intro CS courses?",
-                        ]}
-                    />
-                </div>
-            ) : null}
-
-            {!isEmpty ? (
-                <div className="space-y-6 max-h-3/4 overflow-y-auto px-4">
-                    <ChatMessages messages={messages}>
-                        <MessageList messages={messages} />
-                    </ChatMessages>
-                </div>
-            ) : null}
-
-            <ChatForm className="mt-auto" isPending={isLoading} handleSubmit={submitMessage}>
-                {() => (
-                    <MessageInput
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        stop={stop}
-                        isGenerating={isLoading}
-                    />
-                )}
-            </ChatForm>
-        </ChatContainer>
-    );
-};
-
-// Export all components to match the import structure of the original code
 export { ChatContainer, ChatForm, ChatMessages, MessageList, MessageInput, PromptSuggestions };
