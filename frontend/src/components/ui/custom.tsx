@@ -160,7 +160,7 @@ const PromptSuggestions: React.FC<{
                     <Button
                         key={index}
                         variant="outline"
-                        className="text-left h-auto p-4 flex items-center justify-center text-center max-w-1/10"
+                        className="text-left h-auto p-4 flex items-center justify-center text-center max-w-1/4 whitespace-normal"
                         onClick={() => append({ role: "user", content: suggestion })}
                     >
                         {suggestion}
