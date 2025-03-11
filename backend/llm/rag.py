@@ -110,7 +110,7 @@ class CourseRAG:
                 - Do not attempt to infer or speculate beyond the provided data.
 
                 3. **Mandatory Citation:**
-                - Any statement derived from retrieved data must be followed by a markdown link formatted as: **[Source Name](Source URL)**
+                - Any statement derived from retrieved data must be followed by a markdown link in parentheses formatted as: **[Source Name](Source URL)**
                 - Ensure citations are specific and clearly support the information provided.
                 - If source names are really long and there are a lot of them, shorten them to an abbreviation.
 
