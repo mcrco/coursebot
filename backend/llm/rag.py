@@ -5,7 +5,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain_core.messages import SystemMessage
 from langgraph.graph import MessagesState, END, StateGraph
 from langgraph.prebuilt import ToolNode, tools_condition
-from pinecone import Pinecone
 from dotenv import load_dotenv
 import os
 
@@ -20,20 +19,17 @@ class CourseRAG:
         if not load_dotenv():
             print("Unable to get environment variables via pydotenv.")
 
-        pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
-        self.index = pc.Index("caltech-courses")
-
         if "deepseek" in model_code:
             self.llm = ChatOpenAI(
                 model=model_code,
                 openai_api_key=os.environ["DEEPSEEK_API_KEY"],
                 openai_api_base="https://api.deepseek.com",
-                temperature=0.0,
+                temperature=0.69,
             )
         elif "gemini" in model_code:
             self.llm = ChatGoogleGenerativeAI(
                 model=model_code,
-                temperature=0.0,
+                temperature=0.69,
                 max_tokens=None,
                 timeout=None,
                 max_retries=2,

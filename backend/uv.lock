@@ -121,11 +121,9 @@ dependencies = [
     { name = "langchain-google-genai" },
     { name = "langchain-google-vertexai" },
     { name = "langchain-openai" },
-    { name = "langchain-pinecone" },
     { name = "langchain-qdrant" },
     { name = "langchain-text-splitters" },
     { name = "langgraph" },
-    { name = "pinecone", extra = ["grpc"] },
     { name = "python-dotenv" },
     { name = "qdrant-client", version = "1.12.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13'" },
     { name = "qdrant-client", version = "1.13.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
@@ -142,11 +140,9 @@ requires-dist = [
     { name = "langchain-google-genai", specifier = ">=2.0.11" },
     { name = "langchain-google-vertexai", specifier = ">=2.0.14" },
     { name = "langchain-openai", specifier = ">=0.2.14" },
-    { name = "langchain-pinecone", specifier = ">=0.0.1" },
     { name = "langchain-qdrant", specifier = ">=0.2.0" },
     { name = "langchain-text-splitters", specifier = ">=0.3.4" },
     { name = "langgraph", specifier = ">=0.2.60" },
-    { name = "pinecone", extras = ["grpc"], specifier = ">=5.4.2" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "qdrant-client", specifier = ">=1.12.1" },
 ]
@@ -1041,21 +1037,6 @@ wheels = [
 ]
 
 [[package]]
-name = "langchain-pinecone"
-version = "0.0.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "langchain-core" },
-    { name = "numpy" },
-    { name = "pinecone-client", marker = "python_full_version < '3.13'" },
-    { name = "simsimd" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/f4/1f/41a77366f5f7232a45d23c527200f19fa7d526f9c13e1a96e67abf289d9f/langchain_pinecone-0.0.1.tar.gz", hash = "sha256:d7128f60205bfacdf2c1bf62d12f4dbf79ad8c4dac856e531c0cd718d28e5a7b", size = 7664 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/58/16ca242ba4d95e7b6451dedf9ecb1ee77d3be9712741387d0030ce4c1699/langchain_pinecone-0.0.1-py3-none-any.whl", hash = "sha256:4b657406423951c21b7eaf4e0fb56983deb91ebc425ea2cd880966192c942a6f", size = 8124 },
-]
-
-[[package]]
 name = "langchain-qdrant"
 version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1149,21 +1130,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3a/05/a1dae3dffd1116099471c643b8924f5aa6524411dc6c63fdae648c4f1aca/loguru-0.7.3.tar.gz", hash = "sha256:19480589e77d47b8d85b2c827ad95d49bf31b0dcde16593892eb51dd18706eb6", size = 63559 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl", hash = "sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c", size = 61595 },
-]
-
-[[package]]
-name = "lz4"
-version = "4.3.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a4/31/ec1259ca8ad11568abaf090a7da719616ca96b60d097ccc5799cd0ff599c/lz4-4.3.3.tar.gz", hash = "sha256:01fe674ef2889dbb9899d8a67361e0c4a2c833af5aeb37dd505727cf5d2a131e", size = 171509 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/4d/6f/081811b17ccaec5f06b3030756af2737841447849118a6e1078481a78c6c/lz4-4.3.3-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:e36cd7b9d4d920d3bfc2369840da506fa68258f7bb176b8743189793c055e43d", size = 254213 },
-    { url = "https://files.pythonhosted.org/packages/53/4d/8e04ef75feff8848ba3c624ce81c7732bdcea5f8f994758afa88cd3d7764/lz4-4.3.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:31ea4be9d0059c00b2572d700bf2c1bc82f241f2c3282034a759c9a4d6ca4dc2", size = 212354 },
-    { url = "https://files.pythonhosted.org/packages/a3/04/257a72d6a879dbc8c669018989f776fcdd5b4bf3c2c51c09a54f1ca31721/lz4-4.3.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:33c9a6fd20767ccaf70649982f8f3eeb0884035c150c0b818ea660152cf3c809", size = 1238643 },
-    { url = "https://files.pythonhosted.org/packages/d9/93/4a7e489156fa7ded03ba9cde4a8ca7f373672b5787cac9a0391befa752a1/lz4-4.3.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bca8fccc15e3add173da91be8f34121578dc777711ffd98d399be35487c934bf", size = 1265014 },
-    { url = "https://files.pythonhosted.org/packages/fd/a4/f84ebc23bc7602623b1b003b4e1120cbf86fb03a35c595c226be1985449b/lz4-4.3.3-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:e7d84b479ddf39fe3ea05387f10b779155fc0990125f4fb35d636114e1c63a2e", size = 1184881 },
-    { url = "https://files.pythonhosted.org/packages/de/3d/8ba48305378e84908221de143a21ba0c0ce52778893865cf85b66b1068da/lz4-4.3.3-cp312-cp312-win32.whl", hash = "sha256:337cb94488a1b060ef1685187d6ad4ba8bc61d26d631d7ba909ee984ea736be1", size = 87241 },
-    { url = "https://files.pythonhosted.org/packages/c4/5d/7b70965a0692de29af2af1007fe837f46fd456bbe2aa8f838a8543a3b5cb/lz4-4.3.3-cp312-cp312-win_amd64.whl", hash = "sha256:5d35533bf2cee56f38ced91f766cd0038b6abf46f438a80d50c52750088be93f", size = 99776 },
 ]
 
 [[package]]
@@ -1593,69 +1559,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pinecone"
-version = "5.4.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "certifi" },
-    { name = "pinecone-plugin-inference" },
-    { name = "pinecone-plugin-interface" },
-    { name = "python-dateutil" },
-    { name = "tqdm" },
-    { name = "typing-extensions" },
-    { name = "urllib3", marker = "python_full_version < '4.0'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/df/4e/3376f99662f56e7462a4c444edc19e0cbb20676f03b8f70f56a964f34de4/pinecone-5.4.2.tar.gz", hash = "sha256:23e8aaa73b400bb11a3b626c4129284fb170f19025b82f65bd89cbb0dab2b873", size = 191780 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2f/a4/f7214bf02bb2edb29778e35fa6e73e2d188c403e6d9c2b6945f660a776b3/pinecone-5.4.2-py3-none-any.whl", hash = "sha256:1fad082c66a50a229b58cda0c3a1fa0083532dc9de8303015fe4071cb25c19a8", size = 427295 },
-]
-
-[package.optional-dependencies]
-grpc = [
-    { name = "googleapis-common-protos" },
-    { name = "grpcio", marker = "python_full_version < '4.0'" },
-    { name = "lz4" },
-    { name = "protobuf" },
-    { name = "protoc-gen-openapiv2" },
-]
-
-[[package]]
-name = "pinecone-client"
-version = "3.2.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "certifi", marker = "python_full_version < '3.13'" },
-    { name = "tqdm", marker = "python_full_version < '3.13'" },
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
-    { name = "urllib3", marker = "python_full_version < '3.13'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/86/46/2a78df43128185ebc021df014ab3ee58d37cc7a35fe0523c441a76a5c77f/pinecone_client-3.2.2.tar.gz", hash = "sha256:887a12405f90ac11c396490f605fc479f31cf282361034d1ae0fccc02ac75bee", size = 113892 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/cb/bb/c51fa42d85f431b3b3ec4c35a13a8bb99cafc0671918139a48767421d354/pinecone_client-3.2.2-py3-none-any.whl", hash = "sha256:7e492fdda23c73726bc0cb94c689bb950d06fb94e82b701a0c610c2e830db327", size = 215893 },
-]
-
-[[package]]
-name = "pinecone-plugin-inference"
-version = "3.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pinecone-plugin-interface" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/82/09f6fb3c9d3b005c5b110d323a98f848f57babb1394ebea9f72e26f68242/pinecone_plugin_inference-3.1.0.tar.gz", hash = "sha256:eff826178e1fe448577be2ff3d8dbb072befbbdc2d888e214624523a1c37cd8d", size = 49315 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/89/45/4ae4e38439919584c2d34b6bef5d0ef8d068030871dd4da911d174840ee6/pinecone_plugin_inference-3.1.0-py3-none-any.whl", hash = "sha256:96e861527bd41e90d58b7e76abd4e713d9af28f63e76a51864dfb9cf7180e3df", size = 87477 },
-]
-
-[[package]]
-name = "pinecone-plugin-interface"
-version = "0.0.7"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f4/fb/e8a4063264953ead9e2b24d9b390152c60f042c951c47f4592e9996e57ff/pinecone_plugin_interface-0.0.7.tar.gz", hash = "sha256:b8e6675e41847333aa13923cc44daa3f85676d7157324682dc1640588a982846", size = 3370 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/3b/1d/a21fdfcd6d022cb64cef5c2a29ee6691c6c103c4566b41646b080b7536a5/pinecone_plugin_interface-0.0.7-py3-none-any.whl", hash = "sha256:875857ad9c9fc8bbc074dbe780d187a2afd21f5bfe0f3b08601924a61ef1bba8", size = 6249 },
-]
-
-[[package]]
 name = "portalocker"
 version = "2.10.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1732,19 +1635,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/ab/0f384ca0bc6054b1a7b6009000ab75d28a5506e4459378b81280ae7fd358/protobuf-4.25.5-cp37-abi3-manylinux2014_aarch64.whl", hash = "sha256:919ad92d9b0310070f8356c24b855c98df2b8bd207ebc1c0c6fcc9ab1e007f3d", size = 293717 },
     { url = "https://files.pythonhosted.org/packages/05/a6/094a2640be576d760baa34c902dcb8199d89bce9ed7dd7a6af74dcbbd62d/protobuf-4.25.5-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:fe14e16c22be926d3abfcb500e60cab068baf10b542b8c858fa27e098123e331", size = 294635 },
     { url = "https://files.pythonhosted.org/packages/33/90/f198a61df8381fb43ae0fe81b3d2718e8dcc51ae8502c7657ab9381fbc4f/protobuf-4.25.5-py3-none-any.whl", hash = "sha256:0aebecb809cae990f8129ada5ca273d9d670b76d9bfc9b1809f0a9c02b7dbf41", size = 156467 },
-]
-
-[[package]]
-name = "protoc-gen-openapiv2"
-version = "0.0.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "googleapis-common-protos" },
-    { name = "protobuf" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/d8/d2/84fecd8df61640226c726c12ad7ddd2a7666a7cd7f898b9a5b72e3a66d44/protoc-gen-openapiv2-0.0.1.tar.gz", hash = "sha256:6f79188d842c13177c9c0558845442c340b43011bf67dfef1dfc3bc067506409", size = 7323 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2d/ac/bd8961859d8f3f81530465d2ce9b165627e961c00348939009bac2700cc6/protoc_gen_openapiv2-0.0.1-py3-none-any.whl", hash = "sha256:18090c8be3877c438e7da0f7eb7cace45a9a210306bca4707708dbad367857be", size = 7883 },
 ]
 
 [[package]]
@@ -2081,29 +1971,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/f5/8a/2545cc2a30afc63fc6176c1da3b76af28ef9c7358ed4f68f7c6a9d86cf5b/shapely-2.0.7-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:adeddfb1e22c20548e840403e5e0b3d9dc3daf66f05fa59f1fcf5b5f664f0e98", size = 2514128 },
     { url = "https://files.pythonhosted.org/packages/87/54/2344ce7da39676adec94e84fbaba92a8f1664e4ae2d33bd404dafcbe607f/shapely-2.0.7-cp313-cp313-win32.whl", hash = "sha256:a7f04691ce1c7ed974c2f8b34a1fe4c3c5dfe33128eae886aa32d730f1ec1913", size = 1295783 },
     { url = "https://files.pythonhosted.org/packages/d7/1e/6461e5cfc8e73ae165b8cff6eb26a4d65274fad0e1435137c5ba34fe4e88/shapely-2.0.7-cp313-cp313-win_amd64.whl", hash = "sha256:aaaf5f7e6cc234c1793f2a2760da464b604584fb58c6b6d7d94144fd2692d67e", size = 1442300 },
-]
-
-[[package]]
-name = "simsimd"
-version = "3.9.0"
-source = { registry = "https://pypi.org/simple" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/88/9c/2e9289be724c17ca27d1e37d425332eb0954c1d1ac2c502f292f1d0f88c7/simsimd-3.9.0-cp312-cp312-macosx_10_9_universal2.whl", hash = "sha256:baed785133eaa594e38e56382250e15e0069cf8b3351e1bb09d0b93886a5ff5c", size = 48537 },
-    { url = "https://files.pythonhosted.org/packages/5f/16/b1aaf1cac5cd4f31178ac1ea686902f34f96a69e2817d9b8d9ab1bd889fc/simsimd-3.9.0-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:901d749d15bdc5433f50921ed4e0977d6b28cb6dd676ca46d9d27bf0720d1277", size = 28827 },
-    { url = "https://files.pythonhosted.org/packages/0d/a5/d8fb1d17c393df18f19f7af7b9affc90d6758f94c17ecbfd6cdbde0d6874/simsimd-3.9.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:5069882cb67f58f86bd386ee11373f9e4e144413a6e84879640bf3ab69b56d32", size = 30180 },
-    { url = "https://files.pythonhosted.org/packages/30/c9/573316fd7e3123c1c8e0abe4d36ef809487ad6cbdaf5b0e9dec8a1fc1b2a/simsimd-3.9.0-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f65860e5aeef3619e99e949ba61dcfc8d5208e33bd00948661f3f3bae16e3986", size = 123895 },
-    { url = "https://files.pythonhosted.org/packages/83/7f/50a0f70806f25d505f2828efb2dab8f08319c00646bf8e8c22120294abfa/simsimd-3.9.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:72bfc5cece34f0bece1a3c81d780fb5046075bbe61aa20a7cd88aa437faaf76e", size = 146909 },
-    { url = "https://files.pythonhosted.org/packages/64/b6/ca64d0ea0262d27c447bdd0fa2155b1b2b32faf9f20c1e50577afd1132ee/simsimd-3.9.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:2ab33e2ceff2ab0c20bd32415cee3c28dc4f1f54039d1e8472cf61b71f5620d3", size = 121264 },
-    { url = "https://files.pythonhosted.org/packages/16/fc/77339f08a254d1907673e1c4b64656275d9b223234aaff42cda405415ad6/simsimd-3.9.0-cp312-cp312-manylinux_2_28_aarch64.whl", hash = "sha256:2653df09d11f636be70a8bcf15c0dfff0c7ce8e0feccb17c2b248c88cdda087d", size = 199708 },
-    { url = "https://files.pythonhosted.org/packages/9e/11/0ba2419c480d70091b3a9cecebc3f033495447d739211f08a51c90c181cb/simsimd-3.9.0-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:22f2c82a8b404f5501219d4ae0e896c35fff4e45afb68a242ee419b1053fb773", size = 342197 },
-    { url = "https://files.pythonhosted.org/packages/e3/57/617a283053789ccf447b0835c3a289d5699ab144efe9f5598aade44428b6/simsimd-3.9.0-cp312-cp312-musllinux_1_1_i686.whl", hash = "sha256:efe2e3044266cfd9de962a12b9f2eb8c110b4bbd325f8be2a6e880fd00068733", size = 134952 },
-    { url = "https://files.pythonhosted.org/packages/d9/b8/eabd7e6f046fa3898c8f182c5c751bbba4375365353cfbc87f99cebcc91b/simsimd-3.9.0-cp312-cp312-musllinux_1_1_ppc64le.whl", hash = "sha256:804142a04bb46c011111920beae1eb71f3f712e4267b531ab374d7b27cbf8a19", size = 154310 },
-    { url = "https://files.pythonhosted.org/packages/0a/17/d5ce763f15de59999737c5f4c71b4ab7c53e69f631d6a4206c629aeaf190/simsimd-3.9.0-cp312-cp312-musllinux_1_1_s390x.whl", hash = "sha256:1f85e6be4bcce08c40066a0524e5371c6ed125fcde6db1a76ba75768571077e0", size = 137372 },
-    { url = "https://files.pythonhosted.org/packages/5e/e8/71000da4a79a9871229cbe87043b2ed0623e64491a35e2fdbb31626ca019/simsimd-3.9.0-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:b2e23cbe3f4d9b106283c01d71baa4f31783752772305607d7471d1ba544bb4a", size = 219102 },
-    { url = "https://files.pythonhosted.org/packages/c4/e6/4b887a0875e63e9032efc2f6e2cd75413d9827546d5c0693b50a5559c5c9/simsimd-3.9.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:968f2048e1398212a76bcdad958ac99d5308f4443cfc235734132b4ee9f7ee55", size = 255518 },
-    { url = "https://files.pythonhosted.org/packages/29/76/79c3ad9b30ca17f100aaccc079b10b1de69f2bff120db7aaead9d75e20b5/simsimd-3.9.0-cp312-cp312-win32.whl", hash = "sha256:0089cf7e29fd145883267672e1e468981fde6e094cabcb2a3ef1b604cb499318", size = 21579 },
-    { url = "https://files.pythonhosted.org/packages/80/dd/2278efb57bebd6d40bafe82c0b95f4396f7378926a91787e778d8b305aa0/simsimd-3.9.0-cp312-cp312-win_amd64.whl", hash = "sha256:2ccee3fdc688ec9d34d21f23923c5ab2583f4d5fc6f4aff1486faa321affb9cc", size = 25114 },
-    { url = "https://files.pythonhosted.org/packages/d7/92/089230e55f894e08d1f41815ded4f341f1306c994c5f507c102f736afe66/simsimd-3.9.0-cp312-cp312-win_arm64.whl", hash = "sha256:9f7bd2489d235b5713a8fcde83061c879b2603b84bef0b106e9f04f609887b60", size = 20674 },
 ]
 
 [[package]]
