@@ -1,28 +1,45 @@
-from pinecone import Pinecone, ServerlessSpec
-from langchain_openai import OpenAIEmbeddings
+import itertools
+from fastembed import SparseTextEmbedding
+from langchain_google_vertexai import VertexAIEmbeddings
+from qdrant_client import QdrantClient
+from qdrant_client.models import (
+    Distance,
+    PointStruct,
+    SparseVectorParams,
+    VectorParams,
+)
 from dotenv import load_dotenv
 from tqdm import tqdm
 import json
 import os
+import uuid
 
 if not load_dotenv():
     print("Unable to get environment variables via pydotenv.")
 
-pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
+vector_db = QdrantClient(
+    url=os.environ["QDRANT_URL"], api_key=os.environ["QDRANT_API_KEY"], port=None
+)
+dense_model = "text-embedding-004"
+sparse_model = "Qdrant/bm25"
+dense_embed = VertexAIEmbeddings(model="text-embedding-004", project="coursebot-453309")
+sparse_embed = SparseTextEmbedding("Qdrant/bm25")
 
-index_name = "caltech-courses"
-embed_dim = 1536
-
-
-if index_name not in pc.list_indexes().names():
-    pc.create_index(
-        name=index_name,
-        dimension=embed_dim,
-        spec=ServerlessSpec(cloud="aws", region="us-east-1"),
+collection_name = "coursebot_hybrid"
+if not vector_db.collection_exists(collection_name):
+    vector_db.create_collection(
+        collection_name=collection_name,
+        vectors_config={
+            "dense_vector": VectorParams(
+                size=768, distance=Distance.COSINE
+            )  # 768 is dim for google embedding model
+        },
+        sparse_vectors_config={"sparse_vector": SparseVectorParams()},
     )
 
-index = pc.Index(index_name)
-embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+
+with open("json/tqfr.json", "r") as f:
+    data = json.load(f)
 
 
 def score2text(score, avg):
@@ -84,7 +101,10 @@ with open("json/tqfr.json", "r") as f:
     data = json.load(f)
 
 print("Creating chunks for TQFRs...")
-chunks = []
+ids = []
+metas = []
+texts = []
+full_texts = []
 for key in tqdm(data):
     for term in data[key]:
         report = data[key][term]
@@ -97,24 +117,25 @@ for key in tqdm(data):
             else:
                 course_qas.append(process_table(question, response_data))
 
-        course_chunk_id = f"{key}-tqfr-course"
+        report_id = f"{key}-{term}-tqfr"
+        course_chunk_id = f"{report_id}-course"
         course_chunk_content = (
             f"Course-related feedback during {term} for {course_id}: {name}:\n"
             + f"Response rate was {report['response_rate']}\n"
             + "\n".join(course_qas)
         )
-
-        chunks.append(
+        ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, course_chunk_id)))
+        metas.append(
             {
-                "id": course_chunk_id,
-                "content": course_chunk_content,
-                "metadata": {
-                    "id": course_chunk_id,
-                    "source": f"TQFR {term} for {course_id}: {name}",
-                    "text": course_chunk_content,
-                },
+                "url": report["url"],
+                "source": f"TQFR during {term} term for {report['course_id']}: {name}",
+                "text": report["raw_text"],
+                "dense_model": dense_model,
+                "sparse_model": sparse_model,
+                "doc_id": report_id,
             }
         )
+        texts.append(course_chunk_content)
 
         if "instructor" in report:
             for instructor, inst_data in report["instructor"].items():
@@ -131,66 +152,67 @@ for key in tqdm(data):
                             process_table(question, response_data, instructor)
                         )
 
-                chunk_id = f"{key}-tqfr-{"-".join([name.lower() for name in instructor.split()])}"
+                chunk_id = f"{report_id}-{"-".join([name.lower() for name in instructor.split()])}"
                 chunk_content = (
                     f"{inst_data['type']} feedback for {instructor} during {term} for {course_id}: {name}:\n"
                     + f"Response rate was {report['response_rate']}\n"
                     + "\n".join(inst_qas)
                 )
-                chunks.append(
+                ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, chunk_id)))
+                metas.append(
                     {
-                        "id": chunk_id,
-                        "content": chunk_content,
-                        "metadata": {
-                            "id": chunk_id,
-                            "source": f"TQFR {term} for {course_id}: {name}",
-                            "text": chunk_content,
-                        },
+                        "url": report["url"],
+                        "source": f"TQFR during {term} term for {report['course_id']}: {name}",
+                        "text": report["raw_text"],
+                        "dense_model": dense_model,
+                        "sparse_model": sparse_model,
+                        "doc_id": report_id,
                     }
                 )
+                texts.append(chunk_content)
 
-        comment_chunk_id = f"{key}-tqfr-comments"
+        comment_chunk_id = f"{report_id}-comments"
         comment_chunk_content = (
             f"Comments/advice from students who took {course_id}: {name} during {term}:\n"
             + "\n".join(report["comments"])
         )
-        chunks.append(
+        ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, comment_chunk_id)))
+        metas.append(
             {
-                "id": comment_chunk_id,
-                "content": comment_chunk_content,
-                "metadata": {
-                    "id": comment_chunk_id,
-                    "source": f"TQFR {term} for {course_id}: {name}",
-                    "text": comment_chunk_content,
-                },
+                "url": report["url"],
+                "source": f"TQFR during {term} term for {report['course_id']}: {name}",
+                "text": report["raw_text"],
+                "dense_model": dense_model,
+                "sparse_model": sparse_model,
+                "doc_id": report_id,
             }
         )
+        texts.append(comment_chunk_content)
 
 
-print("Embedding chunks for TQFRs...")
-embedded_chunks = [
-    {
-        "id": chunk["id"],
-        "embedding": embedding_model.embed_query(chunk["content"]),
-        "metadata": {
-            "id": chunk["id"],
-            "source": "TQFR",
-            "text": chunk["content"],
-        },
-    }
-    for chunk in tqdm(chunks)
-]
+print("Embedding document chunks...")
+dense_vectors = dense_embed.embed(texts)
+sparse_vectors = sparse_embed.embed(texts)
 
-print("Uploading chunks for TQFRs...")
-for chunk in embedded_chunks:
-    index.upsert(
-        vectors=[
-            {
-                "id": chunk["id"],
-                "values": chunk["embedding"],
-                "metadata": chunk["metadata"],
-            }
-        ]
+print("Creating points...")
+points = []
+for id, dense, sparse, meta in tqdm(zip(ids, dense_vectors, sparse_vectors, metas)):
+    points.append(
+        PointStruct(
+            id=id,
+            vector={
+                "dense_vector": dense,
+                "sparse_vector": {
+                    "indices": list(sparse.indices),
+                    "values": list(sparse.values),
+                },
+            },
+            payload={"metadata": meta},
+        )
     )
 
-print(f"Uploaded {len(chunks)} vectors to Pinecone.")
+print("Uploading to Qdrant...")
+for batch in itertools.batched(points, 512):
+    vector_db.upsert(collection_name=collection_name, points=list(batch))
+
+print(f"Uploaded {len(points)} points to Qdrant.")

@@ -1,7 +1,6 @@
 import itertools
 from fastembed import SparseTextEmbedding
 from langchain_google_vertexai import VertexAIEmbeddings
-from langchain_text_splitters import MarkdownHeaderTextSplitter
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
     Distance,
@@ -13,23 +12,20 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 import json
 import os
-import string
 import uuid
 
 if not load_dotenv():
     print("Unable to get environment variables via pydotenv.")
 
 vector_db = QdrantClient(
-    url=os.environ["QDRANT_URL"], api_key=os.environ["QDRANT_API_KEY"], port=None
+    url=os.environ["QDRANT_URL"], api_key=os.environ["QDRANT_API_KEY"]
 )
-dense_model = "text-embedding-004"
-sparse_model = "Qdrant/bm25"
 dense_embed = VertexAIEmbeddings(model="text-embedding-004", project="coursebot-453309")
 sparse_embed = SparseTextEmbedding("Qdrant/bm25")
 
 collection_name = "coursebot_hybrid"
 if not vector_db.collection_exists(collection_name):
-    vector_db.create_collection(
+    vector_db.recreate_collection(
         collection_name=collection_name,
         vectors_config={
             "dense_vector": VectorParams(
@@ -40,47 +36,29 @@ if not vector_db.collection_exists(collection_name):
     )
 
 
-with open("json/catalog.json", "r") as f:
+with open("json/courses.json", "r") as f:
     data = json.load(f)
 
 print("Chunking documents...")
-headers_to_split_on = [
-    ("##", "h2"),
-    ("###", "h3"),
-]
-text_splitter = MarkdownHeaderTextSplitter(headers_to_split_on)
 ids = []
 metas = []
 texts = []
 for entry in tqdm(data.values()):
-    content = entry["content"]
-    splits = text_splitter.split_text(content)
-    for chunk in splits:
-        text = chunk.page_content
-        id = entry["title"]
-        headers = "# " + entry["title"] + "\n\n"
-        if "h2" in chunk.metadata:
-            headers += "## " + chunk.metadata["h2"] + "\n\n"
-            id += " " + chunk.metadata["h2"]
-        if "h3" in chunk.metadata:
-            headers += "### " + chunk.metadata["h3"] + "\n\n"
-            id += " " + chunk.metadata["h3"]
-        id = (
-            id.lower()
-            .translate(str.maketrans("", "", string.punctuation))
-            .replace(" ", "_")
-        )
-        ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, id)))
-        metas.append(
-            {
-                "url": entry["url"],
-                "source": entry["source"],
-                "text": headers + text,
-                "dense_model": dense_model,
-                "sparse_model": sparse_model,
-            }
-        )
-        texts.append(headers + text)
+    id = f"{entry["id"]}-catalog"
+    content = f"{entry['course_id']}: {entry['name']}\n" + "\n".join(
+        f"{k.capitalize()}: {v}"
+        for k, v in entry.items()
+        if k not in ["id", "course_id", "name"]
+    )
+    ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, id)))
+    metas.append(
+        {
+            "source": "Caltech Catalog (Courses 2024-25)",
+            "url": entry["link"],
+            "text": content,
+        }
+    )
+    texts.append(content)
 
 print("Embedding document chunks...")
 dense_vectors = dense_embed.embed(texts)
