@@ -12,7 +12,7 @@ import os
 class CourseRAG:
     def __init__(
         self,
-        model_code="deepseek-chat",
+        model_code="gemini-2.0-flash",
         embedding_model="models/text-embedding-004",
         sparse_embedding_model="Qdrant/bm25",
     ):
@@ -138,7 +138,6 @@ class CourseRAG:
                     """
                 ]
             )
-            print(prompt)
             response = self.llm.invoke(prompt)
             return {"messages": [response]}
 
