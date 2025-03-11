@@ -50,7 +50,7 @@ export const ChatWindow = () => {
             if (done) break;
 
             const chunk = decoder.decode(value, { stream: true });
-            console.log(chunk);
+            // console.log(chunk);
             content += chunk;
 
             const responseMessage = {
@@ -101,9 +101,9 @@ export const ChatWindow = () => {
                         label="Don't know what to ask? Try these prompts!"
                         append={appendMessage}
                         suggestions={[
-                            "Are there any tennis courses at Caltech?",
+                            "Tell me about the study abroad programs!",
                             "I like philosophizing time travel. Are there any classes about this?",
-                            "What do students think about Caltech's intro CS courses?",
+                            "What do students think about CS 1?",
                         ]}
                     />
                 </div>
