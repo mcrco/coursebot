@@ -20,8 +20,10 @@ if not load_dotenv():
 vector_db = QdrantClient(
     url=os.environ["QDRANT_URL"], api_key=os.environ["QDRANT_API_KEY"]
 )
-dense_embed = VertexAIEmbeddings(model="text-embedding-004", project="coursebot-453309")
-sparse_embed = SparseTextEmbedding("Qdrant/bm25")
+dense_model = "text-embedding-004"
+sparse_model = "Qdrant/bm25"
+dense_embed = VertexAIEmbeddings(model=dense_model, project="coursebot-453309")
+sparse_embed = SparseTextEmbedding(sparse_model)
 
 collection_name = "coursebot_hybrid"
 if not vector_db.collection_exists(collection_name):
@@ -42,7 +44,8 @@ with open("json/courses.json", "r") as f:
 print("Chunking documents...")
 ids = []
 metas = []
-texts = []
+summaries = []
+contents = []
 for entry in tqdm(data.values()):
     id = f"{entry["id"]}-catalog"
     content = f"{entry['course_id']}: {entry['name']}\n" + "\n".join(
@@ -56,26 +59,46 @@ for entry in tqdm(data.values()):
             "source": "Caltech Catalog (Courses 2024-25)",
             "url": entry["link"],
             "text": content,
+            "dense_model": dense_model,
+            "sparse_model": sparse_model,
+            "doc_id": id,
         }
     )
-    texts.append(content)
+    summaries.append(f'Course catalog entry for {entry['course_id']}: {entry['name']}')
+    contents.append(content)
 
 print("Embedding document chunks...")
-dense_vectors = dense_embed.embed(texts)
-sparse_vectors = sparse_embed.embed(texts)
+dense_summaries = dense_embed.embed(summaries)
+sparse_summmaries = sparse_embed.embed(summaries)
+dense_contents = dense_embed.embed(contents)
+sparse_contents = sparse_embed.embed(contents)
+
+
+def id2uuid(id):
+    return str(uuid.uuid5(uuid.NAMESPACE_DNS, id))
+
 
 print("Creating points...")
 points = []
-for id, dense, sparse, meta in tqdm(zip(ids, dense_vectors, sparse_vectors, metas)):
+for id, ds, ss, dc, sc, meta in tqdm(
+    zip(ids, dense_summaries, sparse_summmaries, dense_contents, sparse_contents, metas)
+):
     points.append(
         PointStruct(
-            id=id,
+            id=id2uuid(f"{id}-summary"),
             vector={
-                "dense_vector": dense,
-                "sparse_vector": {
-                    "indices": list(sparse.indices),
-                    "values": list(sparse.values),
-                },
+                "dense_vector": ds,
+                "sparse_vector": vars(ss),
+            },
+            payload={"metadata": meta},
+        )
+    )
+    points.append(
+        PointStruct(
+            id=id2uuid(f"{id}-content"),
+            vector={
+                "dense_vector": dc,
+                "sparse_vector": vars(sc),
             },
             payload={"metadata": meta},
         )

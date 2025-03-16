@@ -22,9 +22,10 @@ vector_store = QdrantVectorStore.from_existing_collection(
 )
 
 
-query = "Tell me about cs 155"
+while True:
+    query = input("Enter query: ")
+    n_results = int(input("Number of results to list: "))
+    results = vector_store.similarity_search_with_score(query, k=3)
 
-results = vector_store.similarity_search_with_score(query, k=3)
-
-for match in results:
-    print(match)
+    for doc, sim in results:
+        print(f"Matched {doc.metadata['doc_id']} with similarity {sim}")

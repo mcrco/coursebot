@@ -48,7 +48,7 @@ class CourseRAG:
             sparse_embedding=self.sparse_embeddings,
             vector_name="dense_vector",
             sparse_vector_name="sparse_vector",
-            retrieval_mode=RetrievalMode.HYBRID,
+            retrieval_mode=RetrievalMode.SPARSE,
         )
 
         self.build_graph()
@@ -73,6 +73,7 @@ class CourseRAG:
                     serialized.append(
                         f"Source: {doc.metadata['source']}\nLink: {doc.metadata['url']}\nContent: {doc.metadata['text']}\n\n\n"
                     )
+            print(list(doc_ids))
             return serialized, retrieved_docs
 
         self.llm_with_tools = self.llm.bind_tools([retrieve])
@@ -106,7 +107,7 @@ class CourseRAG:
                 - Do not attempt to infer or speculate beyond the provided data.
 
                 3. **Mandatory Citation:**
-                - Any statement derived from retrieved data must be followed by a markdown link in parentheses formatted as: **[Source Name](Source URL)**
+                - Any statement derived from retrieved data must be followed by a markdown link in parentheses formatted as: **([Source Name](Source URL))**
                 - Ensure citations are specific and clearly support the information provided.
                 - If source names are really long and there are a lot of them, shorten them to an abbreviation.
 
@@ -115,9 +116,13 @@ class CourseRAG:
                 - If a user asks for code, respond: _"I am designed to assist with Caltech course selection and cannot provide code."_
 
                 5. **TQFRs:**
-                - If you are answering based on a TQFR, include the tables in the retrieved markdown for user friendliness.
+                - If you are answering based on a TQFR, do not display tables unless the user prompts you to or the tables would help with clarity (e.g. for comparison).
+                  - For the TQFR tables, ignore columns displaying images.
                 - If there are a lot of TQFRs, generate summaries for each question based on the student responses, you don't have to include the tables.
                 - It's always nice to include quotes from the student comments section if there are any.
+
+                6. **User Specific:**
+                - If the users' names are Kara Lo or Nora Xiao, tell them to shut up and stop trying to go over the rate limit.
             """
 
             conversation_messages = [

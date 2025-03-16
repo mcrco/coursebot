@@ -22,8 +22,8 @@ vector_db = QdrantClient(
 )
 dense_model = "text-embedding-004"
 sparse_model = "Qdrant/bm25"
-dense_embed = VertexAIEmbeddings(model="text-embedding-004", project="coursebot-453309")
-sparse_embed = SparseTextEmbedding("Qdrant/bm25")
+dense_embed = VertexAIEmbeddings(model=dense_model, project="coursebot-453309")
+sparse_embed = SparseTextEmbedding(sparse_model)
 
 collection_name = "coursebot_hybrid"
 if not vector_db.collection_exists(collection_name):
@@ -103,8 +103,8 @@ with open("json/tqfr.json", "r") as f:
 print("Creating chunks for TQFRs...")
 ids = []
 metas = []
-texts = []
-full_texts = []
+summaries = []
+contents = []
 for key in tqdm(data):
     for term in data[key]:
         report = data[key][term]
@@ -117,7 +117,8 @@ for key in tqdm(data):
             else:
                 course_qas.append(process_table(question, response_data))
 
-        report_id = f"{key}-{term}-tqfr"
+        report_id = f"{key}-{term.lower().replace('-', '_').replace(' ', '-')}-tqfr"
+        source = f"TQFR {term} for {report['course_id']}: {name}"
         course_chunk_id = f"{report_id}-course"
         course_chunk_content = (
             f"Course-related feedback during {term} for {course_id}: {name}:\n"
@@ -128,14 +129,17 @@ for key in tqdm(data):
         metas.append(
             {
                 "url": report["url"],
-                "source": f"TQFR during {term} term for {report['course_id']}: {name}",
+                "source": source,
                 "text": report["raw_text"],
                 "dense_model": dense_model,
                 "sparse_model": sparse_model,
                 "doc_id": report_id,
             }
         )
-        texts.append(course_chunk_content)
+        summaries.append(
+            f"Student feedback for {course_id}: {name} during the {term} term"
+        )
+        contents.append(course_chunk_content)
 
         if "instructor" in report:
             for instructor, inst_data in report["instructor"].items():
@@ -162,14 +166,17 @@ for key in tqdm(data):
                 metas.append(
                     {
                         "url": report["url"],
-                        "source": f"TQFR during {term} term for {report['course_id']}: {name}",
+                        "source": source,
                         "text": report["raw_text"],
                         "dense_model": dense_model,
                         "sparse_model": sparse_model,
                         "doc_id": report_id,
                     }
                 )
-                texts.append(chunk_content)
+                summaries.append(
+                    f"Student feedback for {instructor} teaching {course_id}: {name} during the {term} term"
+                )
+                contents.append(chunk_content)
 
         comment_chunk_id = f"{report_id}-comments"
         comment_chunk_content = (
@@ -180,32 +187,51 @@ for key in tqdm(data):
         metas.append(
             {
                 "url": report["url"],
-                "source": f"TQFR during {term} term for {report['course_id']}: {name}",
+                "source": source,
                 "text": report["raw_text"],
                 "dense_model": dense_model,
                 "sparse_model": sparse_model,
                 "doc_id": report_id,
             }
         )
-        texts.append(comment_chunk_content)
+        summaries.append(
+            f"Comments/advice from students who took {course_id}: {name} during {term}"
+        )
+        contents.append(comment_chunk_content)
 
 
 print("Embedding document chunks...")
-dense_vectors = dense_embed.embed(texts)
-sparse_vectors = sparse_embed.embed(texts)
+dense_summaries = dense_embed.embed(summaries)
+sparse_summmaries = sparse_embed.embed(summaries)
+dense_contents = dense_embed.embed(contents)
+sparse_contents = sparse_embed.embed(contents)
+
+
+def id2uuid(id):
+    return str(uuid.uuid5(uuid.NAMESPACE_DNS, id))
+
 
 print("Creating points...")
 points = []
-for id, dense, sparse, meta in tqdm(zip(ids, dense_vectors, sparse_vectors, metas)):
+for id, ds, ss, dc, sc, meta in tqdm(
+    zip(ids, dense_summaries, sparse_summmaries, dense_contents, sparse_contents, metas)
+):
     points.append(
         PointStruct(
-            id=id,
+            id=id2uuid(f"{id}-summary"),
             vector={
-                "dense_vector": dense,
-                "sparse_vector": {
-                    "indices": list(sparse.indices),
-                    "values": list(sparse.values),
-                },
+                "dense_vector": ds,
+                "sparse_vector": vars(ss),
+            },
+            payload={"metadata": meta},
+        )
+    )
+    points.append(
+        PointStruct(
+            id=id2uuid(f"{id}-content"),
+            vector={
+                "dense_vector": dc,
+                "sparse_vector": vars(sc),
             },
             payload={"metadata": meta},
         )
