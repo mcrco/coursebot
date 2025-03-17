@@ -90,9 +90,9 @@ export const ChatWindow = () => {
     return (
         <ChatContainer className="h-screen max-h-full flex flex-col gap-6 justify-center w-full sm:w-3/5">
             {isEmpty ? (
-                <h1 className="text-3xl font-bold text-center">Caltech Course Bot</h1>
+                <h1 className="text-3xl font-bold text-center">Caltech Catalog Agent</h1>
             ) : (
-                <h1 className="text-xl font-bold text-center">Caltech Course Bot</h1>
+                <h1 className="text-xl font-bold text-center">Caltech Catalog Agent</h1>
             )}
 
             {isEmpty ? (
