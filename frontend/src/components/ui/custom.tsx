@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Send, Loader2 } from "lucide-react";
+import { Send, Loader2, ArrowDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,14 +35,40 @@ const MessageList: React.FC<{
     messages: Message[];
 }> = ({ messages }) => {
     const messagesEndRef = useRef<HTMLDivElement>(null);
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    // const [showScrollButton, setShowScrollButton] = useState(false);
 
-    useEffect(() => {
+    // useEffect(() => {
+    //     const scrollContainerElement = scrollContainerRef.current?.querySelector('[data-radix-scroll-area-viewport]');
+    //
+    //     if (!scrollContainerElement) {
+    //         console.warn("ScrollArea viewport not found!");
+    //         return;
+    //     }
+    //
+    //     console.log('found scrollContainerElement')
+    //
+    //     const handleScroll = () => {
+    //         const { scrollTop, scrollHeight, clientHeight } = scrollContainerElement as HTMLDivElement;
+    //         const isAtBottom = scrollHeight - (scrollTop + clientHeight) <= 10;
+    //         console.log("Scrolling...", isAtBottom);
+    //         setShowScrollButton(!isAtBottom);
+    //     };
+    //
+    //     scrollContainerElement.addEventListener("scroll", handleScroll);
+    //
+    //     return () => {
+    //         scrollContainerElement.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
+
+    const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    }, [messages]);
+    };
 
     return (
-        <ScrollArea className="h-full p-4">
-            <div className="space-y-6 mx-auto text-sm sm:text-sm md:text-base lg:text-md">
+        <ScrollArea className="h-full p-4" ref={scrollContainerRef}>
+            <div className="space-y-6 mx-auto text-sm sm:text-sm md:text-base lg:text-md relative" style={{ overflowY: 'auto' }}>
                 {messages.map((message) => (
                     <div
                         key={message.id}
@@ -67,14 +93,20 @@ const MessageList: React.FC<{
                 ))}
                 <div ref={messagesEndRef} />
             </div>
+            <div className="fixed bottom-32 inset-x-1/2">
+                <Button variant="secondary" onClick={scrollToBottom}>
+                    Scroll <ArrowDown className="h-4 w-4" />
+                </Button>
+            </div>
         </ScrollArea>
     );
 };
 
+
 const ChatForm: React.FC<{
     className?: string;
-    isPending: boolean;
     handleSubmit: (e: React.FormEvent) => void;
+    stop: () => void;
     children: () => React.ReactNode;
 }> = ({ className, handleSubmit, children }) => {
     return (

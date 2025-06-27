@@ -1,4 +1,6 @@
 import itertools
+import re
+import sys
 from fastembed import SparseTextEmbedding
 from langchain_google_vertexai import VertexAIEmbeddings
 from qdrant_client import QdrantClient
@@ -13,6 +15,13 @@ from tqdm import tqdm
 import json
 import os
 import uuid
+from langchain_qdrant import FastEmbedSparse
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+
+sys.path.append("..")
+from langchain_qdrant import QdrantVectorStore
 
 if not load_dotenv():
     print("Unable to get environment variables via pydotenv.")
@@ -47,13 +56,23 @@ metas = []
 summaries = []
 contents = []
 for entry in tqdm(data.values()):
-    id = f"{entry["id"]}-catalog"
+    cid = f"{entry["id"]}-catalog"
     content = f"{entry['course_id']}: {entry['name']}\n" + "\n".join(
         f"{k.capitalize()}: {v}"
         for k, v in entry.items()
         if k not in ["id", "course_id", "name"]
     )
-    ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, id)))
+
+    depts = []
+    code_number = None
+    # Regex to capture dept codes (e.g., CS, EE, CS/EE) and course number from course_id
+    match = re.match(r"([A-Za-z/]+)\s*(\d+)", entry["course_id"])
+    if match:
+        # Split depts by '/' for cross-listing
+        depts = match.group(1).upper().split("/")
+        code_number = int(match.group(2))
+
+    ids.append(str(uuid.uuid5(uuid.NAMESPACE_DNS, cid)))
     metas.append(
         {
             "source": "Caltech Catalog (Courses 2024-25)",
@@ -61,10 +80,12 @@ for entry in tqdm(data.values()):
             "text": content,
             "dense_model": dense_model,
             "sparse_model": sparse_model,
-            "doc_id": id,
+            "doc_id": cid,
+            "depts": depts,
+            "code_number": code_number,
         }
     )
-    summaries.append(f'Course catalog entry for {entry['course_id']}: {entry['name']}')
+    summaries.append(f"Course catalog entry for {entry['course_id']}: {entry['name']}")
     contents.append(content)
 
 print("Embedding document chunks...")
@@ -85,7 +106,7 @@ for id, ds, ss, dc, sc, meta in tqdm(
 ):
     points.append(
         PointStruct(
-            id=id2uuid(f"{id}-summary"),
+            id=id2uuid(f"{cid}-summary"),
             vector={
                 "dense_vector": ds,
                 "sparse_vector": vars(ss),
@@ -95,7 +116,7 @@ for id, ds, ss, dc, sc, meta in tqdm(
     )
     points.append(
         PointStruct(
-            id=id2uuid(f"{id}-content"),
+            id=id2uuid(f"{cid}-content"),
             vector={
                 "dense_vector": dc,
                 "sparse_vector": vars(sc),

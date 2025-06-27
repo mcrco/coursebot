@@ -1,41 +1,52 @@
 from langchain_core.tools import tool
 from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 from langchain_openai import ChatOpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
-from langchain_core.messages import SystemMessage
-from langgraph.graph import MessagesState, END, StateGraph
-from langgraph.prebuilt import ToolNode, tools_condition
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_core.messages import (
+    SystemMessage,
+    BaseMessage,
+    ToolMessage,
+    AIMessage,
+    HumanMessage,
+)
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langgraph.graph import StateGraph, END
+from langgraph.graph.message import add_messages
+from langgraph.prebuilt import ToolExecutor, ToolInvocation
 from dotenv import load_dotenv
 import os
+from llm.search import hybrid_search, course_catalog_search
+from typing import Annotated, Sequence, TypedDict
+from functools import partial
+import operator
+import json
+
+
+MODEL_CODE = "qwen/qwen3-30b-a3b"
+TEMPERATURE = 0.69
+SYSTEM_MESSAGE_CONTENT = open("llm/react_prompt.txt", "r").read()
+
+
+class AgentState(TypedDict):
+    messages: Annotated[Sequence[BaseMessage], add_messages]
 
 
 class CourseRAG:
     def __init__(
         self,
-        model_code="gemini-2.0-flash",
+        model_code=MODEL_CODE,
         embedding_model="models/text-embedding-004",
         sparse_embedding_model="Qdrant/bm25",
     ):
         if not load_dotenv():
             print("Unable to get environment variables via pydotenv.")
 
-        if "deepseek" in model_code:
-            self.llm = ChatOpenAI(
-                model=model_code,
-                openai_api_key=os.environ["DEEPSEEK_API_KEY"],
-                openai_api_base="https://api.deepseek.com",
-                temperature=0.69,
-            )
-        elif "gemini" in model_code:
-            self.llm = ChatGoogleGenerativeAI(
-                model=model_code,
-                temperature=0.69,
-                max_tokens=None,
-                timeout=None,
-                max_retries=2,
-            )
-        else:
-            raise Exception("invalid llm model code")
+        self.llm = ChatOpenAI(
+            model=model_code,
+            openai_api_key=os.environ["OPENROUTER_API_KEY"],
+            openai_api_base="https://openrouter.ai/api/v1",
+            temperature=TEMPERATURE,
+        )
 
         self.embeddings = GoogleGenerativeAIEmbeddings(model=embedding_model)
         self.sparse_embeddings = FastEmbedSparse(model_name=sparse_embedding_model)
@@ -51,128 +62,87 @@ class CourseRAG:
             retrieval_mode=RetrievalMode.SPARSE,
         )
 
+        self.tools = [hybrid_search, course_catalog_search]
+        self.tool_executor = ToolExecutor(self.tools)
+        self.llm_with_tools = self.llm.bind_tools(self.tools)
+
         self.build_graph()
 
     def build_graph(self):
-        @tool(response_format="content_and_artifact")
-        def retrieve(query: str):
-            """
-            Retrieve information related to a query about Caltech courses or
-            related information, such as major/option requirements using past course
-            reviews (student feedback) and the course catalog.
-            """
-            retrieved_docs = self.vector_store.similarity_search(query, k=8)
-            serialized = []
-            doc_ids = set()
-            for doc in retrieved_docs:
-                doc_id = doc.metadata["_id"]
-                if "doc_id" in doc.metadata:
-                    doc_id = doc.metadata["doc_id"]
-                if doc_id not in doc_ids:
-                    doc_ids.add(doc_id)
-                    serialized.append(
-                        f"Source: {doc.metadata['source']}\nLink: {doc.metadata['url']}\nContent: {doc.metadata['text']}\n\n\n"
-                    )
-            print(list(doc_ids))
-            return serialized, retrieved_docs
+        graph_builder = StateGraph(AgentState)
 
-        self.llm_with_tools = self.llm.bind_tools([retrieve])
-
-        def query_or_respond(state: MessagesState):
-            response = self.llm_with_tools.invoke(state["messages"])
-            return {"messages": response}
-
-        def generate(state: MessagesState):
-            recent_tool_messages = [
-                message
-                for message in reversed(state["messages"])
-                if message.type == "tool"
-            ][::-1]
-
-            docs_content = "\n\n".join(
-                str(doc.content) if not isinstance(doc.content, str) else doc.content
-                for doc in recent_tool_messages
-            )
-            system_message_content = """You are an AI assistant designed to help users with course selection at Caltech. You have access to a database of Caltech course information, professor details, and Teaching Quality Feedback Reports (TQFRs) via a retrieval tool.
-
-                ### Guidelines:
-
-                1. **Scope Restriction:**
-                - Only answer questions related to Caltech courses, professors, scheduling, and related academic topics.
-                - If a question is outside this scope, politely inform the user that you can only assist with Caltech course selection.
-
-                2. **Preventing Hallucination:**
-                - Your responses must be strictly based on retrieved context.
-                - If you lack sufficient retrieved information to answer, say: _"I couldn’t find relevant information in the Caltech course catalog and TQFRs from the past two years."_
-                - Do not attempt to infer or speculate beyond the provided data.
-
-                3. **Mandatory Citation:**
-                - Any statement derived from retrieved data must be followed by a markdown link in parentheses formatted as: **([Source Name](Source URL))**
-                - Ensure citations are specific and clearly support the information provided.
-                - If source names are really long and there are a lot of them, shorten them to an abbreviation.
-
-                4. **Prohibition on Code Generation:**
-                - Do not generate or suggest custom code, scripts, or programming solutions.
-                - If a user asks for code, respond: _"I am designed to assist with Caltech course selection and cannot provide code."_
-
-                5. **TQFRs:**
-                - If you are answering based on a TQFR, do not display tables unless the user prompts you to or the tables would help with clarity (e.g. for comparison).
-                  - For the TQFR tables, ignore columns displaying images.
-                - If there are a lot of TQFRs, generate summaries for each question based on the student responses, you don't have to include the tables.
-                - It's always nice to include quotes from the student comments section if there are any.
-
-                6. **User Specific:**
-                - If the users' names are Kara Lo or Nora Xiao, tell them to shut up and stop trying to go over the rate limit.
-            """
-
-            conversation_messages = [
-                message
-                for message in state["messages"]
-                if message.type in ("human", "system")
-                or (message.type == "ai" and not message.tool_calls)
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                ("system", SYSTEM_MESSAGE_CONTENT),
+                MessagesPlaceholder(variable_name="messages"),
             ]
-            prompt = (
-                [SystemMessage(system_message_content)]
-                + conversation_messages
-                + [f"\n Retrieved context: {docs_content}"]
-                + [
-                    """
-                    Keep in mind your original instructions!
-                    You don't have to use all of the retrieved documents; just pick out the ones relevant to the last user question and answer based off of those.
-                    Note that you are limited to 8000 output tokens, so try to keep the response within that margin.
-                    """
-                ]
-            )
-            response = self.llm.invoke(prompt)
-            return {"messages": [response]}
-
-        tools = ToolNode([retrieve])
-        graph_builder = StateGraph(MessagesState)
-        graph_builder.add_node(query_or_respond)
-        graph_builder.add_node(tools)
-        graph_builder.add_node(generate)
-        graph_builder.set_entry_point("query_or_respond")
-        graph_builder.add_conditional_edges(
-            "query_or_respond", tools_condition, {END: END, "tools": "tools"}
         )
-        graph_builder.add_edge("tools", "generate")
-        graph_builder.add_edge("generate", END)
+        self.agent = prompt | self.llm_with_tools
+
+        graph_builder.add_node("agent", self.run_agent)
+        graph_builder.add_node("action", self.execute_tools)
+        graph_builder.set_entry_point("agent")
+        graph_builder.add_conditional_edges(
+            "agent", self.should_continue, {"action": "action", "end": END}
+        )
+        graph_builder.add_edge("action", "agent")
 
         self.graph = graph_builder.compile()
 
-    def answer(self, input_message: str):
-        state = {"messages": [{"role": "user", "content": input_message}]}
-        final_state = self.graph.invoke(state)
-        return final_state["messages"][-1].content
+    def run_agent(self, state):
+        """
+        Think about what to do
+        """
+        messages = state["messages"]
+        response = self.agent.invoke({"messages": messages})
+        return {"messages": [response]}
 
-    def complete(self, messages):
-        state = {"messages": messages}
-        final_state = self.graph.invoke(state)
-        return final_state["messages"][-1]
+    def execute_tools(self, state):
+        """
+        Execute tools
+        """
+        messages = state["messages"]
+        last_message = messages[-1]
+
+        tool_invocations = []
+        for tool_call in last_message.tool_calls:
+            args = tool_call["args"].copy()
+            args["vector_store"] = self.vector_store
+            tool_invocations.append(
+                ToolInvocation(tool=tool_call["name"], tool_input=args)
+            )
+
+        responses = self.tool_executor.batch(tool_invocations, return_exceptions=True)
+        tool_messages = [
+            ToolMessage(content=str(res), tool_call_id=tool_call["id"])
+            for res, tool_call in zip(responses, last_message.tool_calls)
+        ]
+        
+        return {"messages": tool_messages}
+
+    def should_continue(self, state):
+        messages = state["messages"]
+        last_message = messages[-1]
+        if not last_message.tool_calls:
+            return "end"
+        return "action"
 
     def stream_complete(self, messages):
         state = {"messages": messages}
-        for chunk in self.graph.stream(state, stream_mode=["messages"]):
-            _, (message, metadata) = chunk
-            if metadata["langgraph_node"] in ["query_or_respond", "generate"]:
-                yield message
+        for chunk in self.graph.stream(state):
+            if "agent" in chunk:
+                last_message = chunk["agent"]["messages"][-1]
+                if last_message.tool_calls:
+                    # The new plan is the set of tool calls
+                    new_plan = {
+                        "steps": [
+                            {"tool_name": tc["name"], "args": tc["args"]}
+                            for tc in last_message.tool_calls
+                        ]
+                    }
+                    yield f"data: {json.dumps({'type': 'plan', 'data': new_plan})}\n\n"
+                    yield f"data: {json.dumps({'type': 'tools_start'})}\n\n"
+                else:
+                    yield f"data: {json.dumps({'type': 'final_answer', 'data': last_message.content})}\n\n"
+            if "action" in chunk:
+                yield f"data: {json.dumps({'type': 'tools_end', 'data': [msg.content for msg in chunk['action']['messages']]})}\n\n"

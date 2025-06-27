@@ -71,6 +71,10 @@ for entry in tqdm(data.values()):
             .translate(str.maketrans("", "", string.punctuation))
             .replace(" ", "_")
         )
+
+        depts = []
+        code_number = None
+
         ids.append(id)
         metas.append(
             {
@@ -80,6 +84,8 @@ for entry in tqdm(data.values()):
                 "dense_model": dense_model,
                 "sparse_model": sparse_model,
                 "doc_id": id,
+                "depts": depts,
+                "code_number": code_number,
             }
         )
         summaries.append(headers)

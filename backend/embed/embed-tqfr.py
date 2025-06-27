@@ -13,6 +13,7 @@ from tqdm import tqdm
 import json
 import os
 import uuid
+import re
 
 if not load_dotenv():
     print("Unable to get environment variables via pydotenv.")
@@ -91,7 +92,7 @@ def process_score(question, data, instructor=None):
     about_text = f" about {instructor}" if instructor else ""
     return (
         f'When asked "{question.lower()}"' + about_text + ", students on average rated "
-        f'{data['score']} out of 5 with a standard deviation of {stdev},'
+        f'{data["score"]} out of 5 with a standard deviation of {stdev},'
         f"which was {score2text(score, dept_avg)} than the department average of {dept_avg} "
         f"and {score2text(score, caltech_avg)} the Caltech average of {caltech_avg}. "
     )
@@ -109,6 +110,15 @@ for key in tqdm(data):
     for term in data[key]:
         report = data[key][term]
         course_id, name = report["course_id"], report["name"]
+
+        depts = []
+        code_number = None
+        # Regex to capture dept codes (e.g., CS, EE, CS/EE) and course number from course name
+        match = re.match(r"([A-Za-z/]+)\s*(\d+)", name)
+        if match:
+            # Split depts by '/' for cross-listing
+            depts = match.group(1).upper().split("/")
+            code_number = int(match.group(2))
 
         course_qas = []
         for question, response_data in report["course"].items():
@@ -134,6 +144,8 @@ for key in tqdm(data):
                 "dense_model": dense_model,
                 "sparse_model": sparse_model,
                 "doc_id": report_id,
+                "depts": depts,
+                "code_number": code_number,
             }
         )
         summaries.append(
@@ -171,6 +183,8 @@ for key in tqdm(data):
                         "dense_model": dense_model,
                         "sparse_model": sparse_model,
                         "doc_id": report_id,
+                        "depts": depts,
+                        "code_number": code_number,
                     }
                 )
                 summaries.append(
@@ -192,6 +206,8 @@ for key in tqdm(data):
                 "dense_model": dense_model,
                 "sparse_model": sparse_model,
                 "doc_id": report_id,
+                "depts": depts,
+                "code_number": code_number,
             }
         )
         summaries.append(
