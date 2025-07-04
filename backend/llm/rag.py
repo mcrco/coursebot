@@ -1,7 +1,7 @@
 from langchain_core.tools import tool
 from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 from langchain_openai import ChatOpenAI
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_together import TogetherEmbeddings
 from langchain_core.messages import (
     SystemMessage,
     BaseMessage,
@@ -35,7 +35,7 @@ class CourseRAG:
     def __init__(
         self,
         model_code=MODEL_CODE,
-        embedding_model="models/text-embedding-004",
+        embedding_model="Alibaba-NLP/gte-modernbert-base",
         sparse_embedding_model="Qdrant/bm25",
     ):
         if not load_dotenv():
@@ -48,7 +48,7 @@ class CourseRAG:
             temperature=TEMPERATURE,
         )
 
-        self.embeddings = GoogleGenerativeAIEmbeddings(model=embedding_model)
+        self.embeddings = TogetherEmbeddings(model=embedding_model)
         self.sparse_embeddings = FastEmbedSparse(model_name=sparse_embedding_model)
         self.vector_store = QdrantVectorStore.from_existing_collection(
             url=os.environ["QDRANT_URL"],
